@@ -49,9 +49,9 @@ With [javascript-empire](https://github.com/92bondstreet/javascript-empire#%EF%B
 | --- | --- | ---
 | 1 | [Manipulate data with JavaScript in the browser](./workshops/1-manipulate-javascript.md) | Sept 2024
 | 2 | [Interact data with JavaScript, HTML and CSS in the browser again](./workshops/2-interact-js-css.md) | Sept 2024
-| 3 | Scrape data with Node.js| Oct 2024
-| 4 | Save data in a Database with MongoDB | Oct 2024
-| 5 | Build an api with Express to request data | Dec 2024
+| 3 | [Scrape data with Node.js](./workshops/3-scrape-node.md) | Oct and Nov 2024
+| 4 | Save data in a Database with MongoDB | Nov 2024
+| 5 | Build an api with Express to request data | Nov 2024
 | 6 | Test your code with Jest | Dec 2024
 | 7 | Deploy in production with Vercel | Dec 2024
 
