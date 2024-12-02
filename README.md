@@ -53,7 +53,7 @@ With [javascript-empire](https://github.com/92bondstreet/javascript-empire#%EF%B
 | 4 | [Save data in a Database with MongoDB](./workshops/4-store-mongodb.md) | Nov 2024
 | 5 | [Build an api with Express to request data](./workshops/5-api-express.md) | Nov 2024
 | 6 | Test your code with Jest | Dec 2024
-| 7 | Deploy in production with Vercel | Dec 2024
+| 7 | [Deploy in production with Vercel](./workshops/7-deploy.md) | Dec 2024
 
 
 ## 🌱 Source and Inspiration
