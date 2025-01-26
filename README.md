@@ -51,11 +51,12 @@ With [inception](https://github.com/92bondstreet/inception?tab=readme-ov-file#%E
 | --- | --- | ---
 | 1 | [Manipulate data with JavaScript in the browser](./workshops/1-manipulate-javascript.md) | Jan 2025
 | 2 | [Interact data with JavaScript, HTML and CSS in the browser again](./workshops/2-interact-js-css.md) | Jan 2025
-| 3 | Scrape data with Node.js | Jan and Feb 2025
-| 4 | Save data in a Database with MongoDB | Feb 2025
-| 5 | Build an api with Express to request data | Feb and Mar 2025
-| 7 | Deploy in production with Vercel | Mar 2025
-| 7 | Design an effective experience | Mar 2025
+| 3 | [Be an advocate for your design](./workshops/3-advocate-your-design.md) | Jan 2025
+| n | Scrape data with Node.js | Feb 2025
+| n | Save data in a Database with MongoDB | Feb 2025
+| n | Build an api with Express to request data | Feb and Mar 2025
+| n | Deploy in production with Vercel | Mar 2025
+| n | Design an effective experience | Mar 2025
 
 ## 📝 Licence
 
