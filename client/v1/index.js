@@ -30,8 +30,6 @@ console.log(MY_FAVORITE_DEALERS[0]);
 // 1. Create a new variable and assign it the link of the lego set with the highest reduction I can find on these 2 websites
 // 2. Log the variable
 
-const maxReduc = 'https://www.dealabs.com/bons-plans/lego-technic-42171-mercedes-amg-3268931'
-console.log(maxReduc);
 
 /**
  * 🧱
