@@ -483,7 +483,10 @@ sealedCamera = {
 };
 
 // 3. Update `camera` property with `favorite` to true WITHOUT changing sealedCamera properties
-
+camera = {
+  ...sealedCamera,
+  favorite: true
+};
 
 // 🎯 TODO 16: Compute the profitability
 // From a specific deal called `deal`
