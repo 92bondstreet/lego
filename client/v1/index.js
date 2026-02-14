@@ -469,6 +469,9 @@ camera.favorite = true;
 
 // 1. Log `sealedCamera` and `camera` variables
 // 2. What do you notice?
+console.log(sealedCamera);
+console.log(camera);
+// I notice that both sealedCamera and camera have the property favorite set to true, which means that they are referencing the same object in memory. Therefore, when we modify camera, it also modifies sealedCamera.
 
 // we make (again) a new assignment again
 sealedCamera = {
