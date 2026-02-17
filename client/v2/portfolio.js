@@ -32,6 +32,11 @@ const selectLegoSetIds = document.querySelector('#lego-set-id-select');
 const sectionDeals= document.querySelector('#deals');
 const spanNbDeals = document.querySelector('#nbDeals');
 
+// filter selectors
+const filterDiscount = document.querySelector('#filter-discount');
+const filterCommented = document.querySelector('#filter-commented');
+const filterHot = document.querySelector('#filter-hot');
+
 /**
  * Set global value
  * @param {Array} result - deals to display
@@ -165,3 +170,54 @@ selectPage.addEventListener('change', async (event) => {
   render(currentDeals, currentPagination);
 });
 
+let activeFilter = null;
+
+/**
+ * Filter deals with discount >= 50%, sorted by highest discount
+ */
+filterDiscount.addEventListener('click', () => {
+  // Toggle: si le filtre est déjà actif, le désactiver
+  if (activeFilter === 'discount') {
+    renderDeals(currentDeals);
+    activeFilter = null;
+  } else {
+    const filtered = currentDeals.filter(deal => deal.discount > 50);
+    const sorted = filtered.sort((a, b) => b.discount - a.discount);
+    renderDeals(sorted);
+    activeFilter = 'discount';
+  }
+});
+
+/**
+ * Sort deals by most commented
+ */
+filterCommented.addEventListener('click', () => {
+  // Toggle: si le filtre est déjà actif, le désactiver
+  if (activeFilter === 'commented') {
+    renderDeals(currentDeals);
+    activeFilter = null;
+  } else {
+    const filtered = currentDeals.filter(deal => deal.comments > 15);
+    const sorted = filtered.sort((a, b) => b.comments - a.comments);
+    renderDeals(sorted);
+    activeFilter = 'commented';
+  }
+});
+
+/**
+ * Sort deals by most recent (hot deals)
+ */
+filterHot.addEventListener('click', () => {
+  // Toggle: si le filtre est déjà actif, le désactiver
+  if (activeFilter === 'hot') {
+    renderDeals(currentDeals);
+    activeFilter = null;
+  } else {
+    const filtered = currentDeals.filter(deal => deal.temperature > 80);
+    const sorted = filtered.sort((a, b) => b.temperature - a.temperature);
+    renderDeals(sorted);
+    activeFilter = 'hot';
+  }
+});
+  renderDeals(sorted);
+  activeFilter = 'hot';
