@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>🧱 Lego | Predictability of a lego set deal</title>
+  </head>
+  <body>
+    <h1>Lego</h1>
+    <section id="options">
+      <div id="show">
+        <label for="show-select">Show:</label>
+        <select name="show" id="show-select">
+          <option value="6">6</option>
+          <option value="12">12</option>
+          <option value="24">24</option>
+        </select>
+      </div>
+      <div id="page">
+        <label for="page-select">Go to page:</label>
+        <select name="page" id="page-select"> </select>
+      </div>
+      <div id="filters">
+        <span>By best discount</span>
+        <span>By most commented</span>
+        <span>By hot deals</span>
+      </div>
+      <div id="sort">
+        <label for="sort-select">Sort:</label>
+        <select name="sort" id="sort-select">
+          <option value="price-asc">Cheaper</option>
+          <option value="price-desc">Expensive</option>
+          <option value="date-asc">Recently published</option>
+          <option value="date-desc">Anciently published</option>
+        </select>
+      </div>
+    </section>
+    <section id="lego">
+      <h2>Lego sets</h2>
+      <div>
+        <label>Lego set id:</label>
+        <select id="lego-set-id-select"></select> 
+      </div>
+    </section>
+    <section id="indicators">
+      <h2>Indicators</h2>
+      <div>
+        <span>Number of deals</span>
+        <span id="nbDeals">0</span>
+      </div>
+      <div>
+        <span>Number of sales</span>
+        <span id="nbSales">0</span>
+      </div>
+      <div>
+        <span>p5 sales price value</span>
+        <span>0</span>
+      </div>
+      <div>
+        <span>p25 sales price value</span>
+        <span>0</span>
+      </div>
+      <div>
+        <span>p50 sales price value</span>
+        <span>0</span>
+      </div>
+      <div>
+        <span>Lifetime value</span>
+        <span>10 days</span>
+      </div>
+    </section>
+    <section id="deals"></section>
+    <script type="text/javascript" charset="UTF-8" src="utils.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="portfolio.js"></script>
+  </body>
+</html>
