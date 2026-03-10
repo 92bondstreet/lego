@@ -243,10 +243,11 @@ const renderSales = (sales) => {
   } else {
     const template = sales
       .map(sale => {
+        const price = typeof sale.price === 'object' ? parseFloat(sale.price.amount) : parseFloat(sale.price);
         return `
         <div class="sale">
           <a href="${sale.link}" target="_blank" rel="noopener">${sale.title}</a>
-          <span class="sale-price">${sale.price}€</span>
+          <span class="sale-price">${price.toFixed(2)}€</span>
         </div>
       `;
       })
@@ -312,7 +313,17 @@ const renderSalesIndicators = (sales) => {
     return;
   }
 
-  const prices = sales.map(s => s.price);
+  const prices = sales.map(s => typeof s.price === 'object' ? parseFloat(s.price.amount) : parseFloat(s.price)).filter(p => !isNaN(p));
+
+  if (prices.length === 0) {
+    spanAvgPrice.innerHTML = '-';
+    spanP5.innerHTML = '-';
+    spanP25.innerHTML = '-';
+    spanP50.innerHTML = '-';
+    spanLifetime.innerHTML = '-';
+    return;
+  }
+
   const avg = prices.reduce((sum, p) => sum + p, 0) / prices.length;
 
   spanAvgPrice.innerHTML = avg.toFixed(2) + '€';
@@ -320,10 +331,10 @@ const renderSalesIndicators = (sales) => {
   spanP25.innerHTML = percentile(prices, 25).toFixed(2) + '€';
   spanP50.innerHTML = percentile(prices, 50).toFixed(2) + '€';
 
-  // Lifetime = difference between most recent and oldest sale
+  // Lifetime = difference between most recent and oldest sale (published is Unix timestamp in seconds)
   const dates = sales
     .filter(s => s.published)
-    .map(s => new Date(s.published).getTime())
+    .map(s => s.published * 1000)
     .filter(d => !isNaN(d));
 
   if (dates.length >= 2) {
