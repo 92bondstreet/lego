@@ -24,28 +24,20 @@ This endpoint accepts the following optional query string parameters:
 // current deals on the page
 let currentDeals = [];
 let currentPagination = {};
-<<<<<<< HEAD
 let allDeals = []; // Store all deals for filtering
 let currentFilter = 'all'; // Current active filter
 let currentSort = 'none'; // Current sort option
 let currentVintedSales = []; // Store vinted sales for selected set
 let favorites = JSON.parse(localStorage.getItem('favorites')) || []; // Load favorites from localStorage
-=======
->>>>>>> d0b4843fad2aeaa12978b3023c7fc3277f19d964
 
 // instantiate the selectors
 const selectShow = document.querySelector('#show-select');
 const selectPage = document.querySelector('#page-select');
 const selectLegoSetIds = document.querySelector('#lego-set-id-select');
-<<<<<<< HEAD
 const selectSort = document.querySelector('#sort-select');
 const sectionDeals = document.querySelector('#deals');
 const spanNbDeals = document.querySelector('#nbDeals');
 const spanNbSales = document.querySelector('#nbSales');
-=======
-const sectionDeals= document.querySelector('#deals');
-const spanNbDeals = document.querySelector('#nbDeals');
->>>>>>> d0b4843fad2aeaa12978b3023c7fc3277f19d964
 
 /**
  * Set global value
@@ -75,14 +67,11 @@ const fetchDeals = async (page = 1, size = 6) => {
       return {currentDeals, currentPagination};
     }
 
-<<<<<<< HEAD
     // Log the structure of deals to see available fields
     if (body.data && body.data.result && body.data.result.length > 0) {
       console.log('Sample deal object:', body.data.result[0]);
     }
 
-=======
->>>>>>> d0b4843fad2aeaa12978b3023c7fc3277f19d964
     return body.data;
   } catch (error) {
     console.error(error);
@@ -99,7 +88,6 @@ const renderDeals = deals => {
   const div = document.createElement('div');
   const template = deals
     .map(deal => {
-<<<<<<< HEAD
       const isFavorite = favorites.includes(deal.uuid);
       const favoriteClass = isFavorite ? 'favorite-active' : '';
       return `
@@ -108,13 +96,6 @@ const renderDeals = deals => {
         <a href="${deal.link}" target="_blank" rel="noopener noreferrer">${deal.title}</a>
         <span>${deal.price}</span>
         <button class="favorite-btn ${favoriteClass}" data-uuid="${deal.uuid}" title="Add to favorites">★</button>
-=======
-      return `
-      <div class="deal" id=${deal.uuid}>
-        <span>${deal.id}</span>
-        <a href="${deal.link}">${deal.title}</a>
-        <span>${deal.price}</span>
->>>>>>> d0b4843fad2aeaa12978b3023c7fc3277f19d964
       </div>
     `;
     })
@@ -124,14 +105,11 @@ const renderDeals = deals => {
   fragment.appendChild(div);
   sectionDeals.innerHTML = '<h2>Deals</h2>';
   sectionDeals.appendChild(fragment);
-<<<<<<< HEAD
   
   // Add event listeners to favorite buttons
   document.querySelectorAll('.favorite-btn').forEach(btn => {
     btn.addEventListener('click', toggleFavorite);
   });
-=======
->>>>>>> d0b4843fad2aeaa12978b3023c7fc3277f19d964
 };
 
 /**
@@ -180,7 +158,6 @@ const render = (deals, pagination) => {
 };
 
 /**
-<<<<<<< HEAD
  * Feature 2 - Filter by best discount (>50%)
  * @param {Array} deals
  * @returns {Array} filtered deals
@@ -512,13 +489,10 @@ const handleFilterChange = filter => {
 };
 
 /**
-=======
->>>>>>> d0b4843fad2aeaa12978b3023c7fc3277f19d964
  * Declaration of all Listeners
  */
 
 /**
-<<<<<<< HEAD
  * Feature 0 - Select the number of deals to display
  */
 selectShow.addEventListener('change', async (event) => {
@@ -638,26 +612,12 @@ if (filterSection) {
 addFavoriteFilterBtn.addEventListener('click', () => {
   handleFilterChange(currentFilter === 'favorite' ? 'all' : 'favorite');
   addFavoriteFilterBtn.classList.toggle('filter-active');
-=======
- * Select the number of deals to display
- */
-selectShow.addEventListener('change', async (event) => {
-  const deals = await fetchDeals(currentPagination.currentPage, parseInt(event.target.value));
-
-  setCurrentDeals(deals);
-  render(currentDeals, currentPagination);
->>>>>>> d0b4843fad2aeaa12978b3023c7fc3277f19d964
 });
 
 document.addEventListener('DOMContentLoaded', async () => {
   const deals = await fetchDeals();
 
-<<<<<<< HEAD
   allDeals = deals.result;
   setCurrentDeals(deals);
   render(deals.result, deals.meta);
-=======
-  setCurrentDeals(deals);
-  render(currentDeals, currentPagination);
->>>>>>> d0b4843fad2aeaa12978b3023c7fc3277f19d964
 });
