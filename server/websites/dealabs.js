@@ -50,7 +50,7 @@ const parse = data => {
  * @param {String} url - url to parse and scrape
  * @returns {Promise<Array|null>}
  */
-const scrape = async (url = 'https://www.dealabs.com/groupe/lego') => {
+const scrapePage = async (url) => {
   const response = await fetch(url, {
     headers: {
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
@@ -66,6 +66,29 @@ const scrape = async (url = 'https://www.dealabs.com/groupe/lego') => {
 
   console.error(response);
   return null;
+};
+
+/**
+ * Scrape multiple pages from dealabs (up to maxDeals)
+ * @param {String} baseUrl - base url to scrape
+ * @param {Number} maxDeals - maximum number of deals to collect (default 100)
+ * @returns {Promise<Array>}
+ */
+const scrape = async (baseUrl = 'https://www.dealabs.com/groupe/lego', maxDeals = 100) => {
+  let allDeals = [];
+  let page = 1;
+
+  while (allDeals.length < maxDeals) {
+    const url = page === 1 ? baseUrl : `${baseUrl}?page=${page}`;
+    const deals = await scrapePage(url);
+
+    if (!deals || deals.length === 0) break;
+
+    allDeals = allDeals.concat(deals);
+    page++;
+  }
+
+  return allDeals.slice(0, maxDeals);
 };
 
 export { scrape };
