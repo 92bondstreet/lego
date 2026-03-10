@@ -71,7 +71,7 @@ const setCurrentDeals = ({result, meta}) => {
 const fetchDeals = async (page = 1, size = 6) => {
   try {
     const response = await fetch(
-      `https://lego-api-blue.vercel.app/deals?page=${page}&size=${size}`
+      `http://localhost:8000/api/deals?page=${page}&size=${size}`
     );
     const body = await response.json();
 
@@ -95,7 +95,7 @@ const fetchDeals = async (page = 1, size = 6) => {
 const fetchSales = async (id) => {
   try {
     const response = await fetch(
-      `https://lego-api-blue.vercel.app/sales?id=${id}`
+      `http://localhost:8000/api/sales?id=${id}`
     );
     const body = await response.json();
 
@@ -105,6 +105,32 @@ const fetchSales = async (id) => {
     }
 
     return body.data.result;
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
+};
+
+/**
+ * Fetch all lego set ids from the original API (for Vinted sales)
+ * @return {Array}
+ */
+const fetchAllLegoIds = async () => {
+  try {
+    const ids = new Set();
+    let page = 1;
+    let pageCount = 1;
+    do {
+      const response = await fetch(
+        `https://lego-api-blue.vercel.app/deals?page=${page}&size=50`
+      );
+      const body = await response.json();
+      if (body.success !== true) break;
+      body.data.result.forEach(deal => ids.add(deal.id));
+      pageCount = body.data.meta.pageCount;
+      page++;
+    } while (page <= pageCount);
+    return [...ids];
   } catch (error) {
     console.error(error);
     return [];

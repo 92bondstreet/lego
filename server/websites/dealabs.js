@@ -23,13 +23,25 @@ const parse = data => {
 
         const link = `https://www.dealabs.com/bons-plans/${thread.titleSlug}-${thread.threadId}`;
 
+        // Extract lego set id from title (e.g. "LEGO Star Wars 75441" -> "75441")
+        const idMatch = thread.title && thread.title.match(/\b(\d{4,6})\b/);
+        const id = idMatch ? idMatch[1] : String(thread.threadId);
+
+        // Compute discount from prices if percentage is not available
+        const discount = thread.percentage
+          || (thread.price && thread.nextBestPrice
+            ? Math.round((1 - thread.price / thread.nextBestPrice) * 100)
+            : 0);
+
         return {
+          id,
           title: thread.title,
           link,
           price: thread.price || null,
           nextBestPrice: thread.nextBestPrice || null,
-          discount: thread.percentage || null,
+          discount,
           temperature: thread.temperature || 0,
+          comments: thread.commentCount || 0,
           photo: thread.mainImage
             ? `https://static-pepper.dealabs.com/${thread.mainImage.path}/${thread.mainImage.name}/re/300x300/qt/60/${thread.mainImage.name}.jpg`
             : '',
@@ -71,14 +83,14 @@ const scrapePage = async (url) => {
 /**
  * Scrape multiple pages from dealabs (up to maxDeals)
  * @param {String} baseUrl - base url to scrape
- * @param {Number} maxDeals - maximum number of deals to collect (default 100)
+ * @param {Number} maxPages - maximum number of pages to scrape (default 10)
  * @returns {Promise<Array>}
  */
-const scrape = async (baseUrl = 'https://www.dealabs.com/groupe/lego', maxDeals = 100) => {
+const scrape = async (baseUrl = 'https://www.dealabs.com/groupe/lego', maxPages = 10) => {
   let allDeals = [];
   let page = 1;
 
-  while (allDeals.length < maxDeals) {
+  while (page <= maxPages) {
     const url = page === 1 ? baseUrl : `${baseUrl}?page=${page}`;
     const deals = await scrapePage(url);
 
@@ -88,7 +100,7 @@ const scrape = async (baseUrl = 'https://www.dealabs.com/groupe/lego', maxDeals 
     page++;
   }
 
-  return allDeals.slice(0, maxDeals);
+  return allDeals;
 };
 
 export { scrape };

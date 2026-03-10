@@ -3,6 +3,7 @@ import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import * as dealabs from './websites/dealabs.js';
+import * as vinted from './websites/vinted.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -58,6 +59,34 @@ app.get('/api/deals', async (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).json({ success: false, error: 'Failed to scrape deals' });
+  }
+});
+
+/**
+ * GET /api/sales
+ * Scrapes Vinted for a given lego set id
+ * Query params: id (lego set id)
+ */
+app.get('/api/sales', async (req, res) => {
+  try {
+    const id = req.query.id;
+    if (!id) {
+      return res.status(400).json({ success: false, error: 'Missing id parameter' });
+    }
+
+    console.log(`🔍 Scraping Vinted for lego set ${id}...`);
+    const sales = await vinted.scrape(id) || [];
+    console.log(`✅ ${sales.length} Vinted sales found for set ${id}`);
+
+    res.json({
+      success: true,
+      data: {
+        result: sales
+      }
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ success: false, error: 'Failed to scrape Vinted' });
   }
 });
 
