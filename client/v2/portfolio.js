@@ -1,159 +1,242 @@
-// Invoking strict mode https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode#invoking_strict_mode
-'use strict';
+'use strict'
 
-/**
-Description of the available api
-GET https://lego-api-blue.vercel.app/deals
+let currentDeals=[]
+let currentPagination={}
+let activeFilters=[]
+let favorites=JSON.parse(localStorage.getItem("legoFavorites")||"[]")
 
-Search for specific deals
+const selectShow=document.querySelector('#show-select')
+const selectPage=document.querySelector('#page-select')
+const selectSort=document.querySelector('#sort-select')
+const filters=document.querySelectorAll('#filters span')
 
-This endpoint accepts the following optional query string parameters:
+const sectionDeals=document.querySelector('#deals')
 
-- `page` - page of deals to return
-- `size` - number of deals to return
+const spanNbDeals=document.querySelector('#nbDeals')
+const spanNbSales=document.querySelector('#nbSales')
 
-GET https://lego-api-blue.vercel.app/sales
+const selectLegoSetIds=document.querySelector('#lego-set-id-select')
 
-Search for current Vinted sales for a given lego set id
+const API="https://lego-api-blue.vercel.app"
 
-This endpoint accepts the following optional query string parameters:
+const setCurrentDeals=({result,meta})=>{
+currentDeals=result
+currentPagination=meta
+}
 
-- `id` - lego set id to return
-*/
+const fetchDeals=async(page=1,size=6)=>{
 
-// current deals on the page
-let currentDeals = [];
-let currentPagination = {};
+const response=await fetch(`${API}/deals?page=${page}&size=${size}`)
+const body=await response.json()
 
-// instantiate the selectors
-const selectShow = document.querySelector('#show-select');
-const selectPage = document.querySelector('#page-select');
-const selectLegoSetIds = document.querySelector('#lego-set-id-select');
-const sectionDeals= document.querySelector('#deals');
-const spanNbDeals = document.querySelector('#nbDeals');
+if(!body.success) return
 
-/**
- * Set global value
- * @param {Array} result - deals to display
- * @param {Object} meta - pagination meta info
- */
-const setCurrentDeals = ({result, meta}) => {
-  currentDeals = result;
-  currentPagination = meta;
-};
+return body.data
+}
 
-/**
- * Fetch deals from api
- * @param  {Number}  [page=1] - current page to fetch
- * @param  {Number}  [size=12] - size of the page
- * @return {Object}
- */
-const fetchDeals = async (page = 1, size = 6) => {
-  try {
-    const response = await fetch(
-      `https://lego-api-blue.vercel.app/deals?page=${page}&size=${size}`
-    );
-    const body = await response.json();
+const fetchSales=async(id)=>{
 
-    if (body.success !== true) {
-      console.error(body);
-      return {currentDeals, currentPagination};
-    }
+const response=await fetch(`${API}/sales?id=${id}`)
+const body=await response.json()
 
-    return body.data;
-  } catch (error) {
-    console.error(error);
-    return {currentDeals, currentPagination};
-  }
-};
+if(!body.success) return []
 
-/**
- * Render list of deals
- * @param  {Array} deals
- */
-const renderDeals = deals => {
-  const fragment = document.createDocumentFragment();
-  const div = document.createElement('div');
-  const template = deals
-    .map(deal => {
-      return `
-      <div class="deal" id=${deal.uuid}>
-        <span>${deal.id}</span>
-        <a href="${deal.link}">${deal.title}</a>
-        <span>${deal.price}</span>
-      </div>
-    `;
-    })
-    .join('');
+return body.data
+}
 
-  div.innerHTML = template;
-  fragment.appendChild(div);
-  sectionDeals.innerHTML = '<h2>Deals</h2>';
-  sectionDeals.appendChild(fragment);
-};
+const toggleFavorite=(uuid)=>{
 
-/**
- * Render page selector
- * @param  {Object} pagination
- */
-const renderPagination = pagination => {
-  const {currentPage, pageCount} = pagination;
-  const options = Array.from(
-    {'length': pageCount},
-    (value, index) => `<option value="${index + 1}">${index + 1}</option>`
-  ).join('');
+if(favorites.includes(uuid))
+favorites=favorites.filter(f=>f!==uuid)
+else
+favorites.push(uuid)
 
-  selectPage.innerHTML = options;
-  selectPage.selectedIndex = currentPage - 1;
-};
+localStorage.setItem("legoFavorites",JSON.stringify(favorites))
 
-/**
- * Render lego set ids selector
- * @param  {Array} lego set ids
- */
-const renderLegoSetIds = deals => {
-  const ids = getIdsFromDeals(deals);
-  const options = ids.map(id => 
-    `<option value="${id}">${id}</option>`
-  ).join('');
+renderDeals(applyFilters())
+}
 
-  selectLegoSetIds.innerHTML = options;
-};
+const renderDeals=(deals)=>{
 
-/**
- * Render page selector
- * @param  {Object} pagination
- */
-const renderIndicators = pagination => {
-  const {count} = pagination;
+sectionDeals.innerHTML=""
 
-  spanNbDeals.innerHTML = count;
-};
+deals.forEach(deal=>{
 
-const render = (deals, pagination) => {
-  renderDeals(deals);
-  renderPagination(pagination);
-  renderIndicators(pagination);
-  renderLegoSetIds(deals)
-};
+const div=document.createElement('div')
+div.className="deal"
 
-/**
- * Declaration of all Listeners
- */
+const isFav=favorites.includes(deal.uuid)
 
-/**
- * Select the number of deals to display
- */
-selectShow.addEventListener('change', async (event) => {
-  const deals = await fetchDeals(currentPagination.currentPage, parseInt(event.target.value));
+div.innerHTML=`
+<div>
+<span class="favorite ${isFav?"active":""}" data-id="${deal.uuid}">
+${isFav ? "⭐" : "☆"}
+</span>
+</div>
 
-  setCurrentDeals(deals);
-  render(currentDeals, currentPagination);
-});
+<div class="deal-title">${deal.title}</div>
 
-document.addEventListener('DOMContentLoaded', async () => {
-  const deals = await fetchDeals();
+<div>ID: ${deal.id}</div>
 
-  setCurrentDeals(deals);
-  render(currentDeals, currentPagination);
-});
+<div class="deal-price">${deal.price}€</div>
+
+<a href="${deal.link}" target="_blank">Open deal</a>
+`
+
+sectionDeals.appendChild(div)
+
+})
+
+document.querySelectorAll(".favorite").forEach(btn=>{
+btn.onclick=(e)=>toggleFavorite(e.target.dataset.id)
+})
+
+}
+
+const renderPagination=(pagination)=>{
+
+const {currentPage,pageCount}=pagination
+
+let options=""
+
+for(let i=1;i<=pageCount;i++)
+options+=`<option value="${i}">${i}</option>`
+
+selectPage.innerHTML=options
+selectPage.value=currentPage
+
+}
+
+const renderIndicators=(pagination)=>{
+
+spanNbDeals.innerText=pagination.count
+
+}
+
+const renderLegoSetIds=(deals)=>{
+
+const ids=[...new Set(deals.map(d=>d.id))]
+
+selectLegoSetIds.innerHTML=ids.map(id=>`<option>${id}</option>`).join("")
+}
+
+const applyFilters=()=>{
+
+let deals=[...currentDeals]
+
+if(activeFilters.includes("discount"))
+deals=deals.filter(d=>d.discount>50)
+
+if(activeFilters.includes("comments"))
+deals=deals.filter(d=>d.comments>15)
+
+if(activeFilters.includes("hot"))
+deals=deals.filter(d=>d.temperature>100)
+
+if(activeFilters.includes("favorites"))
+deals=deals.filter(d=>favorites.includes(d.uuid))
+
+return sortDeals(deals)
+}
+
+const sortDeals=(deals)=>{
+
+const sort=selectSort.value
+
+switch(sort){
+
+case "price-asc":
+deals.sort((a,b)=>a.price-b.price)
+break
+
+case "price-desc":
+deals.sort((a,b)=>b.price-a.price)
+break
+
+case "date-desc":
+deals.sort((a,b)=>new Date(b.publishedAt)-new Date(a.publishedAt))
+break
+
+case "date-asc":
+deals.sort((a,b)=>new Date(a.publishedAt)-new Date(b.publishedAt))
+break
+
+}
+
+return deals
+}
+
+filters.forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+const f=btn.dataset.filter
+
+btn.classList.toggle("active")
+
+if(activeFilters.includes(f))
+activeFilters=activeFilters.filter(x=>x!==f)
+else
+activeFilters.push(f)
+
+renderDeals(applyFilters())
+
+})
+
+})
+
+selectShow.addEventListener('change',async(e)=>{
+
+const deals=await fetchDeals(1,parseInt(e.target.value))
+
+setCurrentDeals(deals)
+
+render()
+
+})
+
+selectPage.addEventListener("change",async(e)=>{
+
+const deals=await fetchDeals(parseInt(e.target.value),selectShow.value)
+
+setCurrentDeals(deals)
+
+render()
+
+})
+
+selectSort.addEventListener("change",()=>{
+
+renderDeals(applyFilters())
+
+})
+
+selectLegoSetIds.addEventListener("change",async(e)=>{
+
+const sales=await fetchSales(e.target.value)
+
+spanNbSales.innerText=sales.length
+
+})
+
+const render=()=>{
+
+renderDeals(applyFilters())
+
+renderPagination(currentPagination)
+
+renderIndicators(currentPagination)
+
+renderLegoSetIds(currentDeals)
+
+}
+
+document.addEventListener('DOMContentLoaded',async()=>{
+
+const deals=await fetchDeals()
+
+setCurrentDeals(deals)
+
+render()
+
+})

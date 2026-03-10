@@ -1,75 +1,235 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>🧱 Lego | Predictability of a lego set deal</title>
-  </head>
-  <body>
-    <h1>Lego</h1>
-    <section id="options">
-      <div id="show">
-        <label for="show-select">Show:</label>
-        <select name="show" id="show-select">
-          <option value="6">6</option>
-          <option value="12">12</option>
-          <option value="24">24</option>
-        </select>
-      </div>
-      <div id="page">
-        <label for="page-select">Go to page:</label>
-        <select name="page" id="page-select"> </select>
-      </div>
-      <div id="filters">
-        <span>By best discount</span>
-        <span>By most commented</span>
-        <span>By hot deals</span>
-      </div>
-      <div id="sort">
-        <label for="sort-select">Sort:</label>
-        <select name="sort" id="sort-select">
-          <option value="price-asc">Cheaper</option>
-          <option value="price-desc">Expensive</option>
-          <option value="date-asc">Recently published</option>
-          <option value="date-desc">Anciently published</option>
-        </select>
-      </div>
-    </section>
-    <section id="lego">
-      <h2>Lego sets</h2>
-      <div>
-        <label>Lego set id:</label>
-        <select id="lego-set-id-select"></select> 
-      </div>
-    </section>
-    <section id="indicators">
-      <h2>Indicators</h2>
-      <div>
-        <span>Number of deals</span>
-        <span id="nbDeals">0</span>
-      </div>
-      <div>
-        <span>Number of sales</span>
-        <span id="nbSales">0</span>
-      </div>
-      <div>
-        <span>p5 sales price value</span>
-        <span>0</span>
-      </div>
-      <div>
-        <span>p25 sales price value</span>
-        <span>0</span>
-      </div>
-      <div>
-        <span>p50 sales price value</span>
-        <span>0</span>
-      </div>
-      <div>
-        <span>Lifetime value</span>
-        <span>10 days</span>
-      </div>
-    </section>
-    <section id="deals"></section>
-    <script type="text/javascript" charset="UTF-8" src="utils.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="portfolio.js"></script>
-  </body>
+<head>
+<meta charset="utf-8"/>
+<title> 🏎️ Lego Deal Analyzer  </title>
+
+<style>
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+background:#f4f6f9;
+}
+
+header{
+background:#ffcf00;
+color:rgb(229, 9, 9);
+padding:20px;
+font-size:32px;
+font-weight:900;
+text-transform:uppercase;
+letter-spacing:2px;
+}
+
+section{
+padding:20px;
+}
+
+#options{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+background:white;
+border-bottom:1px solid #ddd;
+}
+
+#filters span{
+background:#eee;
+padding:6px 10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+#filters span.active{
+background:#d62828;
+color:white;
+}
+
+#deals{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+gap:20px;
+}
+
+
+.deal{
+background:white;
+padding:15px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+display:flex;
+flex-direction:column;
+gap:6px;
+}
+
+.deal-title{
+font-weight:bold;
+font-size:16px;
+color:#333;
+}
+
+.deal-price{
+color:#d62828;
+font-weight:bold;
+font-size:18px;
+}
+
+.favorite{
+cursor:pointer;
+font-size:18px;
+}
+
+.favorite.active{
+color:gold;
+}
+
+#indicators{
+background:white;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+}
+
+.indicator{
+background:#fafafa;
+padding:10px;
+border-radius:6px;
+text-align:center;
+}
+
+.indicator span{
+display:block;
+font-weight:bold;
+font-size:18px;
+}
+
+#sales{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+gap:20px;
+margin-top:10px;
+}
+
+.sale{
+background:white;
+padding:15px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+display:flex;
+flex-direction:column;
+gap:6px;
+}
+
+.sale-price{
+color:#2a9d8f;
+font-weight:bold;
+font-size:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header> 🏎️ Lego Deal Analyzer   </header>
+
+<section id="options">
+
+<div>
+<label>Show</label>
+<select id="show-select">
+<option value="6">6</option>
+<option value="12">12</option>
+<option value="24">24</option>
+</select>
+</div>
+
+<div>
+<label>Page</label>
+<select id="page-select"></select>
+</div>
+
+<div id="filters">
+<span data-filter="discount">🔥 Best Discounts (> 50%) </span>
+<span data-filter="comments">💬 Most Commented (>15 comments) </span>
+<span data-filter="hot">🌡 Hot (>100) </span>
+<span data-filter="favorites">⭐ Favorites</span>
+</div>
+
+<div>
+<label>Sort</label>
+<select id="sort-select">
+<option value="price-asc">Price ↑</option>
+<option value="price-desc">Price ↓</option>
+<option value="date-desc">Recent</option>
+<option value="date-asc">Old</option>
+</select>
+</div>
+
+</section>
+
+<section id="lego">
+
+<h2>Lego set</h2>
+
+<label>ID</label>
+<select id="lego-set-id-select"></select>
+
+</section>
+
+<section id="indicators">
+
+<div class="indicator">
+Deals
+<span id="nbDeals">0</span>
+</div>
+
+<div class="indicator">
+Sales
+<span id="nbSales">0</span>
+</div>
+
+<div class="indicator">
+Average
+<span id="avgPrice">0</span>
+</div>
+
+<div class="indicator">
+p5
+<span id="p5Price">0</span>
+</div>
+
+<div class="indicator">
+p25
+<span id="p25Price">0</span>
+</div>
+
+<div class="indicator">
+p50
+<span id="p50Price">0</span>
+</div>
+
+<div class="indicator">
+Lifetime
+<span id="lifetime">0 days</span>
+</div>
+
+</section>
+
+<section>
+<h2>Deals</h2>
+<div id="deals"></div>
+</section>
+
+<section>
+  <h2>Vinted Sales</h2>
+  <div id="sales"></div>
+</section>
+
+<script src="utils.js"></script>
+<script src="portfolio.js"></script>
+
+</body>
 </html>
