@@ -33,7 +33,10 @@ async function scrapeVinted (lego) {
 }
 
 
-const [,, param] = process.argv;
+const scraper = process.argv[2];
 
-scrapeADLB(param);
-//scrapeVinted(param)
+if (scraper === "vinted") {
+  scrapeVinted(process.argv[3] || "75331");
+} else {
+  scrapeADLB();
+}

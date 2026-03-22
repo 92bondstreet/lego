@@ -58,4 +58,4 @@ const scrape = async url => {
   return null;
 };
 
-export {scrape};
+export {scrape};  
