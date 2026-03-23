@@ -13,11 +13,10 @@ const parse = data => {
       const link = $(element)
         .attr('href');
 
-      const price = parseFloat(
-        $(element)
-          .find('span.prodl-prix span')
-          .text()
-      );
+      const priceStr = $(element)
+        .find('span.prodl-prix span')
+        .text();
+      const price = parseFloat(priceStr.replace(',', '.'));
 
       const discount = Math.abs(parseInt(
         $(element)
