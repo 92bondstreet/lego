@@ -84,27 +84,25 @@ const fetchDeals = async (page = 1, size = 6) => {
  * @param  {Array} deals
  */
 const renderDeals = deals => {
-  const fragment = document.createDocumentFragment();
-  const div = document.createElement('div');
   const template = deals
     .map(deal => {
       const isFavorite = favorites.includes(deal.uuid);
       const favoriteClass = isFavorite ? 'favorite-active' : '';
       return `
       <div class="deal" id=${deal.uuid}>
-        <span>${deal.id}</span>
+        <span class="deal-id">${deal.id}</span>
         <a href="${deal.link}" target="_blank" rel="noopener noreferrer">${deal.title}</a>
-        <span>${deal.price}</span>
-        <button class="favorite-btn ${favoriteClass}" data-uuid="${deal.uuid}" title="Add to favorites">★</button>
+        <span class="deal-price">€${deal.price}</span>
+        <div class="deal-footer">
+          <span></span>
+          <button class="favorite-btn ${favoriteClass}" data-uuid="${deal.uuid}" title="Add to favorites">★</button>
+        </div>
       </div>
     `;
     })
     .join('');
 
-  div.innerHTML = template;
-  fragment.appendChild(div);
-  sectionDeals.innerHTML = '<h2>Deals</h2>';
-  sectionDeals.appendChild(fragment);
+  sectionDeals.innerHTML = template;
   
   // Add event listeners to favorite buttons
   document.querySelectorAll('.favorite-btn').forEach(btn => {
@@ -378,22 +376,32 @@ const calculateLifetimeValue = sales => {
  * @param {Array} sales
  */
 const renderVintedSales = sales => {
-  // Create or get the Vinted sales section
-  let vintedSection = document.querySelector('#vinted-sales');
-  if (!vintedSection) {
-    vintedSection = document.createElement('section');
-    vintedSection.id = 'vinted-sales';
-    const dealsSection = document.querySelector('#deals');
-    dealsSection.parentNode.insertBefore(vintedSection, dealsSection.nextSibling);
+  // Create or get the Vinted sales container
+  let vintedContainer = document.querySelector('.deals-container').nextElementSibling;
+  if (!vintedContainer || !vintedContainer.classList.contains('vinted-container')) {
+    vintedContainer = document.createElement('section');
+    vintedContainer.className = 'vinted-container';
+    document.querySelector('.deals-container').parentNode.insertBefore(vintedContainer, document.querySelector('.deals-container').nextSibling);
   }
 
   if (sales.length === 0) {
-    vintedSection.innerHTML = '<h2>Vinted Sales</h2><p>No sales available for this set</p>';
+    vintedContainer.innerHTML = '';
     return;
   }
 
   const fragment = document.createDocumentFragment();
+  
+  // Create heading
+  const heading = document.createElement('h2');
+  heading.className = 'section-heading';
+  heading.innerHTML = '<i class="fas fa-tags"></i> Previous Sales (Vinted)';
+  fragment.appendChild(heading);
+  
   const div = document.createElement('div');
+  div.className = 'vinted-section';
+  const salesDiv = document.createElement('div');
+  salesDiv.className = 'vinted-sales-grid';
+  
   const template = sales
     .map(sale => {
       const price = sale.price && typeof sale.price === 'object' 
@@ -403,18 +411,24 @@ const renderVintedSales = sales => {
       
       return `
       <div class="vinted-sale" id=${sale.uuid}>
-        <a href="${sale.link}" target="_blank" rel="noopener noreferrer">${sale.title}</a>
-        <span class="price">${price}€</span>
-        <span class="date">${publishedDate}</span>
+        <div class="vinted-header">
+          <span class="vinted-id">SOLD</span>
+        </div>
+        <a href="${sale.link}" target="_blank" rel="noopener noreferrer" class="vinted-title">${sale.title}</a>
+        <div class="vinted-price">€${price}</div>
+        <div class="vinted-footer">
+          <span class="vinted-date">📅 ${publishedDate}</span>
+        </div>
       </div>
     `;
     })
     .join('');
 
-  div.innerHTML = template;
+  salesDiv.innerHTML = template;
+  div.appendChild(salesDiv);
   fragment.appendChild(div);
-  vintedSection.innerHTML = '<h2>Vinted Sales</h2>';
-  vintedSection.appendChild(fragment);
+  vintedContainer.innerHTML = '';
+  vintedContainer.appendChild(fragment);
 };
 
 /**
@@ -430,17 +444,16 @@ const renderVintedIndicators = sales => {
   
   spanNbSales.innerHTML = indicators.count;
   
-  const p5Element = document.querySelector('#indicators div:nth-child(3) span:nth-child(2)');
-  const p25Element = document.querySelector('#indicators div:nth-child(4) span:nth-child(2)');
-  const p50Element = document.querySelector('#indicators div:nth-child(5) span:nth-child(2)');
-  const lifetimeElement = document.querySelector('#indicators div:nth-child(6) span:nth-child(2)');
+  // Update stat cards with new IDs
+  const statP50 = document.querySelector('#stat-p50');
+  const statP25 = document.querySelector('#stat-p25');
+  const statP5 = document.querySelector('#stat-p5');
   
-  console.log('DOM elements found:', {p5Element, p25Element, p50Element, lifetimeElement});
+  console.log('DOM elements found:', {statP50, statP25, statP5});
   
-  if (p5Element) p5Element.innerHTML = indicators.p5;
-  if (p25Element) p25Element.innerHTML = indicators.p25;
-  if (p50Element) p50Element.innerHTML = indicators.p50;
-  if (lifetimeElement) lifetimeElement.innerHTML = lifetime > 0 ? `${lifetime} days` : '0 days';
+  if (statP50) statP50.innerHTML = '€' + indicators.p50;
+  if (statP25) statP25.innerHTML = '€' + indicators.p25;
+  if (statP5) statP5.innerHTML = '€' + indicators.p5;
   
   // Also render the Vinted sales themselves
   renderVintedSales(sales);
@@ -542,11 +555,8 @@ selectSort.addEventListener('change', async (event) => {
 /**
  * Feature 2 - Filter by best discount
  */
-const filterBestDiscountBtn = document.querySelector('#filters span:nth-child(1)');
+const filterBestDiscountBtn = document.querySelector('#filter-discount');
 if (filterBestDiscountBtn) {
-  filterBestDiscountBtn.style.cursor = 'pointer';
-  filterBestDiscountBtn.style.padding = '5px 10px';
-  filterBestDiscountBtn.style.borderRadius = '4px';
   filterBestDiscountBtn.addEventListener('click', () => {
     console.log('Best discount filter clicked, current filter:', currentFilter);
     handleFilterChange(currentFilter === 'discount' ? 'all' : 'discount');
@@ -557,11 +567,8 @@ if (filterBestDiscountBtn) {
 /**
  * Feature 3 - Filter by most commented
  */
-const filterMostCommentedBtn = document.querySelector('#filters span:nth-child(2)');
+const filterMostCommentedBtn = document.querySelector('#filter-commented');
 if (filterMostCommentedBtn) {
-  filterMostCommentedBtn.style.cursor = 'pointer';
-  filterMostCommentedBtn.style.padding = '5px 10px';
-  filterMostCommentedBtn.style.borderRadius = '4px';
   filterMostCommentedBtn.addEventListener('click', () => {
     console.log('Most commented filter clicked, current filter:', currentFilter);
     handleFilterChange(currentFilter === 'commented' ? 'all' : 'commented');
@@ -572,11 +579,8 @@ if (filterMostCommentedBtn) {
 /**
  * Feature 4 - Filter by hot deals
  */
-const filterHotDealsBtn = document.querySelector('#filters span:nth-child(3)');
+const filterHotDealsBtn = document.querySelector('#filter-hot');
 if (filterHotDealsBtn) {
-  filterHotDealsBtn.style.cursor = 'pointer';
-  filterHotDealsBtn.style.padding = '5px 10px';
-  filterHotDealsBtn.style.borderRadius = '4px';
   filterHotDealsBtn.addEventListener('click', () => {
     console.log('Hot deals filter clicked, current filter:', currentFilter);
     handleFilterChange(currentFilter === 'hot' ? 'all' : 'hot');
@@ -601,18 +605,34 @@ selectLegoSetIds.addEventListener('change', async (event) => {
 /**
  * Feature 14 - Filter by favorite
  */
-const addFavoriteFilterBtn = document.createElement('button');
-addFavoriteFilterBtn.textContent = 'Show Favorites';
-addFavoriteFilterBtn.id = 'favorite-filter-btn';
-const filterSection = document.querySelector('#filters');
-if (filterSection) {
-  filterSection.appendChild(addFavoriteFilterBtn);
+const addFavoriteFilterBtn = document.querySelector('#filter-favorite');
+if (addFavoriteFilterBtn) {
+  addFavoriteFilterBtn.addEventListener('click', () => {
+    handleFilterChange(currentFilter === 'favorite' ? 'all' : 'favorite');
+    addFavoriteFilterBtn.classList.toggle('filter-active');
+  });
 }
 
-addFavoriteFilterBtn.addEventListener('click', () => {
-  handleFilterChange(currentFilter === 'favorite' ? 'all' : 'favorite');
-  addFavoriteFilterBtn.classList.toggle('filter-active');
-});
+/**
+ * View Control - Grid/List Toggle
+ */
+const gridViewBtn = document.querySelector('.view-btn:nth-child(1)');
+const listViewBtn = document.querySelector('.view-btn:nth-child(2)');
+const dealsGrid = document.querySelector('#deals');
+
+if (gridViewBtn && listViewBtn && dealsGrid) {
+  gridViewBtn.addEventListener('click', () => {
+    dealsGrid.classList.remove('list-view');
+    gridViewBtn.classList.add('active');
+    listViewBtn.classList.remove('active');
+  });
+
+  listViewBtn.addEventListener('click', () => {
+    dealsGrid.classList.add('list-view');
+    listViewBtn.classList.add('active');
+    gridViewBtn.classList.remove('active');
+  });
+}
 
 document.addEventListener('DOMContentLoaded', async () => {
   const deals = await fetchDeals();
