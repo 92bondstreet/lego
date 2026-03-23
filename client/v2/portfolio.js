@@ -88,14 +88,34 @@ const renderDeals = deals => {
     .map(deal => {
       const isFavorite = favorites.includes(deal.uuid);
       const favoriteClass = isFavorite ? 'favorite-active' : '';
+      
+      let discount = deal.discount || 0;
+      if ((!discount || discount === 0) && deal.retail && deal.retail > 0) {
+        discount = ((deal.retail - deal.price) / deal.retail) * 100;
+      }
+      const discountHtml = discount > 0 
+        ? `<span class="deal-discount" style="background-color: #ff4757; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.85em; font-weight: bold;">-${Math.round(discount)}%</span>` 
+        : '';
+
+      const tempHtml = deal.temperature 
+        ? `<span class="deal-temp" style="color: #ff9f43; font-weight: bold;">🔥 ${deal.temperature}°</span>` 
+        : '';
+
       return `
-      <div class="deal" id=${deal.uuid}>
-        <span class="deal-id">${deal.id}</span>
-        <a href="${deal.link}" target="_blank" rel="noopener noreferrer">${deal.title}</a>
-        <span class="deal-price">€${deal.price}</span>
-        <div class="deal-footer">
-          <span></span>
-          <button class="favorite-btn ${favoriteClass}" data-uuid="${deal.uuid}" title="Add to favorites">★</button>
+      <div class="deal" id=${deal.uuid} style="display: flex; flex-direction: column; height: 100%;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 8px;">
+          <span class="deal-id" style="font-size: 0.8em; color: white;">#${deal.id}</span>
+          <button class="favorite-btn ${favoriteClass}" data-uuid="${deal.uuid}" title="Add to favorites" style="background: none; border: none; font-size: 1.5em; cursor: pointer; padding: 0;">♥</button>
+        </div>
+        
+        <a href="${deal.link}" target="_blank" rel="noopener noreferrer" style="flex-grow: 1; margin-bottom: 12px; font-weight: 500; line-height: 1.4;">${deal.title}</a>
+        
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; padding-top: 10px; border-top: 1px solid #f0f0f0;">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="deal-price" style="font-size: 1.25em; font-weight: bold; color: #2c3e50;">€${deal.price}</span>
+            ${discountHtml}
+          </div>
+          ${tempHtml}
         </div>
       </div>
     `;
