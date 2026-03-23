@@ -53,9 +53,8 @@ With [inception](https://github.com/92bondstreet/inception?tab=readme-ov-file#%E
 | 1 | [Manipulate data with JavaScript in the browser](./workshops/1-manipulate-javascript.md) | Feb 2025
 | 2 | [Interact data with JavaScript, HTML and CSS in the browser again](./workshops/2-interact-js-css.md) | Feb 2025
 | 3 | [Scrape data with Node.js](./workshops/3-scrape-node.md)| Mar 2025
-| 4 | Save data in a Database with MongoDB | Mar 2024
-| 5 | Build an api with Express to request data | Mar 2025
-| 6 | Deploy in production with Vercel | Mar 2025
+| 4 | [Build an api with Express to request data](./workshops/4-api-express.md) | Mar 2025
+| 5 | Deploy in production with Vercel | Mar 2025
 
 ## 📝 Licence
 
