@@ -58,7 +58,7 @@ const setCurrentDeals = ({result, meta}) => {
 const fetchDeals = async (page = 1, size = 6) => {
   try {
     const response = await fetch(
-      `https://server-emlruejus-fnxnicknames-projects.vercel.app/deals/search?limit=${size}`
+      `https://server-ten-coral-54.vercel.app/deals/search?limit=${size}`
     );
     const body = await response.json();
 
@@ -286,7 +286,7 @@ const fetchVintedSales = async (setId) => {
   try {
     console.log('Fetching Vinted sales for set ID:', setId);
     const response = await fetch(
-      `https://server-emlruejus-fnxnicknames-projects.vercel.app/sales/search?legoSetId=${setId}`
+      `https://server-ten-coral-54.vercel.app/sales/search?legoSetId=${setId}`
     );
     const body = await response.json();
 
