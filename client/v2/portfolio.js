@@ -107,7 +107,7 @@ const renderDeals = deals => {
       return `
       <div class="deal" id=${deal.uuid} style="display: flex; flex-direction: column; height: 100%;">
         <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 8px;">
-          <span class="deal-id" style="font-size: 0.8em; color: white;">#${deal.id}</span>
+          <span class="deal-id" style="font-size: 0.8em; color: white;">#${deal.id || (deal.uuid ? deal.uuid.substring(0, 8) : 'LEGO')}</span>
           <button class="favorite-btn ${favoriteClass}" data-uuid="${deal.uuid}" title="Add to favorites" style="background: none; border: none; font-size: 1.5em; cursor: pointer; padding: 0;">♥</button>
         </div>
         
@@ -115,7 +115,7 @@ const renderDeals = deals => {
         
         <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; padding-top: 10px; border-top: 1px solid #f0f0f0;">
           <div style="display: flex; align-items: center; gap: 8px;">
-            <span class="deal-price" style="font-size: 1.25em; font-weight: bold; color: #2c3e50;">€${deal.price}</span>
+            <span class="deal-price" style="font-size: 1.25em; font-weight: bold; color: #2c3e50;">${deal.price > 0 ? '€' + deal.price : 'Click to see price'}</span>
             ${discountHtml}
           </div>
           ${tempHtml}
@@ -169,6 +169,11 @@ const renderIndicators = pagination => {
   const {count} = pagination;
 
   spanNbDeals.innerHTML = count;
+  
+  const statDeals = document.querySelector('#stat-deals');
+  if (statDeals) {
+    statDeals.innerHTML = count;
+  }
 };
 
 const render = (deals, pagination) => {
