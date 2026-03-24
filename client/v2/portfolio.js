@@ -58,21 +58,24 @@ const setCurrentDeals = ({result, meta}) => {
 const fetchDeals = async (page = 1, size = 6) => {
   try {
     const response = await fetch(
-      `https://lego-api-blue.vercel.app/deals?page=${page}&size=${size}`
+      `https://server-emlruejus-fnxnicknames-projects.vercel.app/deals/search?limit=${size}`
     );
     const body = await response.json();
 
-    if (body.success !== true) {
-      console.error(body);
+    if (body.error) {
+      console.error(body.error);
       return {currentDeals, currentPagination};
     }
 
-    // Log the structure of deals to see available fields
-    if (body.data && body.data.result && body.data.result.length > 0) {
-      console.log('Sample deal object:', body.data.result[0]);
-    }
-
-    return body.data;
+    // Adapt the backend response to the frontend expectations
+    return {
+      result: body.results || [],
+      meta: {
+        currentPage: page,
+        pageCount: Math.ceil((body.total || 0) / size) || 1,
+        count: body.total || 0
+      }
+    };
   } catch (error) {
     console.error(error);
     return {currentDeals, currentPagination};
@@ -283,19 +286,22 @@ const fetchVintedSales = async (setId) => {
   try {
     console.log('Fetching Vinted sales for set ID:', setId);
     const response = await fetch(
-      `https://lego-api-blue.vercel.app/sales?id=${setId}`
+      `https://server-emlruejus-fnxnicknames-projects.vercel.app/sales/search?legoSetId=${setId}`
     );
     const body = await response.json();
 
     console.log('Vinted sales response:', body);
 
-    if (body.success !== true) {
-      console.error('Sales API error:', body);
+    if (body.error) {
+      console.error('Sales API error:', body.error);
       return {result: [], meta: {}};
     }
 
-    console.log('Sales data received:', body.data);
-    return body.data;
+    console.log('Sales data received:', body.results);
+    return {
+      result: body.results || [],
+      meta: {}
+    };
   } catch (error) {
     console.error('Error fetching sales:', error);
     return {result: [], meta: {}};
