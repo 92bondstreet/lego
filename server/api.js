@@ -17,6 +17,22 @@ const app = express();
 // We load json files as data source
 let SALES = {};
 let DEALS = [];
+
+try {
+  SALES = JSON.parse(
+    readFileSync(path.join(__dirname, 'sources', 'vinted.json'), 'utf8')
+  );
+} catch (error) {
+  console.warn(`⚠️  Vinted: ${error.message}`);
+}
+
+try {
+  DEALS = JSON.parse(
+    readFileSync(path.join(__dirname, 'websites', 'dealabs.json'), 'utf8')
+  );
+} catch (error) {
+  console.warn(`⚠️  Dealabs: ${error.message}`);
+}
 app.use(bodyParser.json());
 app.use(cors());
 app.use(helmet());
@@ -121,23 +137,10 @@ app.get('/sales/search', (request, response) => {
   }
 });
 
-app.listen(PORT, () => {
-  // when we start the server we load available json files
-  try {
-    SALES = JSON.parse(
-      readFileSync(path.join(__dirname, 'sources', 'vinted.json'), 'utf8')
-    );
-  } catch (error) {
-    console.warn(`⚠️  Vinted: ${error.message}`);
-  }
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`📡 Running on port ${PORT}`);
+  });
+}
 
-  try {
-    DEALS = JSON.parse(
-      readFileSync(path.join(__dirname, 'websites', 'dealabs.json'), 'utf8')
-    );
-  } catch (error) {
-    console.warn(`⚠️  Dealabs: ${error.message}`);
-  }
-})
-
-console.log(`📡 Running on port ${PORT}`);
+export default app;
