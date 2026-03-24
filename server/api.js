@@ -3,12 +3,12 @@ import cors from 'cors';
 import express from 'express';
 import helmet from 'helmet';
 
-import { readFileSync } from 'node:fs';
-import { fileURLToPath } from 'url';
+import fs from 'fs';
 import path from 'path';
+const { readFileSync } = fs;
+import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
 
 const PORT = 8092;
 
@@ -17,7 +17,6 @@ const app = express();
 // We load json files as data source
 let SALES = {};
 let DEALS = [];
-
 app.use(bodyParser.json());
 app.use(cors());
 app.use(helmet());
