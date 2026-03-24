@@ -1,6 +1,8 @@
 // Invoking strict mode https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode#invoking_strict_mode
 'use strict';
 
+const API_BASE_URL = 'https://lego-api-xi.vercel.app';
+
 /**
 Description of the available api
 GET https://lego-api-blue.vercel.app/deals
@@ -71,7 +73,7 @@ const setCurrentDeals = ({result, meta}) => {
 const fetchDeals = async (page = 1, size = 6) => {
   try {
     const response = await fetch(
-      `http://localhost:8000/api/deals?page=${page}&size=${size}`
+      `${API_BASE_URL}/api/deals?page=${page}&size=${size}`
     );
     const body = await response.json();
 
@@ -95,7 +97,7 @@ const fetchDeals = async (page = 1, size = 6) => {
 const fetchSales = async (id) => {
   try {
     const response = await fetch(
-      `http://localhost:8000/api/sales?id=${id}`
+      `${API_BASE_URL}/api/sales?id=${id}`
     );
     const body = await response.json();
 
@@ -122,7 +124,7 @@ const fetchAllLegoIds = async () => {
     let pageCount = 1;
     do {
       const response = await fetch(
-        `https://lego-api-blue.vercel.app/deals?page=${page}&size=50`
+        `${API_BASE_URL}/api/deals?page=${page}&size=50`
       );
       const body = await response.json();
       if (body.success !== true) break;
