@@ -471,7 +471,9 @@ filterFavorite.addEventListener('click', () => {
  */
 selectLegoSetIds.addEventListener('change', async (event) => {
   const id = event.target.value;
-  currentSales = await fetchSales(id);
+  const allSales = await fetchSales(id);
+  // Filter sales to only show those matching this lego set id
+  currentSales = filterSalesByLegoId(allSales, id);
   renderSales(currentSales);
   renderSalesIndicators(currentSales);
 });
@@ -486,7 +488,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // auto-load sales for the first lego set id
   if (selectLegoSetIds.value) {
-    currentSales = await fetchSales(selectLegoSetIds.value);
+    const id = selectLegoSetIds.value;
+    const allSales = await fetchSales(id);
+    // Filter sales to only show those matching this lego set id
+    currentSales = filterSalesByLegoId(allSales, id);
     renderSales(currentSales);
     renderSalesIndicators(currentSales);
   }
