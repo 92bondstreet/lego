@@ -18,20 +18,45 @@ const app = express();
 let SALES = {};
 let DEALS = [];
 
+// Load SALES from vinted.json
 try {
-  SALES = JSON.parse(
-    readFileSync(path.join(__dirname, 'sources', 'vinted.json'), 'utf8')
-  );
+  const vintedPath = path.join(__dirname, 'sources', 'vinted.json');
+  if (fs.existsSync(vintedPath)) {
+    SALES = JSON.parse(readFileSync(vintedPath, 'utf8'));
+  }
 } catch (error) {
   console.warn(`⚠️  Vinted: ${error.message}`);
 }
 
+// Load all DEALS from any json file in the websites folder
 try {
-  DEALS = JSON.parse(
-    readFileSync(path.join(__dirname, 'websites', 'dealabs.json'), 'utf8')
-  );
+  const websitesDir = path.join(__dirname, 'websites');
+  const files = fs.readdirSync(websitesDir);
+  
+  files.forEach(file => {
+    if (file.endsWith('.json')) {
+      const filePath = path.join(websitesDir, file);
+      try {
+        const sourceDeals = JSON.parse(readFileSync(filePath, 'utf8'));
+        if (Array.isArray(sourceDeals)) {
+          DEALS = [...DEALS, ...sourceDeals];
+          console.log(`✅ Loaded ${sourceDeals.length} deals from ${file}`);
+        }
+      } catch (e) {
+        console.warn(`⚠️ Error loading ${file}: ${e.message}`);
+      }
+    }
+  });
+
+  // Remove duplicates based on uuid
+  const uniqueDeals = {};
+  DEALS.forEach(deal => {
+    if (deal.uuid) uniqueDeals[deal.uuid] = deal;
+  });
+  DEALS = Object.values(uniqueDeals);
+  console.log(`🚀 Total unique deals: ${DEALS.length}`);
 } catch (error) {
-  console.warn(`⚠️  Dealabs: ${error.message}`);
+  console.warn(`⚠️  Websites folder error: ${error.message}`);
 }
 app.use(bodyParser.json());
 app.use(cors());
