@@ -46,13 +46,8 @@ try {
             if (!d.published || Number.isNaN(d.published)) d.published = Math.floor(Date.now() / 1000) - Math.floor(Math.random() * 86400 * 7);
             
             // Fix broken images from avenuedelabrique
-            if (d.photo && d.photo.includes('image-non-chargee')) {
-              d.photo = "https://picsum.photos/400/300?random=" + Math.floor(Math.random() * 1000);
-            } else if (d.photo && d.photo.startsWith('/')) {
+            if (d.photo && d.photo.startsWith('/')) {
               d.photo = "https://www.avenuedelabrique.com" + d.photo;
-            }
-            if (!d.photo) {
-              d.photo = "https://picsum.photos/400/300?random=" + Math.floor(Math.random() * 1000);
             }
             return d;
           });

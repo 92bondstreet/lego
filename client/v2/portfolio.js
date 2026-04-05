@@ -84,6 +84,8 @@ const fetchDeals = async (page = 1, size = 100) => {
   }
 };
 
+
+
 /**
  * Render list of deals
  * @param  {Array} deals
@@ -95,7 +97,7 @@ const renderDeals = deals => {
         <div class="empty-state-icon">🔍</div>
         <h3 class="empty-state-title">No deals found</h3>
         <p class="empty-state-text">Try changing your filters or sorting options.</p>
-        <button class="btn btn-primary" onclick="document.querySelector('[data-filter=all]').click()" style="margin-top:16px;">Clear filters</button>
+        <button class="btn btn-primary" onclick="window.handleFilterChange('all')" style="margin-top:16px;">Clear filters</button>
       </div>
     `;
     return;
@@ -172,17 +174,18 @@ const renderPagination = pagination => {
   selectPage.selectedIndex = currentPage - 1;
 };
 
-/**
- * Render lego set ids selector
- * @param  {Array} lego set ids
- */
-const renderLegoSetIds = deals => {
-  const ids = getIdsFromDeals(deals);
-  const options = ids.map(id => 
+const renderLegoSetIds = () => {
+  const ids = getIdsFromDeals(allDeals);
+  let options = `<option value="all">Tous les sets</option>\n`;
+  options += ids.map(id => 
     `<option value="${id}">${id}</option>`
   ).join('');
 
-  selectLegoSetIds.innerHTML = options;
+  // Only update if it's different to prevent resetting selection
+  if (selectLegoSetIds.innerHTML !== options) {
+    selectLegoSetIds.innerHTML = options;
+    if (currentLegoSetId) selectLegoSetIds.value = currentLegoSetId;
+  }
 };
 
 /**
@@ -204,7 +207,7 @@ const render = (deals, pagination) => {
   renderDeals(deals);
   renderPagination(pagination);
   renderIndicators(pagination);
-  renderLegoSetIds(deals)
+  renderLegoSetIds();
 };
 
 /**
@@ -215,18 +218,9 @@ const render = (deals, pagination) => {
 const filterByBestDiscount = deals => {
   return deals.filter(deal => {
     let discount = deal.discount || 0;
-    
-    // If discount is null/0 and retail is available, calculate from retail and price
-    if ((!discount || discount === 0) && deal.retail && deal.retail > 0) {
+    if ((!discount || discount === 0) && deal.retail && deal.retail > 0 && deal.price) {
       discount = ((deal.retail - deal.price) / deal.retail) * 100;
     }
-    
-    // If retail is 0/null, can't calculate discount - show deals with high temperature instead
-    // (those are popular deals)
-    if (deal.retail === 0 || !deal.retail) {
-      return deal.temperature > 100; // Show hot/popular deals when discount can't be calculated
-    }
-    
     return discount > 50;
   });
 };
@@ -270,19 +264,41 @@ const filterByFavorite = deals => {
  * @returns {Array} filtered deals
  */
 const applyFilter = deals => {
-  switch (currentFilter) {
+  let filtered = [...deals];
+  
+  if (currentLegoSetId && currentLegoSetId !== 'all') {
+    filtered = filtered.filter(deal => {
+      const id = getIdsFromDeals([deal])[0];
+      return id === currentLegoSetId;
+    });
+  }
+
+  switch(currentFilter) {
     case 'discount':
-      return filterByBestDiscount(deals);
+      return filterByBestDiscount(filtered);
     case 'commented':
-      return filterByMostCommented(deals);
+      return filterByMostCommented(filtered);
     case 'hot':
-      return filterByHotDeals(deals);
+      return filterByHotDeals(filtered);
     case 'favorite':
-      return filterByFavorite(deals);
+      const favorites = JSON.parse(localStorage.getItem('lego-favorites') || '[]');
+      return filtered.filter(deal => favorites.includes(deal._id || deal.uuid || deal.id));
     default:
-      return deals;
+      return filtered;
   }
 };
+
+const handleFilterChange = filter => {
+  currentFilter = filter;
+  currentPage = 1;
+
+  document.querySelectorAll('.quick-filter-btn').forEach(btn => {
+    btn.classList.remove('filter-active');
+  });
+
+  renderFiltered();
+};
+window.handleFilterChange = handleFilterChange;
 
 /**
  * Feature 5 & 6 - Sort deals by price or date
@@ -469,6 +485,7 @@ const renderVintedSales = sales => {
         <div class="vinted-header">
           <span class="vinted-id">SOLD</span>
         </div>
+        ${sale.photo ? `<div class="vinted-photo-wrapper"><img src="${sale.photo}" class="vinted-photo" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 8px;" /></div>` : ''}
         <a href="${sale.link}" target="_blank" rel="noopener noreferrer" class="vinted-title">${sale.title}</a>
         <div class="vinted-price">€${price}</div>
         <div class="vinted-footer">
@@ -537,15 +554,7 @@ const toggleFavorite = event => {
   event.target.classList.toggle('favorite-active');
 };
 
-/**
- * Handle filter changes
- * @param {String} filter
- */
-const handleFilterChange = filter => {
-  currentFilter = filter;
-  currentPage = 1;
-  renderFiltered();
-};
+
 
 /**
  * Declaration of all Listeners
@@ -649,12 +658,20 @@ if (filterHotDealsBtn) {
  * Feature 7 - Display Vinted sales for selected lego set id
  */
 selectLegoSetIds.addEventListener('change', async (event) => {
-  const setId = event.target.value;
-  console.log('Lego set ID selected:', setId);
-  const sales = await fetchVintedSales(setId);
+  currentLegoSetId = event.target.value;
+  console.log('Lego set ID selected:', currentLegoSetId);
   
-  console.log('Sales received:', sales);
-  currentVintedSales = sales.result || [];
+  currentPage = 1;
+  renderFiltered(); // Filter the main deals view on lego set
+  
+  // Also fetch Vinted sales for this exact set
+  if (currentLegoSetId && currentLegoSetId !== 'all') {
+    const sales = await fetchVintedSales(currentLegoSetId);
+    console.log('Sales received:', sales);
+    currentVintedSales = sales.result || [];
+  } else {
+    currentVintedSales = [];
+  }
   console.log('Current Vinted sales set to:', currentVintedSales);
   renderVintedIndicators(currentVintedSales);
 });
