@@ -9,10 +9,8 @@
  */
 const getIdsFromDeals = deals => {
     const ids = deals.map(deal => {
-        if (deal.id) return deal.id;
-        // Try to find a 4-digit or 5-digit number in the title (common for Lego sets)
-        // Ensure it's not part of another word
-        const match = deal.title.match(/(?<!\d)\d{4,5}(?!\d)/);
+        // Extract 4 or 5 digit number from the title (Lego Set ID)
+        const match = deal.title.match(/\b\d{4,5}\b/);
         return match ? match[0] : null;
     }).filter(id => id);
     return [...new Set(ids)];
