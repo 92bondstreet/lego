@@ -727,7 +727,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   currentSort = selectSort.value || 'price-asc';
   currentSize = parseInt(selectShow.value) || 12;
 
-  const deals = await fetchDeals(1, currentSize);
+  // Fetch a larger amount of deals to have all options for filtering
+  const deals = await fetchDeals(1, 1000);
   allDeals = deals.result;
 
   renderFiltered();
