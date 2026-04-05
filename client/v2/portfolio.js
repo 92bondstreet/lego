@@ -26,6 +26,7 @@ let currentDeals = [];
 let currentPagination = {};
 let allDeals = []; // Store all deals for filtering
 let currentFilter = 'all'; // Current active filter
+let currentLegoSetId = 'all'; // Current selected Lego Set
 let currentSort = 'price-asc'; // Current sort option - default matches the select
 let currentPage = 1; // Current page for client-side pagination
 let currentSize = 6; // Current page size
