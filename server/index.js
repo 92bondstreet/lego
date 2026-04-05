@@ -1,12 +1,30 @@
-import parseDomain from 'parse-domain';
-import { requireAll } from 'require-all';
+/**
+ * Generic scraper dispatcher
+ * Routes a URL to the correct website scraper based on domain
+ */
+import * as avenuedelabrique from './websites/avenuedelabrique.js';
+import * as dealabs from './websites/dealabs.js';
 
-const websites = requireAll(`${__dirname}/websites`);
+const scrapers = {
+  avenuedelabrique,
+  dealabs
+};
 
+/**
+ * Scrape deals from a given URL by detecting the website
+ * @param {string} link - URL to scrape
+ * @returns {Promise<Array>} list of deals
+ */
+export default async (link) => {
+  const url = new URL(link);
+  // Extract the second-level domain (e.g. "dealabs" from "www.dealabs.com")
+  const parts = url.hostname.split('.');
+  const domain = parts.length >= 2 ? parts[parts.length - 2] : parts[0];
 
-module.exports = async link => {
-  const {'domain': website} = parseDomain(link);
-  const deals = await websites[website].scrape(link);
+  const scraper = scrapers[domain];
+  if (!scraper) {
+    throw new Error(`No scraper found for domain: ${domain}`);
+  }
 
-  return deals;
+  return scraper.scrape(link);
 };

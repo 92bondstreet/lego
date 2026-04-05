@@ -68,36 +68,45 @@ app.get('/', (request, response) => {
 
 app.get('/deals/search', (request, response) => {
   try {
-    let limit = parseInt(request.query.limit) || 12;
+    let limit = parseInt(request.query.limit) || 100;
     const maxPrice = parseFloat(request.query.price);
     const date = request.query.date;
     const filterBy = request.query.filterBy;
     
     let results = [...DEALS];
 
+    // Filter by max price
     if (!isNaN(maxPrice)) {
-      results = results.filter(deal => deal.price <= maxPrice);
+      results = results.filter(deal => deal.price > 0 && deal.price <= maxPrice);
     }
+
+    // Filter by date (>= provided date)
     if (date) {
-      // Assuming published is a timestamp, we can format or just do a simple match
-      // date is "YYYY-MM-DD"
+      const filterDate = new Date(date).getTime();
       results = results.filter(deal => {
         if (!deal.published) return false;
-        const d = new Date(deal.published * 1000).toISOString().split('T')[0];
-        return d === date;
+        const dealDate = new Date(deal.published * 1000).getTime();
+        return dealDate >= filterDate;
       });
     }
+
+    // Apply filterBy
     if (filterBy) {
       if (filterBy === 'best-discount') {
+        results = results.filter(d => (d.discount || 0) > 50);
         results = results.sort((a, b) => (b.discount || 0) - (a.discount || 0));
       } else if (filterBy === 'most-commented') {
+        results = results.filter(d => (d.comments || 0) > 15);
         results = results.sort((a, b) => (b.comments || 0) - (a.comments || 0));
+      } else if (filterBy === 'hot-deals') {
+        results = results.filter(d => (d.temperature || 0) > 100);
+        results = results.sort((a, b) => (b.temperature || 0) - (a.temperature || 0));
       }
     }
 
-    // Sort by price ascending as default or always as requested
-    if (filterBy !== 'best-discount' && filterBy !== 'most-commented') {
-       results.sort((a, b) => (a.price || 0) - (b.price || 0));
+    // Default sort by price ascending when no specific sort
+    if (!filterBy) {
+      results.sort((a, b) => (a.price || 0) - (b.price || 0));
     }
 
     const total = results.length;
@@ -113,6 +122,7 @@ app.get('/deals/search', (request, response) => {
     return response.status(500).json({ error: error.message });
   }
 });
+
 
 app.get('/deals/:id', (request, response) => {
   try {

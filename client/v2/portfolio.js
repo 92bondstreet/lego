@@ -26,7 +26,9 @@ let currentDeals = [];
 let currentPagination = {};
 let allDeals = []; // Store all deals for filtering
 let currentFilter = 'all'; // Current active filter
-let currentSort = 'none'; // Current sort option
+let currentSort = 'price-asc'; // Current sort option - default matches the select
+let currentPage = 1; // Current page for client-side pagination
+let currentSize = 6; // Current page size
 let currentVintedSales = []; // Store vinted sales for selected set
 let favorites = JSON.parse(localStorage.getItem('favorites')) || []; // Load favorites from localStorage
 
@@ -55,7 +57,7 @@ const setCurrentDeals = ({result, meta}) => {
  * @param  {Number}  [size=12] - size of the page
  * @return {Object}
  */
-const fetchDeals = async (page = 1, size = 6) => {
+const fetchDeals = async (page = 1, size = 100) => {
   try {
     const response = await fetch(
       `https://server-ten-coral-54.vercel.app/deals/search?limit=${size}`
@@ -87,6 +89,18 @@ const fetchDeals = async (page = 1, size = 6) => {
  * @param  {Array} deals
  */
 const renderDeals = deals => {
+  if (deals.length === 0) {
+    sectionDeals.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-state-icon">🔍</div>
+        <h3 class="empty-state-title">No deals found</h3>
+        <p class="empty-state-text">Try changing your filters or sorting options.</p>
+        <button class="btn btn-primary" onclick="document.querySelector('[data-filter=all]').click()" style="margin-top:16px;">Clear filters</button>
+      </div>
+    `;
+    return;
+  }
+
   const template = deals
     .map(deal => {
       const isFavorite = favorites.includes(deal.uuid);
@@ -104,8 +118,18 @@ const renderDeals = deals => {
         ? `<span class="deal-temp" style="color: #ff9f43; font-weight: bold;">🔥 ${deal.temperature}°</span>` 
         : '';
 
+      // Photo: use deal photo if valid URL, otherwise show a styled placeholder
+      const hasPhoto = deal.photo && deal.photo.startsWith('http');
+      const photoHtml = hasPhoto
+        ? `<img src="${deal.photo}" alt="${deal.title}" class="deal-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+           <div class="deal-photo-placeholder" style="display:none;">🧱</div>`
+        : `<div class="deal-photo-placeholder">🧱</div>`;
+
       return `
       <div class="deal" id=${deal.uuid} style="display: flex; flex-direction: column; height: 100%;">
+        <div class="deal-photo-wrapper">
+          ${photoHtml}
+        </div>
         <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 8px;">
           <span class="deal-id" style="font-size: 0.8em; color: white;">#${deal.id || (deal.uuid ? deal.uuid.substring(0, 8) : 'LEGO')}</span>
           <button class="favorite-btn ${favoriteClass}" data-uuid="${deal.uuid}" title="Add to favorites" style="background: none; border: none; font-size: 1.5em; cursor: pointer; padding: 0;">♥</button>
@@ -215,7 +239,7 @@ const filterByBestDiscount = deals => {
 const filterByMostCommented = deals => {
   return deals.filter(deal => {
     const comments = deal.comments || 0;
-    return comments > 3; // Lowered from 15 to match actual data distribution
+    return comments > 15;
   });
 };
 
@@ -467,24 +491,30 @@ const renderVintedSales = sales => {
  * @param {Array} sales
  */
 const renderVintedIndicators = sales => {
-  console.log('Rendering Vinted indicators with sales:', sales);
   const indicators = calculateSalesIndicators(sales);
-  console.log('Calculated indicators:', indicators);
   const lifetime = calculateLifetimeValue(sales);
-  console.log('Calculated lifetime:', lifetime);
   
   spanNbSales.innerHTML = indicators.count;
   
-  // Update stat cards with new IDs
+  // Update stat cards
   const statP50 = document.querySelector('#stat-p50');
   const statP25 = document.querySelector('#stat-p25');
   const statP5 = document.querySelector('#stat-p5');
+  const statLifetime = document.querySelector('#stat-lifetime');
   
-  console.log('DOM elements found:', {statP50, statP25, statP5});
-  
-  if (statP50) statP50.innerHTML = '€' + indicators.p50;
-  if (statP25) statP25.innerHTML = '€' + indicators.p25;
-  if (statP5) statP5.innerHTML = '€' + indicators.p5;
+  if (statP50) statP50.innerHTML = indicators.count > 0 ? '€' + indicators.p50 : '—';
+  if (statP25) statP25.innerHTML = indicators.count > 0 ? '€' + indicators.p25 : '—';
+  if (statP5) statP5.innerHTML = indicators.count > 0 ? '€' + indicators.p5 : '—';
+  if (statLifetime) {
+    if (lifetime > 0) {
+      statLifetime.innerHTML = lifetime + ' days';
+      // Update the subtitle
+      const changeEl = statLifetime.parentElement.querySelector('.stat-card-change');
+      if (changeEl) changeEl.innerHTML = 'from first to last sale';
+    } else {
+      statLifetime.innerHTML = '—';
+    }
+  }
   
   // Also render the Vinted sales themselves
   renderVintedSales(sales);
@@ -513,23 +543,8 @@ const toggleFavorite = event => {
  */
 const handleFilterChange = filter => {
   currentFilter = filter;
-  console.log('Filter changed to:', currentFilter);
-  console.log('All deals available:', allDeals.length);
-  
-  // Apply filter and sort
-  let filtered = applyFilter(allDeals);
-  console.log('Filtered deals count:', filtered.length);
-  
-  filtered = sortDeals(filtered);
-  
-  setCurrentDeals({result: filtered, meta: currentPagination});
-  render(filtered, currentPagination);
-  
-  // Show alert if no results
-  if (filtered.length === 0) {
-    console.warn('No deals match the current filter:', currentFilter);
-    alert(`No deals found matching "${currentFilter}" filter`);
-  }
+  currentPage = 1;
+  renderFiltered();
 };
 
 /**
@@ -537,50 +552,61 @@ const handleFilterChange = filter => {
  */
 
 /**
- * Feature 0 - Select the number of deals to display
+ * Get the current page slice of filtered+sorted deals
+ * @param {Array} filtered - filtered and sorted deals
+ * @returns {Array} page slice
  */
-selectShow.addEventListener('change', async (event) => {
-  const deals = await fetchDeals(1, parseInt(event.target.value));
+const getPageDeals = (filtered) => {
+  const start = (currentPage - 1) * currentSize;
+  return filtered.slice(start, start + currentSize);
+};
 
-  allDeals = deals.result;
-  
-  // Apply filter and sort
-  let filtered = applyFilter(allDeals);
-  filtered = sortDeals(filtered);
-  
-  setCurrentDeals({result: filtered, meta: deals.meta});
-  render(filtered, deals.meta);
+/**
+ * Build pagination meta from filtered deals
+ * @param {Array} filtered
+ * @returns {Object} meta
+ */
+const buildPaginationMeta = (filtered) => ({
+  currentPage,
+  pageCount: Math.max(1, Math.ceil(filtered.length / currentSize)),
+  count: filtered.length
 });
 
 /**
- * Feature 1 - Browse pages
+ * Central render function: apply filter+sort then paginate and display
  */
-selectPage.addEventListener('change', async (event) => {
-  const pageSize = parseInt(selectShow.value) || 6;
-  const deals = await fetchDeals(parseInt(event.target.value), pageSize);
+const renderFiltered = () => {
+  const filtered = sortDeals(applyFilter(allDeals));
+  const meta = buildPaginationMeta(filtered);
+  const pageDeals = getPageDeals(filtered);
+  setCurrentDeals({result: pageDeals, meta});
+  render(pageDeals, meta);
+};
 
-  allDeals = deals.result;
-  
-  // Apply filter and sort
-  let filtered = applyFilter(allDeals);
-  filtered = sortDeals(filtered);
-  
-  setCurrentDeals({result: filtered, meta: deals.meta});
-  render(filtered, deals.meta);
+/**
+ * Feature 0 - Select the number of deals to display
+ */
+selectShow.addEventListener('change', async (event) => {
+  currentSize = parseInt(event.target.value);
+  currentPage = 1;
+  renderFiltered();
+});
+
+/**
+ * Feature 1 - Browse pages (client-side pagination)
+ */
+selectPage.addEventListener('change', (event) => {
+  currentPage = parseInt(event.target.value);
+  renderFiltered();
 });
 
 /**
  * Feature 5 & 6 - Sort by price or date
  */
-selectSort.addEventListener('change', async (event) => {
+selectSort.addEventListener('change', (event) => {
   currentSort = event.target.value;
-  
-  // Apply filter and sort
-  let filtered = applyFilter(allDeals);
-  filtered = sortDeals(filtered);
-  
-  setCurrentDeals({result: filtered, meta: currentPagination});
-  render(filtered, currentPagination);
+  currentPage = 1;
+  renderFiltered();
 });
 
 /**
@@ -666,9 +692,12 @@ if (gridViewBtn && listViewBtn && dealsGrid) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  const deals = await fetchDeals();
+  // Sync currentSort with the select default value
+  currentSort = selectSort.value || 'price-asc';
+  currentSize = parseInt(selectShow.value) || 6;
 
+  const deals = await fetchDeals(1, currentSize);
   allDeals = deals.result;
-  setCurrentDeals(deals);
-  render(deals.result, deals.meta);
+
+  renderFiltered();
 });

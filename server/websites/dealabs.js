@@ -2,71 +2,145 @@ import * as cheerio from 'cheerio';
 import { v5 as uuidv5 } from 'uuid';
 import * as fs from 'fs';
 
+const IMAGE_BASE = 'https://static-pepper.dealabs.com';
+
 /**
- * Scrape a given url page for dealabs
+ * Build a proper image URL from Dealabs mainImage object
+ * @param {{path: string, name: string}|null} mainImage
+ * @returns {string}
+ */
+const buildImageUrl = (mainImage) => {
+  if (!mainImage || !mainImage.path || !mainImage.name) return '';
+  return `${IMAGE_BASE}/${mainImage.path}/${mainImage.name}/re/400x400/qt/70/${mainImage.name}.jpg`;
+};
+
+/**
+ * Scrape a given url page for dealabs by extracting the embedded
+ * window.__INITIAL_STATE__ JSON — which contains all deal data
+ * including price, temperature, discount, and images.
+ *
  * @param {String} url - url to parse
- * @returns {Array} deals
+ * @returns {Promise<Array>} deals
  */
 export const scrape = async (url = 'https://www.dealabs.com/groupe/lego') => {
-  console.log(`🕵️‍♀️  browsing ${url} website`);
+  console.log(`🕵️  scraping ${url}`);
+
   const response = await fetch(url, {
     headers: {
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/129.0.0.0 Safari/537.36',
+      'Accept-Language': 'fr-FR,fr;q=0.9',
+      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     }
   });
 
   if (!response.ok) {
-    console.error('Error fetching dealabs:', response.status);
+    console.error(`❌ Error fetching dealabs: ${response.status}`);
     return [];
   }
 
-  const body = await response.text();
-  const $ = cheerio.load(body);
+  const html = await response.text();
+
+  // Extract the embedded JSON state — Dealabs injects all deal data here
+  const stateMatch = html.match(/window\.__INITIAL_STATE__\s*=\s*(\{[\s\S]+?\});\s*\n/);
+  if (!stateMatch) {
+    console.error('❌ Could not find window.__INITIAL_STATE__ in Dealabs page');
+    return [];
+  }
+
+  let state;
+  try {
+    state = JSON.parse(stateMatch[1]);
+  } catch (e) {
+    console.error('❌ Failed to parse __INITIAL_STATE__:', e.message);
+    return [];
+  }
+
   const deals = [];
+  const threadMap = {};
 
-  $('article').each((i, el) => {
-    // try different title selectors
-    let linkEl = $(el).find('strong.thread-title a');
-    if (!linkEl.length) linkEl = $(el).find('a.thread-title--list');
-    if (!linkEl.length) linkEl = $(el).find('.thread-title a');
+  // Get hottest threads (they have full data including price, temperature, images)
+  const hottestThreads = state?.widgets?.hottestWidget?.threads || [];
+  hottestThreads.forEach(t => {
+    threadMap[String(t.threadId)] = t;
+  });
 
-    const title = linkEl.text().trim();
-    if (!title) return; // Not a deal
+  // Also scrape the main page article listing using cheerio for the remaining threads
+  const $ = cheerio.load(html);
 
-    const link = linkEl.attr('href');
-    
-    // Price
-    const priceText = $(el).find('span.thread-price').text().trim() || $(el).find('span.text--b').text().trim();
-    const price = parseFloat(priceText.replace(',', '.').replace(/[^0-9.]/g, ''));
+  $('article[id]').each((i, el) => {
+    const rawId = $(el).attr('id') || '';
+    const threadId = rawId.replace('thread-', '');
+    if (!threadId || threadMap[threadId]) return;
 
-    // Discount
-    const discountText = $(el).find('span.mute--text').filter((i, el2) => $(el2).text().includes('%')).first().text();
+    const priceText = $(el).find('[data-t="price"]').text().trim() ||
+                      $(el).find('.thread-price').text().trim();
+    const price = parseFloat(priceText.replace(',', '.').replace(/[^0-9.]/g, '')) || null;
+
+    const discountText = $(el).find('[data-t="discount"]').text().trim();
     const discount = discountText ? parseInt(discountText.replace(/[^0-9]/g, '')) : 0;
 
-    // Image
-    let photo = $(el).find('img.thread-image').attr('src');
-    if (photo && photo.includes('data:image')) {
-       // it might be lazy loaded, try getting from data attribute if Dealabs uses it
-       photo = $(el).find('img.thread-image').attr('data-lazy-src') || photo;
+    const tempText = $(el).find('[data-t="temperature"]').text().trim();
+    const temperature = tempText ? parseFloat(tempText) : 0;
+
+    const titleEl = $(el).find('strong.thread-title a, a.thread-title--list, .thread-title a').first();
+    const title = titleEl.text().trim();
+    const link = titleEl.attr('href') || `https://www.dealabs.com/bons-plans/${threadId}`;
+
+    const imgSrc = $(el).find('img[src]').not('[src*="data:"]').first().attr('src') ||
+                   $(el).find('img').first().attr('data-src') || '';
+
+    if (title) {
+      threadMap[threadId] = {
+        threadId,
+        title,
+        price,
+        priceDiscount: discount,
+        temperature,
+        url: link,
+        mainImage: null,
+        _rawPhoto: imgSrc
+      };
     }
+  });
+
+  // Convert all threads to our deal format
+  Object.values(threadMap).forEach(thread => {
+    const link = thread.url || `https://www.dealabs.com/bons-plans/${thread.threadId}`;
+    const photo = thread._rawPhoto || buildImageUrl(thread.mainImage);
 
     deals.push({
-      title,
-      price: isNaN(price) ? 0 : price,
-      discount,
+      id: String(thread.threadId),
+      uuid: uuidv5(link, uuidv5.URL),
+      title: thread.title || '',
+      price: thread.price || 0,
+      retail: thread.nextBestPrice || 0,
+      discount: thread.priceDiscount || 0,
+      temperature: Math.round(thread.temperature || 0),
+      comments: thread.commentCount || 0,
       link,
-      photo: photo || '',
-      uuid: link ? uuidv5(link, uuidv5.URL) : ''
+      photo,
+      published: thread.publishedAt
+        ? Math.floor(new Date(thread.publishedAt).getTime() / 1000)
+        : Math.floor(Date.now() / 1000),
     });
   });
 
+  console.log(`✅ Found ${deals.length} deals from Dealabs`);
   return deals;
 };
 
 // If ran directly, scrape and save to JSON
-if (process.argv[1] && process.argv[1].includes('dealabs.js')) {
+const isMain = process.argv[1] && (
+  process.argv[1].endsWith('dealabs.js') ||
+  process.argv[1].endsWith('dealabs')
+);
+if (isMain) {
   scrape('https://www.dealabs.com/groupe/lego').then(deals => {
-    fs.writeFileSync('dealabs.json', JSON.stringify(deals, null, 2));
-    console.log(`Saved ${deals.length} deals to dealabs.json`);
+    const outPath = new URL('./dealabs.json', import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1');
+    fs.writeFileSync(outPath, JSON.stringify(deals, null, 2));
+    console.log(`💾 Saved ${deals.length} deals`);
+    if (deals.length > 0) {
+      console.log('Sample deal:', JSON.stringify(deals[0], null, 2));
+    }
   });
 }
