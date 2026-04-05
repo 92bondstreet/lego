@@ -73,11 +73,12 @@ app.get('/deals/search', (request, response) => {
     const date = request.query.date;
     const filterBy = request.query.filterBy;
     
-    let results = [...DEALS];
+    // Only keep deals with a valid price
+    let results = [...DEALS].filter(deal => deal.price > 0);
 
     // Filter by max price
     if (!isNaN(maxPrice)) {
-      results = results.filter(deal => deal.price > 0 && deal.price <= maxPrice);
+      results = results.filter(deal => deal.price <= maxPrice);
     }
 
     // Filter by date (>= provided date)

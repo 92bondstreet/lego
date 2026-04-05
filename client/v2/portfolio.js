@@ -694,7 +694,7 @@ if (gridViewBtn && listViewBtn && dealsGrid) {
 document.addEventListener('DOMContentLoaded', async () => {
   // Sync currentSort with the select default value
   currentSort = selectSort.value || 'price-asc';
-  currentSize = parseInt(selectShow.value) || 6;
+  currentSize = parseInt(selectShow.value) || 12;
 
   const deals = await fetchDeals(1, currentSize);
   allDeals = deals.result;
