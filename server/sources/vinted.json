@@ -2,672 +2,960 @@
   "10283": [
     {
       "link": "https://www.vinted.fr/items/8017525331-lego-31058-neuf-et-scelle",
-      "price": null,
+      "price": {
+        "amount": 22.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1769277568,
       "uuid": "251637d5-9edc-51bd-9583-af8e36930b41"
     },
     {
       "link": "https://www.vinted.fr/items/8187107062-lego-orchidee",
-      "price": null,
+      "price": {
+        "amount": 47.6,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771239748,
       "uuid": "e42a9d54-e7f8-524d-b25c-f9171e332c33"
     },
     {
       "link": "https://www.vinted.fr/items/8176786038-lego-super-heroes-mr-freeze",
-      "price": null,
+      "price": {
+        "amount": 22.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771146650,
       "uuid": "a20900fb-4bcc-5241-b02a-a3716fe254c7"
     },
     {
       "link": "https://www.vinted.fr/items/8122945453-valisette-de-construction-lego-classic-4-99",
-      "price": null,
+      "price": {
+        "amount": 30.78,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770486686,
       "uuid": "74136aa8-45c6-568a-bbe4-914f84946789"
     },
     {
       "link": "https://www.vinted.fr/items/8192303861-lego-creator-le-paons-3-en-1-neuf-dans-carton-dorigine",
-      "price": null,
+      "price": {
+        "amount": 39.2,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771272476,
       "uuid": "b607da09-dd42-5e28-9577-86867b6ee2cc"
     },
     {
       "link": "https://www.vinted.fr/items/8182577458-lego-10343-botanicals",
-      "price": null,
+      "price": {
+        "amount": 43.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771174443,
       "uuid": "7d066424-e007-5c7d-a068-8a7d80b5816e"
     },
     {
       "link": "https://www.vinted.fr/items/8176635927-lego-super-heroes-spiderman",
-      "price": null,
+      "price": {
+        "amount": 11.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771145304,
       "uuid": "79351163-af10-59d6-9733-6f073a23a77b"
     },
     {
       "link": "https://www.vinted.fr/items/8175584815-lego-art-set-31214-love-sculpture-neuf-2025",
-      "price": null,
+      "price": {
+        "amount": 98,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771103127,
       "uuid": "3309e45e-d921-5b09-8cac-ec84e8bd13dd"
     },
     {
       "link": "https://www.vinted.fr/items/8166043148-lego-botanique-10343-lorchidee-miniature-neuf",
-      "price": null,
+      "price": {
+        "amount": 48.44,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770995307,
       "uuid": "fb2da5e6-c297-5d5b-b8cb-548119a67780"
     },
     {
       "link": "https://www.vinted.fr/items/8174852577-lego-minifigures-serie-23",
-      "price": null,
+      "price": {
+        "amount": 12.96,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771095041,
       "uuid": "a964201e-5f30-5600-a0ca-f7932b49775b"
     },
     {
       "link": "https://www.vinted.fr/items/8191766542-lego-40913-vintage-parade-car",
-      "price": null,
+      "price": {
+        "amount": 53.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771268528,
       "uuid": "1e872899-a871-52a2-8516-c5eb8b5a25c5"
     },
     {
       "link": "https://www.vinted.fr/items/8177904417-lego-spider-man",
-      "price": null,
+      "price": {
+        "amount": 26.6,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771153230,
       "uuid": "7b5852ef-b277-5f05-a2d9-b51c010bdb49"
     },
     {
       "link": "https://www.vinted.fr/items/8153554579-lego-botanicals-ndeg-10343-mini-orchidee-neuf-avec-etiquette-25-eu",
-      "price": null,
+      "price": {
+        "amount": 53.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770827284,
       "uuid": "c19ddca2-6ddc-5763-be2d-372aee21db5b"
     },
     {
       "link": "https://www.vinted.fr/items/8177968352-lego-10343",
-      "price": null,
+      "price": {
+        "amount": 18.2,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771153548,
       "uuid": "26ee262d-4eb7-5130-a11b-e81063fd6588"
     },
     {
       "link": "https://www.vinted.fr/items/8019454629-lego-duplo-train-neuf",
-      "price": null,
+      "price": {
+        "amount": 20.3,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1769300652,
       "uuid": "c7df99e9-b416-5a26-9f63-30660d6827a4"
     },
     {
       "link": "https://www.vinted.fr/items/8174831724-lego-minifigure",
-      "price": null,
+      "price": {
+        "amount": 12.96,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771094839,
       "uuid": "0b901802-b3e9-56e7-ac73-2acb0ecb2990"
     },
     {
       "link": "https://www.vinted.fr/items/8190451433-lego-bonhomme-de-neige-40093",
-      "price": null,
+      "price": {
+        "amount": 22.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771260088,
       "uuid": "15cac1c3-1cee-585f-a9c4-63e64fd2920c"
     },
     {
       "link": "https://www.vinted.fr/items/8097590317-lego-creator-le-perroquet-rose-neuf",
-      "price": null,
+      "price": {
+        "amount": 81.2,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770206293,
       "uuid": "2d951f7c-3b80-5fbd-959a-e72f18dd9c25"
     },
     {
       "link": "https://www.vinted.fr/items/8174844676-lego-minifigures-muppets",
-      "price": null,
+      "price": {
+        "amount": 12.96,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771094962,
       "uuid": "fe57db56-1d50-5a75-8b3c-200a7494d573"
     },
     {
       "link": "https://www.vinted.fr/items/8167143726-lego-10343-nuevo-sin-abrir-orquidea-planta-artificial-decoracion",
-      "price": null,
+      "price": {
+        "amount": 62.3,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771003695,
       "uuid": "23ffe28d-c2e8-5e88-9c24-1578d4ed4461"
     },
     {
       "link": "https://www.vinted.fr/items/7463443690-lego-spider-man",
-      "price": null,
+      "price": {
+        "amount": 14,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1762092357,
       "uuid": "c514a5b2-fc86-59a9-add0-353044b061f4"
     },
     {
       "link": "https://www.vinted.fr/items/8114023689-lego-3-en-1-6387808",
-      "price": null,
+      "price": {
+        "amount": 20.3,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770394154,
       "uuid": "ee3e09d7-6c5c-56ab-b262-39a19b95e9ac"
     },
     {
       "link": "https://www.vinted.fr/items/8011060201-lego-botanicals-10343-orchidee-miniature-plante-deco-neuf",
-      "price": null,
+      "price": {
+        "amount": 64.2,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1769205231,
       "uuid": "8c0874d7-5087-5fd6-8798-bbe72df667b0"
     },
     {
       "link": "https://www.vinted.fr/items/8149322325-genuine-lego-lester-minifigure-sealed-polybag-40308",
-      "price": null,
+      "price": {
+        "amount": 30.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770791662,
       "uuid": "9ed209f4-8762-5afe-9ab7-1d4b33356115"
     },
     {
       "link": "https://www.vinted.fr/items/8182809356-lego-nexo-knight-70354",
-      "price": null,
+      "price": {
+        "amount": 64.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771175551,
       "uuid": "ba3b605b-410f-5112-bfca-b616db2d5b21"
     },
     {
       "link": "https://www.vinted.fr/items/8175580574-lego-botanicals-10343-lorchidee-miniature",
-      "price": null,
+      "price": {
+        "amount": 58.1,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771103071,
       "uuid": "b645c5c5-a486-5f76-9a29-7493d2c5eef0"
     },
     {
       "link": "https://www.vinted.fr/items/8155595148-lego-stranger-things-75810",
-      "price": null,
+      "price": {
+        "amount": 589.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770842658,
       "uuid": "d437938c-39f9-560a-a65a-e44bfdea4711"
     },
     {
       "link": "https://www.vinted.fr/items/8163117455-lego-set-orchid-10343",
-      "price": null,
+      "price": {
+        "amount": 53.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770970317,
       "uuid": "2b8c4bd4-f716-5d08-a277-25c98944b406"
     },
     {
       "link": "https://www.vinted.fr/items/8189231193-polybag-reference-30549-de-la-marque-lego",
-      "price": null,
+      "price": {
+        "amount": 11.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771253166,
       "uuid": "094a3010-5e7e-5abf-a855-92f3863273f0"
     },
     {
       "link": "https://www.vinted.fr/items/8146460288-lego-10343-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 48.66,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770741908,
       "uuid": "4f7ca49d-8ab7-5a22-9788-f1779eac2a58"
     },
     {
       "link": "https://www.vinted.fr/items/8071472004-lego-botanical-mini-orquidia",
-      "price": null,
+      "price": {
+        "amount": 53.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1769903238,
       "uuid": "e98e20f6-f7c3-551d-b889-d9ca74203af9"
     },
     {
       "link": "https://www.vinted.fr/items/7995197864-lego-minifigurine-serie-19-col19-5",
-      "price": null,
+      "price": {
+        "amount": 7.7,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1769009985,
       "uuid": "e4ce9ff8-957c-5aaa-8682-f128adc403f5"
     },
     {
       "link": "https://www.vinted.fr/items/8170886259-figurines-lego-71028-seconde-serie-harry-potter",
-      "price": null,
+      "price": {
+        "amount": 230.3,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771068657,
       "uuid": "2b513335-8406-5a2a-9c11-7716fb7fa8cc"
     },
     {
       "link": "https://www.vinted.fr/items/7516877748-lego-creator-31033",
-      "price": null,
+      "price": {
+        "amount": 18.2,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1762706365,
       "uuid": "56e14b34-5b67-54cd-a585-7e220c53c811"
     },
     {
       "link": "https://www.vinted.fr/items/8084908388-lego-mandalorian-pilot-sachet",
-      "price": null,
+      "price": {
+        "amount": 11.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770044083,
       "uuid": "73348bc6-420e-5dd3-9d1e-6dbed7b7e9dc"
     },
     {
       "link": "https://www.vinted.fr/items/8160011281-love-lego-neuve-robert-indiana",
-      "price": null,
+      "price": {
+        "amount": 106.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770911116,
       "uuid": "07cfdd58-c13e-5d3a-8612-f02e1e7eb320"
     },
     {
       "link": "https://www.vinted.fr/items/7614797110-lego-70347",
-      "price": null,
+      "price": {
+        "amount": 20.3,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1763831114,
       "uuid": "8ad1e13f-9695-511a-8b1c-095ce8061933"
     },
     {
       "link": "https://www.vinted.fr/items/8082903243-lego-10343-la-mini-orchidee",
-      "price": null,
+      "price": {
+        "amount": 53.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770030285,
       "uuid": "e2122add-5d83-5e27-aa34-2656fe5afb7f"
     },
     {
       "link": "https://www.vinted.fr/items/8115673321-lego-fleur-collection-botanique-plante-10343-mini-orchidee-orchid-flower-botanical",
-      "price": null,
+      "price": {
+        "amount": 64.2,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770406990,
       "uuid": "004fb090-a347-5522-b920-08df2a6f004a"
     },
     {
       "link": "https://www.vinted.fr/items/8181873883-lego-marvel-polybag",
-      "price": null,
+      "price": {
+        "amount": 16.1,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771171324,
       "uuid": "1ff037a0-4d1d-5071-9dc3-1792f4df81e3"
     },
     {
       "link": "https://www.vinted.fr/items/8099799161-lego-botanicals-10343-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 53.88,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770220984,
       "uuid": "043bd085-df53-5773-8706-44905dd77a78"
     },
     {
       "link": "https://www.vinted.fr/items/8185074464-lego-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 53.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771190606,
       "uuid": "7df25a40-6de5-5401-84de-9e64060de3a7"
     },
     {
       "link": "https://www.vinted.fr/items/8134570792-lego-f1-williams-10353",
-      "price": null,
+      "price": {
+        "amount": 127.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770588276,
       "uuid": "df8f6daa-ceb0-5cd7-9348-755930f623c2"
     },
     {
       "link": "https://www.vinted.fr/items/7844629440-aiguillage-lego-7895",
-      "price": null,
+      "price": {
+        "amount": 53.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1767174260,
       "uuid": "9b1152f8-d0dc-5c31-9e10-7774d4351d74"
     },
     {
       "link": "https://www.vinted.fr/items/8189675017-lego-vintage-parade-car-40913",
-      "price": null,
+      "price": {
+        "amount": 43.38,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771255675,
       "uuid": "8fd4fc29-7ef7-53e8-bb99-bcad7db1949b"
     },
     {
       "link": "https://www.vinted.fr/items/8130065610-lego-40153-decoration-pour-table-danniversaire",
-      "price": null,
+      "price": {
+        "amount": 43.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770562566,
       "uuid": "b5f1cc26-8782-5b2d-9fd4-377e48576b74"
     },
     {
       "link": "https://www.vinted.fr/items/7635955778-lego-duplo-30330-birthday-cake",
-      "price": null,
+      "price": {
+        "amount": 7.7,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1764069907,
       "uuid": "85f125a5-a244-580a-bc2b-3ca68f7313ce"
     },
     {
       "link": "https://www.vinted.fr/items/8010992712-lego-42031",
-      "price": null,
+      "price": {
+        "amount": 14,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1769204251,
       "uuid": "85d6aa8d-e8d9-5877-bb3c-0ca1db6d68ae"
     },
     {
       "link": "https://www.vinted.fr/items/8172465651-lego-city-40345-pack-de-figurines-de-lespace-laboratoire-de-lespace",
-      "price": null,
+      "price": {
+        "amount": 41.3,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771078811,
       "uuid": "7117c574-7dcc-5b47-a609-f51a094a8fdb"
     },
     {
       "link": "https://www.vinted.fr/items/8180938109-set-lego-10305-le-chateau-des-chevaliers-du-lion-neuf-et-scelle",
-      "price": null,
+      "price": {
+        "amount": 1007.3,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771167339,
       "uuid": "251f1641-92b2-5e7d-af97-150db82175fc"
     },
     {
       "link": "https://www.vinted.fr/items/8100605826-lego-icons-le-bambou-de-la-chance-lorchidee-miniature",
-      "price": null,
+      "price": {
+        "amount": 125.3,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770226387,
       "uuid": "978aa70e-1a0d-5997-93e4-cac41afa3b80"
     },
     {
       "link": "https://www.vinted.fr/items/8137957333-mini-orchidee-lego-neuf",
-      "price": null,
+      "price": {
+        "amount": 47.6,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770646435,
       "uuid": "2b36fec6-3b63-57f2-ada4-7f023582dabd"
     },
     {
       "link": "https://www.vinted.fr/items/7953420420-lego-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 49.7,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1768514031,
       "uuid": "0b440a84-877c-519e-afec-cc0281d7e78e"
     },
     {
       "link": "https://www.vinted.fr/items/7531479067-lego-classic-plaque-de-base-bleue-10714",
-      "price": null,
+      "price": {
+        "amount": 22.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1762867991,
       "uuid": "0ef79489-b902-52e3-a2c9-0b6b2330ddc4"
     },
     {
       "link": "https://www.vinted.fr/items/7586487493-lego-city-30589",
-      "price": null,
+      "price": {
+        "amount": 11.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1763482192,
       "uuid": "449937ea-9526-5fc7-a655-230e00a61a82"
     },
     {
       "link": "https://www.vinted.fr/items/7929689936-lego-31002-neuf-et-scelle",
-      "price": null,
+      "price": {
+        "amount": 28.7,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1768222567,
       "uuid": "2e698ef3-79b8-5994-b4bd-80b7f37de5e1"
     },
     {
       "link": "https://www.vinted.fr/items/8162015676-lego-colecao-botanica-mini-orquidea",
-      "price": null,
+      "price": {
+        "amount": 53.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770929264,
       "uuid": "4d66df02-7967-53ad-a2ef-b7c782e024fd"
     },
     {
       "link": "https://www.vinted.fr/items/8077019617-lego-botanicals-mini-orchidee-10343",
-      "price": null,
+      "price": {
+        "amount": 49.7,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1769959254,
       "uuid": "3102b1a1-9156-50d4-ac9d-63d03a770107"
     },
     {
       "link": "https://www.vinted.fr/items/8084851313-lego-botanicals-10343-mini-orchidee",
-      "price": null,
+      "price": {
+        "amount": 53.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770043716,
       "uuid": "fa2e7148-19d2-5c33-93cc-647f5745e928"
     },
     {
       "link": "https://www.vinted.fr/items/8124815982-lego-botanicals-orquidea-em-miniatura-set-10343-novo-e-selado",
-      "price": null,
+      "price": {
+        "amount": 53.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770505170,
       "uuid": "83a49c88-603a-54e5-9ef7-f730eed68b98"
     },
     {
       "link": "https://www.vinted.fr/items/8131360331-lego-ninjago-entrainement-ninja",
-      "price": null,
+      "price": {
+        "amount": 32.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770567955,
       "uuid": "19fe6a9d-584f-5984-9606-dab18b2c46ca"
     },
     {
       "link": "https://www.vinted.fr/items/8141977356-lego-dreamzzz-30636-neuf",
-      "price": null,
+      "price": {
+        "amount": 7.28,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770678547,
       "uuid": "2b236370-8f74-543e-b8a0-588dc1622b81"
     },
     {
       "link": "https://www.vinted.fr/items/7823315824-lego-disney-40613-le-palais-agrabah",
-      "price": null,
+      "price": {
+        "amount": 83.3,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1766856815,
       "uuid": "811a29f7-2dc8-5e8a-96c0-6b7019d5943e"
     },
     {
       "link": "https://www.vinted.fr/items/8173396976-lego-6305",
-      "price": null,
+      "price": {
+        "amount": 158.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771084384,
       "uuid": "12b1e900-ec40-5b0b-85cf-426c7b0114e5"
     },
     {
       "link": "https://www.vinted.fr/items/7463511960-lego-polybag-spider-man",
-      "price": null,
+      "price": {
+        "amount": 14,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1762092638,
       "uuid": "3ea693a5-244f-5527-9ac5-b90ad75ca635"
     },
     {
       "link": "https://www.vinted.fr/items/7922763710-lego-set-10343-orquidea-em-miniatura",
-      "price": null,
+      "price": {
+        "amount": 49.7,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1768143144,
       "uuid": "0b78f617-543d-58b8-a940-f7fe8a64d368"
     },
     {
       "link": "https://www.vinted.fr/items/5816130026-lego-minifigures-disney-series-2-sally",
-      "price": null,
+      "price": {
+        "amount": 22.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1739553801,
       "uuid": "4f433d06-b84c-5789-8989-fed69805c2a9"
     },
     {
       "link": "https://www.vinted.fr/items/8083584123-lot-de-3-lego-botanique",
-      "price": null,
+      "price": {
+        "amount": 158.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770035288,
       "uuid": "144d0dac-2571-517c-81ab-5016af265464"
     },
     {
       "link": "https://www.vinted.fr/items/6873792416-lego-polybag-dr-strange",
-      "price": null,
+      "price": {
+        "amount": 11.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1755266611,
       "uuid": "405c6c30-d6ed-5840-bd79-7d501d9df309"
     },
     {
       "link": "https://www.vinted.fr/items/7654505363-lego-mc-laren-30683-speed-chanpion",
-      "price": null,
+      "price": {
+        "amount": 16.1,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1764317372,
       "uuid": "5c3a1e5e-73c5-5684-84a1-3a2bca692365"
     },
     {
       "link": "https://www.vinted.fr/items/8191335177-2011-lego-city-3658-police-helicopter-8n1ks",
-      "price": null,
+      "price": {
+        "amount": 232.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771265547,
       "uuid": "9d1ec326-30ab-5159-a695-7af7b275200c"
     },
     {
       "link": "https://www.vinted.fr/items/6620380598-lego-polybag-30614-dc-super-heroes-superman-lex-luthor",
-      "price": null,
+      "price": {
+        "amount": 24.5,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1751613896,
       "uuid": "b1d9d9a3-e1dd-5a0a-a8d7-9831b205b429"
     },
     {
       "link": "https://www.vinted.fr/items/5817655058-la-plaque-de-base-bleue-lego-classic-10714",
-      "price": null,
+      "price": {
+        "amount": 20.28,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1739610405,
       "uuid": "1595b698-4cb5-589b-9d22-22580f54b6f7"
     },
     {
       "link": "https://www.vinted.fr/items/8128999191-lego-creator",
-      "price": null,
+      "price": {
+        "amount": 32.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770558063,
       "uuid": "29c00483-4459-58b2-91ca-59f92fbdb519"
     },
     {
       "link": "https://www.vinted.fr/items/1440018076-lego-construction",
-      "price": null,
+      "price": {
+        "amount": 7.7,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1636796858,
       "uuid": "d4a36dfa-0028-524f-8a91-9d48039811e8"
     },
     {
       "link": "https://www.vinted.fr/items/8079478981-lego-10343",
-      "price": null,
+      "price": {
+        "amount": 47.6,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1769970721,
       "uuid": "6d90f17f-b3ca-588a-8678-aeb3e058a588"
     },
     {
       "link": "https://www.vinted.fr/items/6841439644-lego-city",
-      "price": null,
+      "price": {
+        "amount": 9.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1754760082,
       "uuid": "84eb99f4-3a01-5190-8bdd-888d734b8a77"
     },
     {
       "link": "https://www.vinted.fr/items/7831737090-lego-10343-mini-orquidea",
-      "price": null,
+      "price": {
+        "amount": 49.7,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1766965564,
       "uuid": "7ac5f8c4-5159-5a80-940e-5f8bb18e7666"
     },
     {
       "link": "https://www.vinted.fr/items/6952941162-lego-creator",
-      "price": null,
+      "price": {
+        "amount": 11.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1756297231,
       "uuid": "17386ff0-1916-5368-99f1-549950e1afd5"
     },
     {
       "link": "https://www.vinted.fr/items/8095169372-lego-10343-orquideas-botanical-pvp-fijo-25",
-      "price": null,
+      "price": {
+        "amount": 53.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770154193,
       "uuid": "96d93e96-51d8-5b66-9913-687ea86fdd51"
     },
     {
       "link": "https://www.vinted.fr/items/8184256808-lego-nexo-knights-brand-new-still-sealed-in-packaging",
-      "price": null,
+      "price": {
+        "amount": 18.18,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771184086,
       "uuid": "6cbe0f4d-79d0-5937-af62-bf7714823fef"
     },
     {
       "link": "https://www.vinted.fr/items/8116045809-lego-70335-nexo-knights-neuf",
-      "price": null,
+      "price": {
+        "amount": 18.2,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770410434,
       "uuid": "3f46aeb1-3321-5307-af11-a19be1eee0cd"
     },
     {
       "link": "https://www.vinted.fr/items/6982566184-lego-city-30352-voiture-de-police",
-      "price": null,
+      "price": {
+        "amount": 11.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1756644186,
       "uuid": "1778a6b2-fb5b-50a0-b511-a676d891b208"
     },
     {
       "link": "https://www.vinted.fr/items/7876609531-10343-miniorquidea-new",
-      "price": null,
+      "price": {
+        "amount": 51.6,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1767560565,
       "uuid": "2120f1cf-b29c-5a7c-b179-ac030fa460c6"
     },
     {
       "link": "https://www.vinted.fr/items/8163695862-lego-technic",
-      "price": null,
+      "price": {
+        "amount": 13.98,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770976794,
       "uuid": "6bba613a-fb58-5d90-b3f5-3509d4cc9f24"
     },
     {
       "link": "https://www.vinted.fr/items/8065064338-lego-orquidea-10343",
-      "price": null,
+      "price": {
+        "amount": 51.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1769863719,
       "uuid": "09cafed4-6128-594f-be5d-e9fe63584e97"
     },
     {
       "link": "https://www.vinted.fr/items/8189941673-lego-series-disney-71024-13-hades-novo-neufnuovonuevonieuwnew",
-      "price": null,
+      "price": {
+        "amount": 10.82,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1771257172,
       "uuid": "ab4991c0-4af9-549c-822e-8120a646a379"
     },
     {
       "link": "https://www.vinted.fr/items/4715684936-minifig-lego-serie-16-le-mariachi",
-      "price": null,
+      "price": {
+        "amount": 22.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1719944286,
       "uuid": "33381a1f-f5b7-5aeb-addc-b08989f734af"
     },
     {
       "link": "https://www.vinted.fr/items/7625917411-lego-mini-figurine-personnage-anglais-40308-sachet-scelle-neuf",
-      "price": null,
+      "price": {
+        "amount": 32.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1763927891,
       "uuid": "f603bdbd-fb84-540d-a0cc-f6098122a50a"
     },
     {
       "link": "https://www.vinted.fr/items/8103763140-lego-friends-flowers-ref-30634-neuf",
-      "price": null,
+      "price": {
+        "amount": 18.2,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770285074,
       "uuid": "10ee15da-02b3-5c86-a545-db4ae53144c6"
     },
     {
       "link": "https://www.vinted.fr/items/2421872712-minifigurines-lego-muppet-show",
-      "price": null,
+      "price": {
+        "amount": 7.7,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1668539226,
       "uuid": "bac04592-bdac-51a4-8d78-c2ff84cdfe77"
     },
     {
       "link": "https://www.vinted.fr/items/6467440486-lego-disney-100-ans-minifigure-jiminy-cricket",
-      "price": null,
+      "price": {
+        "amount": 18.2,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1749242672,
       "uuid": "84438244-756a-524a-b1ad-d0eedbf3539f"
     },
     {
       "link": "https://www.vinted.fr/items/8103319743-10343-lego-botanicals-mini-orchidea-nuovo",
-      "price": null,
+      "price": {
+        "amount": 64.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1770280300,
       "uuid": "b09439eb-eb61-57c8-b320-cfcf22f6c6ec"
     },
     {
       "link": "https://www.vinted.fr/items/8041188701-10343-mini-orchid-newsealed",
-      "price": null,
+      "price": {
+        "amount": 49.5,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1769535284,
       "uuid": "c2d80c5d-c7df-58a6-bf8b-cdac942b0c00"
     },
     {
       "link": "https://www.vinted.fr/items/4326023335-brique-lego",
-      "price": null,
+      "price": {
+        "amount": 18.2,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1712429443,
       "uuid": "bb733893-6749-56b1-b4b6-f35011ede553"
     },
     {
       "link": "https://www.vinted.fr/items/6684919587-lego-city",
-      "price": null,
+      "price": {
+        "amount": 11.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego Space Shuttle 10283",
       "published": 1752523956,
       "uuid": "c476f2d9-f3e9-52f8-9e5f-ff07f8ef5ba4"
@@ -3562,672 +3850,960 @@
   "21345": [
     {
       "link": "https://www.vinted.fr/items/8017525331-lego-31058-neuf-et-scelle",
-      "price": null,
+      "price": {
+        "amount": 10.08,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1769277568,
       "uuid": "251637d5-9edc-51bd-9583-af8e36930b41"
     },
     {
       "link": "https://www.vinted.fr/items/8187107062-lego-orchidee",
-      "price": null,
+      "price": {
+        "amount": 21.42,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771239748,
       "uuid": "e42a9d54-e7f8-524d-b25c-f9171e332c33"
     },
     {
       "link": "https://www.vinted.fr/items/8176786038-lego-super-heroes-mr-freeze",
-      "price": null,
+      "price": {
+        "amount": 10.08,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771146650,
       "uuid": "a20900fb-4bcc-5241-b02a-a3716fe254c7"
     },
     {
       "link": "https://www.vinted.fr/items/8122945453-valisette-de-construction-lego-classic-4-99",
-      "price": null,
+      "price": {
+        "amount": 13.85,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770486686,
       "uuid": "74136aa8-45c6-568a-bbe4-914f84946789"
     },
     {
       "link": "https://www.vinted.fr/items/8192303861-lego-creator-le-paons-3-en-1-neuf-dans-carton-dorigine",
-      "price": null,
+      "price": {
+        "amount": 17.64,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771272476,
       "uuid": "b607da09-dd42-5e28-9577-86867b6ee2cc"
     },
     {
       "link": "https://www.vinted.fr/items/8182577458-lego-10343-botanicals",
-      "price": null,
+      "price": {
+        "amount": 19.53,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771174443,
       "uuid": "7d066424-e007-5c7d-a068-8a7d80b5816e"
     },
     {
       "link": "https://www.vinted.fr/items/8176635927-lego-super-heroes-spiderman",
-      "price": null,
+      "price": {
+        "amount": 5.36,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771145304,
       "uuid": "79351163-af10-59d6-9733-6f073a23a77b"
     },
     {
       "link": "https://www.vinted.fr/items/8175584815-lego-art-set-31214-love-sculpture-neuf-2025",
-      "price": null,
+      "price": {
+        "amount": 44.1,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771103127,
       "uuid": "3309e45e-d921-5b09-8cac-ec84e8bd13dd"
     },
     {
       "link": "https://www.vinted.fr/items/8166043148-lego-botanique-10343-lorchidee-miniature-neuf",
-      "price": null,
+      "price": {
+        "amount": 21.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770995307,
       "uuid": "fb2da5e6-c297-5d5b-b8cb-548119a67780"
     },
     {
       "link": "https://www.vinted.fr/items/8174852577-lego-minifigures-serie-23",
-      "price": null,
+      "price": {
+        "amount": 5.83,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771095041,
       "uuid": "a964201e-5f30-5600-a0ca-f7932b49775b"
     },
     {
       "link": "https://www.vinted.fr/items/8191766542-lego-40913-vintage-parade-car",
-      "price": null,
+      "price": {
+        "amount": 24.25,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771268528,
       "uuid": "1e872899-a871-52a2-8516-c5eb8b5a25c5"
     },
     {
       "link": "https://www.vinted.fr/items/8177904417-lego-spider-man",
-      "price": null,
+      "price": {
+        "amount": 11.97,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771153230,
       "uuid": "7b5852ef-b277-5f05-a2d9-b51c010bdb49"
     },
     {
       "link": "https://www.vinted.fr/items/8153554579-lego-botanicals-ndeg-10343-mini-orchidee-neuf-avec-etiquette-25-eu",
-      "price": null,
+      "price": {
+        "amount": 24.25,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770827284,
       "uuid": "c19ddca2-6ddc-5763-be2d-372aee21db5b"
     },
     {
       "link": "https://www.vinted.fr/items/8177968352-lego-10343",
-      "price": null,
+      "price": {
+        "amount": 8.19,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771153548,
       "uuid": "26ee262d-4eb7-5130-a11b-e81063fd6588"
     },
     {
       "link": "https://www.vinted.fr/items/8019454629-lego-duplo-train-neuf",
-      "price": null,
+      "price": {
+        "amount": 9.13,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1769300652,
       "uuid": "c7df99e9-b416-5a26-9f63-30660d6827a4"
     },
     {
       "link": "https://www.vinted.fr/items/8174831724-lego-minifigure",
-      "price": null,
+      "price": {
+        "amount": 5.83,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771094839,
       "uuid": "0b901802-b3e9-56e7-ac73-2acb0ecb2990"
     },
     {
       "link": "https://www.vinted.fr/items/8190451433-lego-bonhomme-de-neige-40093",
-      "price": null,
+      "price": {
+        "amount": 10.08,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771260088,
       "uuid": "15cac1c3-1cee-585f-a9c4-63e64fd2920c"
     },
     {
       "link": "https://www.vinted.fr/items/8097590317-lego-creator-le-perroquet-rose-neuf",
-      "price": null,
+      "price": {
+        "amount": 36.54,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770206293,
       "uuid": "2d951f7c-3b80-5fbd-959a-e72f18dd9c25"
     },
     {
       "link": "https://www.vinted.fr/items/8174844676-lego-minifigures-muppets",
-      "price": null,
+      "price": {
+        "amount": 5.83,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771094962,
       "uuid": "fe57db56-1d50-5a75-8b3c-200a7494d573"
     },
     {
       "link": "https://www.vinted.fr/items/8167143726-lego-10343-nuevo-sin-abrir-orquidea-planta-artificial-decoracion",
-      "price": null,
+      "price": {
+        "amount": 28.04,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771003695,
       "uuid": "23ffe28d-c2e8-5e88-9c24-1578d4ed4461"
     },
     {
       "link": "https://www.vinted.fr/items/7463443690-lego-spider-man",
-      "price": null,
+      "price": {
+        "amount": 6.3,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1762092357,
       "uuid": "c514a5b2-fc86-59a9-add0-353044b061f4"
     },
     {
       "link": "https://www.vinted.fr/items/8114023689-lego-3-en-1-6387808",
-      "price": null,
+      "price": {
+        "amount": 9.13,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770394154,
       "uuid": "ee3e09d7-6c5c-56ab-b262-39a19b95e9ac"
     },
     {
       "link": "https://www.vinted.fr/items/8011060201-lego-botanicals-10343-orchidee-miniature-plante-deco-neuf",
-      "price": null,
+      "price": {
+        "amount": 28.89,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1769205231,
       "uuid": "8c0874d7-5087-5fd6-8798-bbe72df667b0"
     },
     {
       "link": "https://www.vinted.fr/items/8149322325-genuine-lego-lester-minifigure-sealed-polybag-40308",
-      "price": null,
+      "price": {
+        "amount": 13.86,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770791662,
       "uuid": "9ed209f4-8762-5afe-9ab7-1d4b33356115"
     },
     {
       "link": "https://www.vinted.fr/items/8182809356-lego-nexo-knight-70354",
-      "price": null,
+      "price": {
+        "amount": 28.98,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771175551,
       "uuid": "ba3b605b-410f-5112-bfca-b616db2d5b21"
     },
     {
       "link": "https://www.vinted.fr/items/8175580574-lego-botanicals-10343-lorchidee-miniature",
-      "price": null,
+      "price": {
+        "amount": 26.14,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771103071,
       "uuid": "b645c5c5-a486-5f76-9a29-7493d2c5eef0"
     },
     {
       "link": "https://www.vinted.fr/items/8155595148-lego-stranger-things-75810",
-      "price": null,
+      "price": {
+        "amount": 265.23,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770842658,
       "uuid": "d437938c-39f9-560a-a65a-e44bfdea4711"
     },
     {
       "link": "https://www.vinted.fr/items/8163117455-lego-set-orchid-10343",
-      "price": null,
+      "price": {
+        "amount": 24.25,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770970317,
       "uuid": "2b8c4bd4-f716-5d08-a277-25c98944b406"
     },
     {
       "link": "https://www.vinted.fr/items/8189231193-polybag-reference-30549-de-la-marque-lego",
-      "price": null,
+      "price": {
+        "amount": 5.36,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771253166,
       "uuid": "094a3010-5e7e-5abf-a855-92f3863273f0"
     },
     {
       "link": "https://www.vinted.fr/items/8146460288-lego-10343-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 21.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770741908,
       "uuid": "4f7ca49d-8ab7-5a22-9788-f1779eac2a58"
     },
     {
       "link": "https://www.vinted.fr/items/8071472004-lego-botanical-mini-orquidia",
-      "price": null,
+      "price": {
+        "amount": 24.25,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1769903238,
       "uuid": "e98e20f6-f7c3-551d-b889-d9ca74203af9"
     },
     {
       "link": "https://www.vinted.fr/items/7995197864-lego-minifigurine-serie-19-col19-5",
-      "price": null,
+      "price": {
+        "amount": 3.47,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1769009985,
       "uuid": "e4ce9ff8-957c-5aaa-8682-f128adc403f5"
     },
     {
       "link": "https://www.vinted.fr/items/8170886259-figurines-lego-71028-seconde-serie-harry-potter",
-      "price": null,
+      "price": {
+        "amount": 103.64,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771068657,
       "uuid": "2b513335-8406-5a2a-9c11-7716fb7fa8cc"
     },
     {
       "link": "https://www.vinted.fr/items/7516877748-lego-creator-31033",
-      "price": null,
+      "price": {
+        "amount": 8.19,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1762706365,
       "uuid": "56e14b34-5b67-54cd-a585-7e220c53c811"
     },
     {
       "link": "https://www.vinted.fr/items/8084908388-lego-mandalorian-pilot-sachet",
-      "price": null,
+      "price": {
+        "amount": 5.36,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770044083,
       "uuid": "73348bc6-420e-5dd3-9d1e-6dbed7b7e9dc"
     },
     {
       "link": "https://www.vinted.fr/items/8160011281-love-lego-neuve-robert-indiana",
-      "price": null,
+      "price": {
+        "amount": 47.88,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770911116,
       "uuid": "07cfdd58-c13e-5d3a-8612-f02e1e7eb320"
     },
     {
       "link": "https://www.vinted.fr/items/7614797110-lego-70347",
-      "price": null,
+      "price": {
+        "amount": 9.13,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1763831114,
       "uuid": "8ad1e13f-9695-511a-8b1c-095ce8061933"
     },
     {
       "link": "https://www.vinted.fr/items/8082903243-lego-10343-la-mini-orchidee",
-      "price": null,
+      "price": {
+        "amount": 24.25,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770030285,
       "uuid": "e2122add-5d83-5e27-aa34-2656fe5afb7f"
     },
     {
       "link": "https://www.vinted.fr/items/8115673321-lego-fleur-collection-botanique-plante-10343-mini-orchidee-orchid-flower-botanical",
-      "price": null,
+      "price": {
+        "amount": 28.89,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770406990,
       "uuid": "004fb090-a347-5522-b920-08df2a6f004a"
     },
     {
       "link": "https://www.vinted.fr/items/8181873883-lego-marvel-polybag",
-      "price": null,
+      "price": {
+        "amount": 7.25,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771171324,
       "uuid": "1ff037a0-4d1d-5071-9dc3-1792f4df81e3"
     },
     {
       "link": "https://www.vinted.fr/items/8099799161-lego-botanicals-10343-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 24.25,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770220984,
       "uuid": "043bd085-df53-5773-8706-44905dd77a78"
     },
     {
       "link": "https://www.vinted.fr/items/8185074464-lego-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 24.25,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771190606,
       "uuid": "7df25a40-6de5-5401-84de-9e64060de3a7"
     },
     {
       "link": "https://www.vinted.fr/items/8134570792-lego-f1-williams-10353",
-      "price": null,
+      "price": {
+        "amount": 57.33,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770588276,
       "uuid": "df8f6daa-ceb0-5cd7-9348-755930f623c2"
     },
     {
       "link": "https://www.vinted.fr/items/7844629440-aiguillage-lego-7895",
-      "price": null,
+      "price": {
+        "amount": 24.25,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1767174260,
       "uuid": "9b1152f8-d0dc-5c31-9e10-7774d4351d74"
     },
     {
       "link": "https://www.vinted.fr/items/8189675017-lego-vintage-parade-car-40913",
-      "price": null,
+      "price": {
+        "amount": 19.52,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771255675,
       "uuid": "8fd4fc29-7ef7-53e8-bb99-bcad7db1949b"
     },
     {
       "link": "https://www.vinted.fr/items/8130065610-lego-40153-decoration-pour-table-danniversaire",
-      "price": null,
+      "price": {
+        "amount": 19.53,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770562566,
       "uuid": "b5f1cc26-8782-5b2d-9fd4-377e48576b74"
     },
     {
       "link": "https://www.vinted.fr/items/7635955778-lego-duplo-30330-birthday-cake",
-      "price": null,
+      "price": {
+        "amount": 3.47,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1764069907,
       "uuid": "85f125a5-a244-580a-bc2b-3ca68f7313ce"
     },
     {
       "link": "https://www.vinted.fr/items/8010992712-lego-42031",
-      "price": null,
+      "price": {
+        "amount": 6.3,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1769204251,
       "uuid": "85d6aa8d-e8d9-5877-bb3c-0ca1db6d68ae"
     },
     {
       "link": "https://www.vinted.fr/items/8172465651-lego-city-40345-pack-de-figurines-de-lespace-laboratoire-de-lespace",
-      "price": null,
+      "price": {
+        "amount": 18.59,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771078811,
       "uuid": "7117c574-7dcc-5b47-a609-f51a094a8fdb"
     },
     {
       "link": "https://www.vinted.fr/items/8180938109-set-lego-10305-le-chateau-des-chevaliers-du-lion-neuf-et-scelle",
-      "price": null,
+      "price": {
+        "amount": 453.28,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771167339,
       "uuid": "251f1641-92b2-5e7d-af97-150db82175fc"
     },
     {
       "link": "https://www.vinted.fr/items/8100605826-lego-icons-le-bambou-de-la-chance-lorchidee-miniature",
-      "price": null,
+      "price": {
+        "amount": 56.38,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770226387,
       "uuid": "978aa70e-1a0d-5997-93e4-cac41afa3b80"
     },
     {
       "link": "https://www.vinted.fr/items/8137957333-mini-orchidee-lego-neuf",
-      "price": null,
+      "price": {
+        "amount": 21.42,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770646435,
       "uuid": "2b36fec6-3b63-57f2-ada4-7f023582dabd"
     },
     {
       "link": "https://www.vinted.fr/items/7953420420-lego-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 22.37,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1768514031,
       "uuid": "0b440a84-877c-519e-afec-cc0281d7e78e"
     },
     {
       "link": "https://www.vinted.fr/items/7531479067-lego-classic-plaque-de-base-bleue-10714",
-      "price": null,
+      "price": {
+        "amount": 10.08,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1762867991,
       "uuid": "0ef79489-b902-52e3-a2c9-0b6b2330ddc4"
     },
     {
       "link": "https://www.vinted.fr/items/7586487493-lego-city-30589",
-      "price": null,
+      "price": {
+        "amount": 5.36,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1763482192,
       "uuid": "449937ea-9526-5fc7-a655-230e00a61a82"
     },
     {
       "link": "https://www.vinted.fr/items/7929689936-lego-31002-neuf-et-scelle",
-      "price": null,
+      "price": {
+        "amount": 12.91,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1768222567,
       "uuid": "2e698ef3-79b8-5994-b4bd-80b7f37de5e1"
     },
     {
       "link": "https://www.vinted.fr/items/8162015676-lego-colecao-botanica-mini-orquidea",
-      "price": null,
+      "price": {
+        "amount": 24.25,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770929264,
       "uuid": "4d66df02-7967-53ad-a2ef-b7c782e024fd"
     },
     {
       "link": "https://www.vinted.fr/items/8077019617-lego-botanicals-mini-orchidee-10343",
-      "price": null,
+      "price": {
+        "amount": 22.37,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1769959254,
       "uuid": "3102b1a1-9156-50d4-ac9d-63d03a770107"
     },
     {
       "link": "https://www.vinted.fr/items/8084851313-lego-botanicals-10343-mini-orchidee",
-      "price": null,
+      "price": {
+        "amount": 24.25,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770043716,
       "uuid": "fa2e7148-19d2-5c33-93cc-647f5745e928"
     },
     {
       "link": "https://www.vinted.fr/items/8124815982-lego-botanicals-orquidea-em-miniatura-set-10343-novo-e-selado",
-      "price": null,
+      "price": {
+        "amount": 24.25,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770505170,
       "uuid": "83a49c88-603a-54e5-9ef7-f730eed68b98"
     },
     {
       "link": "https://www.vinted.fr/items/8131360331-lego-ninjago-entrainement-ninja",
-      "price": null,
+      "price": {
+        "amount": 14.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770567955,
       "uuid": "19fe6a9d-584f-5984-9606-dab18b2c46ca"
     },
     {
       "link": "https://www.vinted.fr/items/8141977356-lego-dreamzzz-30636-neuf",
-      "price": null,
+      "price": {
+        "amount": 3.28,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770678547,
       "uuid": "2b236370-8f74-543e-b8a0-588dc1622b81"
     },
     {
       "link": "https://www.vinted.fr/items/7823315824-lego-disney-40613-le-palais-agrabah",
-      "price": null,
+      "price": {
+        "amount": 37.48,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1766856815,
       "uuid": "811a29f7-2dc8-5e8a-96c0-6b7019d5943e"
     },
     {
       "link": "https://www.vinted.fr/items/8173396976-lego-6305",
-      "price": null,
+      "price": {
+        "amount": 71.51,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771084384,
       "uuid": "12b1e900-ec40-5b0b-85cf-426c7b0114e5"
     },
     {
       "link": "https://www.vinted.fr/items/7463511960-lego-polybag-spider-man",
-      "price": null,
+      "price": {
+        "amount": 6.3,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1762092638,
       "uuid": "3ea693a5-244f-5527-9ac5-b90ad75ca635"
     },
     {
       "link": "https://www.vinted.fr/items/7922763710-lego-set-10343-orquidea-em-miniatura",
-      "price": null,
+      "price": {
+        "amount": 22.37,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1768143144,
       "uuid": "0b78f617-543d-58b8-a940-f7fe8a64d368"
     },
     {
       "link": "https://www.vinted.fr/items/5816130026-lego-minifigures-disney-series-2-sally",
-      "price": null,
+      "price": {
+        "amount": 10.08,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1739553801,
       "uuid": "4f433d06-b84c-5789-8989-fed69805c2a9"
     },
     {
       "link": "https://www.vinted.fr/items/8083584123-lot-de-3-lego-botanique",
-      "price": null,
+      "price": {
+        "amount": 71.51,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770035288,
       "uuid": "144d0dac-2571-517c-81ab-5016af265464"
     },
     {
       "link": "https://www.vinted.fr/items/6873792416-lego-polybag-dr-strange",
-      "price": null,
+      "price": {
+        "amount": 5.36,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1755266611,
       "uuid": "405c6c30-d6ed-5840-bd79-7d501d9df309"
     },
     {
       "link": "https://www.vinted.fr/items/7654505363-lego-mc-laren-30683-speed-chanpion",
-      "price": null,
+      "price": {
+        "amount": 7.25,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1764317372,
       "uuid": "5c3a1e5e-73c5-5684-84a1-3a2bca692365"
     },
     {
       "link": "https://www.vinted.fr/items/8191335177-2011-lego-city-3658-police-helicopter-8n1ks",
-      "price": null,
+      "price": {
+        "amount": 104.58,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771265547,
       "uuid": "9d1ec326-30ab-5159-a695-7af7b275200c"
     },
     {
       "link": "https://www.vinted.fr/items/6620380598-lego-polybag-30614-dc-super-heroes-superman-lex-luthor",
-      "price": null,
+      "price": {
+        "amount": 11.03,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1751613896,
       "uuid": "b1d9d9a3-e1dd-5a0a-a8d7-9831b205b429"
     },
     {
       "link": "https://www.vinted.fr/items/5817655058-la-plaque-de-base-bleue-lego-classic-10714",
-      "price": null,
+      "price": {
+        "amount": 9.13,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1739610405,
       "uuid": "1595b698-4cb5-589b-9d22-22580f54b6f7"
     },
     {
       "link": "https://www.vinted.fr/items/8128999191-lego-creator",
-      "price": null,
+      "price": {
+        "amount": 14.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770558063,
       "uuid": "29c00483-4459-58b2-91ca-59f92fbdb519"
     },
     {
       "link": "https://www.vinted.fr/items/1440018076-lego-construction",
-      "price": null,
+      "price": {
+        "amount": 3.47,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1636796858,
       "uuid": "d4a36dfa-0028-524f-8a91-9d48039811e8"
     },
     {
       "link": "https://www.vinted.fr/items/8079478981-lego-10343",
-      "price": null,
+      "price": {
+        "amount": 21.42,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1769970721,
       "uuid": "6d90f17f-b3ca-588a-8678-aeb3e058a588"
     },
     {
       "link": "https://www.vinted.fr/items/6841439644-lego-city",
-      "price": null,
+      "price": {
+        "amount": 4.41,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1754760082,
       "uuid": "84eb99f4-3a01-5190-8bdd-888d734b8a77"
     },
     {
       "link": "https://www.vinted.fr/items/7831737090-lego-10343-mini-orquidea",
-      "price": null,
+      "price": {
+        "amount": 22.37,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1766965564,
       "uuid": "7ac5f8c4-5159-5a80-940e-5f8bb18e7666"
     },
     {
       "link": "https://www.vinted.fr/items/6952941162-lego-creator",
-      "price": null,
+      "price": {
+        "amount": 5.36,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1756297231,
       "uuid": "17386ff0-1916-5368-99f1-549950e1afd5"
     },
     {
       "link": "https://www.vinted.fr/items/8095169372-lego-10343-orquideas-botanical-pvp-fijo-25",
-      "price": null,
+      "price": {
+        "amount": 24.25,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770154193,
       "uuid": "96d93e96-51d8-5b66-9913-687ea86fdd51"
     },
     {
       "link": "https://www.vinted.fr/items/8184256808-lego-nexo-knights-brand-new-still-sealed-in-packaging",
-      "price": null,
+      "price": {
+        "amount": 8.18,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771184086,
       "uuid": "6cbe0f4d-79d0-5937-af62-bf7714823fef"
     },
     {
       "link": "https://www.vinted.fr/items/8116045809-lego-70335-nexo-knights-neuf",
-      "price": null,
+      "price": {
+        "amount": 8.19,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770410434,
       "uuid": "3f46aeb1-3321-5307-af11-a19be1eee0cd"
     },
     {
       "link": "https://www.vinted.fr/items/6982566184-lego-city-30352-voiture-de-police",
-      "price": null,
+      "price": {
+        "amount": 5.36,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1756644186,
       "uuid": "1778a6b2-fb5b-50a0-b511-a676d891b208"
     },
     {
       "link": "https://www.vinted.fr/items/7876609531-10343-miniorquidea-new",
-      "price": null,
+      "price": {
+        "amount": 23.22,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1767560565,
       "uuid": "2120f1cf-b29c-5a7c-b179-ac030fa460c6"
     },
     {
       "link": "https://www.vinted.fr/items/8163695862-lego-technic",
-      "price": null,
+      "price": {
+        "amount": 6.29,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770976794,
       "uuid": "6bba613a-fb58-5d90-b3f5-3509d4cc9f24"
     },
     {
       "link": "https://www.vinted.fr/items/8065064338-lego-orquidea-10343",
-      "price": null,
+      "price": {
+        "amount": 23.31,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1769863719,
       "uuid": "09cafed4-6128-594f-be5d-e9fe63584e97"
     },
     {
       "link": "https://www.vinted.fr/items/8189941673-lego-series-disney-71024-13-hades-novo-neufnuovonuevonieuwnew",
-      "price": null,
+      "price": {
+        "amount": 4.87,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1771257172,
       "uuid": "ab4991c0-4af9-549c-822e-8120a646a379"
     },
     {
       "link": "https://www.vinted.fr/items/4715684936-minifig-lego-serie-16-le-mariachi",
-      "price": null,
+      "price": {
+        "amount": 10.08,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1719944286,
       "uuid": "33381a1f-f5b7-5aeb-addc-b08989f734af"
     },
     {
       "link": "https://www.vinted.fr/items/7625917411-lego-mini-figurine-personnage-anglais-40308-sachet-scelle-neuf",
-      "price": null,
+      "price": {
+        "amount": 14.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1763927891,
       "uuid": "f603bdbd-fb84-540d-a0cc-f6098122a50a"
     },
     {
       "link": "https://www.vinted.fr/items/8103763140-lego-friends-flowers-ref-30634-neuf",
-      "price": null,
+      "price": {
+        "amount": 8.19,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770285074,
       "uuid": "10ee15da-02b3-5c86-a545-db4ae53144c6"
     },
     {
       "link": "https://www.vinted.fr/items/2421872712-minifigurines-lego-muppet-show",
-      "price": null,
+      "price": {
+        "amount": 3.47,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1668539226,
       "uuid": "bac04592-bdac-51a4-8d78-c2ff84cdfe77"
     },
     {
       "link": "https://www.vinted.fr/items/6467440486-lego-disney-100-ans-minifigure-jiminy-cricket",
-      "price": null,
+      "price": {
+        "amount": 8.19,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1749242672,
       "uuid": "84438244-756a-524a-b1ad-d0eedbf3539f"
     },
     {
       "link": "https://www.vinted.fr/items/8103319743-10343-lego-botanicals-mini-orchidea-nuovo",
-      "price": null,
+      "price": {
+        "amount": 28.98,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1770280300,
       "uuid": "b09439eb-eb61-57c8-b320-cfcf22f6c6ec"
     },
     {
       "link": "https://www.vinted.fr/items/8041188701-10343-mini-orchid-newsealed",
-      "price": null,
+      "price": {
+        "amount": 22.28,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1769535284,
       "uuid": "c2d80c5d-c7df-58a6-bf8b-cdac942b0c00"
     },
     {
       "link": "https://www.vinted.fr/items/4326023335-brique-lego",
-      "price": null,
+      "price": {
+        "amount": 8.19,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1712429443,
       "uuid": "bb733893-6749-56b1-b4b6-f35011ede553"
     },
     {
       "link": "https://www.vinted.fr/items/6684919587-lego-city",
-      "price": null,
+      "price": {
+        "amount": 5.36,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 21345",
       "published": 1752523956,
       "uuid": "c476f2d9-f3e9-52f8-9e5f-ff07f8ef5ba4"
@@ -5193,6 +5769,968 @@
       "title": "Lego creator 30389",
       "published": 1760816065,
       "uuid": "0fa10502-ad14-5228-a2eb-868eefac26f7"
+    }
+  ],
+  "31154": [
+    {
+      "link": "https://www.vinted.fr/items/8017525331-lego-31058-neuf-et-scelle",
+      "price": {
+        "amount": 12.32,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1769277568,
+      "uuid": "251637d5-9edc-51bd-9583-af8e36930b41"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8187107062-lego-orchidee",
+      "price": {
+        "amount": 26.18,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771239748,
+      "uuid": "e42a9d54-e7f8-524d-b25c-f9171e332c33"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8176786038-lego-super-heroes-mr-freeze",
+      "price": {
+        "amount": 12.32,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771146650,
+      "uuid": "a20900fb-4bcc-5241-b02a-a3716fe254c7"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8122945453-valisette-de-construction-lego-classic-4-99",
+      "price": {
+        "amount": 16.93,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770486686,
+      "uuid": "74136aa8-45c6-568a-bbe4-914f84946789"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8192303861-lego-creator-le-paons-3-en-1-neuf-dans-carton-dorigine",
+      "price": {
+        "amount": 21.56,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771272476,
+      "uuid": "b607da09-dd42-5e28-9577-86867b6ee2cc"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8182577458-lego-10343-botanicals",
+      "price": {
+        "amount": 23.87,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771174443,
+      "uuid": "7d066424-e007-5c7d-a068-8a7d80b5816e"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8176635927-lego-super-heroes-spiderman",
+      "price": {
+        "amount": 6.55,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771145304,
+      "uuid": "79351163-af10-59d6-9733-6f073a23a77b"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8175584815-lego-art-set-31214-love-sculpture-neuf-2025",
+      "price": {
+        "amount": 53.9,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771103127,
+      "uuid": "3309e45e-d921-5b09-8cac-ec84e8bd13dd"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8166043148-lego-botanique-10343-lorchidee-miniature-neuf",
+      "price": {
+        "amount": 26.64,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770995307,
+      "uuid": "fb2da5e6-c297-5d5b-b8cb-548119a67780"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8174852577-lego-minifigures-serie-23",
+      "price": {
+        "amount": 7.13,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771095041,
+      "uuid": "a964201e-5f30-5600-a0ca-f7932b49775b"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8191766542-lego-40913-vintage-parade-car",
+      "price": {
+        "amount": 29.65,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771268528,
+      "uuid": "1e872899-a871-52a2-8516-c5eb8b5a25c5"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8177904417-lego-spider-man",
+      "price": {
+        "amount": 14.63,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771153230,
+      "uuid": "7b5852ef-b277-5f05-a2d9-b51c010bdb49"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8153554579-lego-botanicals-ndeg-10343-mini-orchidee-neuf-avec-etiquette-25-eu",
+      "price": {
+        "amount": 29.65,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770827284,
+      "uuid": "c19ddca2-6ddc-5763-be2d-372aee21db5b"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8177968352-lego-10343",
+      "price": {
+        "amount": 10.01,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771153548,
+      "uuid": "26ee262d-4eb7-5130-a11b-e81063fd6588"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8019454629-lego-duplo-train-neuf",
+      "price": {
+        "amount": 11.17,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1769300652,
+      "uuid": "c7df99e9-b416-5a26-9f63-30660d6827a4"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8174831724-lego-minifigure",
+      "price": {
+        "amount": 7.13,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771094839,
+      "uuid": "0b901802-b3e9-56e7-ac73-2acb0ecb2990"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8190451433-lego-bonhomme-de-neige-40093",
+      "price": {
+        "amount": 12.32,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771260088,
+      "uuid": "15cac1c3-1cee-585f-a9c4-63e64fd2920c"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8097590317-lego-creator-le-perroquet-rose-neuf",
+      "price": {
+        "amount": 44.66,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770206293,
+      "uuid": "2d951f7c-3b80-5fbd-959a-e72f18dd9c25"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8174844676-lego-minifigures-muppets",
+      "price": {
+        "amount": 7.13,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771094962,
+      "uuid": "fe57db56-1d50-5a75-8b3c-200a7494d573"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8167143726-lego-10343-nuevo-sin-abrir-orquidea-planta-artificial-decoracion",
+      "price": {
+        "amount": 34.27,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771003695,
+      "uuid": "23ffe28d-c2e8-5e88-9c24-1578d4ed4461"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7463443690-lego-spider-man",
+      "price": {
+        "amount": 7.7,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1762092357,
+      "uuid": "c514a5b2-fc86-59a9-add0-353044b061f4"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8114023689-lego-3-en-1-6387808",
+      "price": {
+        "amount": 11.17,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770394154,
+      "uuid": "ee3e09d7-6c5c-56ab-b262-39a19b95e9ac"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8011060201-lego-botanicals-10343-orchidee-miniature-plante-deco-neuf",
+      "price": {
+        "amount": 35.31,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1769205231,
+      "uuid": "8c0874d7-5087-5fd6-8798-bbe72df667b0"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8149322325-genuine-lego-lester-minifigure-sealed-polybag-40308",
+      "price": {
+        "amount": 16.94,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770791662,
+      "uuid": "9ed209f4-8762-5afe-9ab7-1d4b33356115"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8182809356-lego-nexo-knight-70354",
+      "price": {
+        "amount": 35.42,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771175551,
+      "uuid": "ba3b605b-410f-5112-bfca-b616db2d5b21"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8175580574-lego-botanicals-10343-lorchidee-miniature",
+      "price": {
+        "amount": 31.96,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771103071,
+      "uuid": "b645c5c5-a486-5f76-9a29-7493d2c5eef0"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8155595148-lego-stranger-things-75810",
+      "price": {
+        "amount": 324.17,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770842658,
+      "uuid": "d437938c-39f9-560a-a65a-e44bfdea4711"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8163117455-lego-set-orchid-10343",
+      "price": {
+        "amount": 29.65,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770970317,
+      "uuid": "2b8c4bd4-f716-5d08-a277-25c98944b406"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8189231193-polybag-reference-30549-de-la-marque-lego",
+      "price": {
+        "amount": 6.55,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771253166,
+      "uuid": "094a3010-5e7e-5abf-a855-92f3863273f0"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8146460288-lego-10343-mini-orchid",
+      "price": {
+        "amount": 26.76,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770741908,
+      "uuid": "4f7ca49d-8ab7-5a22-9788-f1779eac2a58"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8071472004-lego-botanical-mini-orquidia",
+      "price": {
+        "amount": 29.65,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1769903238,
+      "uuid": "e98e20f6-f7c3-551d-b889-d9ca74203af9"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7995197864-lego-minifigurine-serie-19-col19-5",
+      "price": {
+        "amount": 4.24,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1769009985,
+      "uuid": "e4ce9ff8-957c-5aaa-8682-f128adc403f5"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8170886259-figurines-lego-71028-seconde-serie-harry-potter",
+      "price": {
+        "amount": 126.67,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771068657,
+      "uuid": "2b513335-8406-5a2a-9c11-7716fb7fa8cc"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7516877748-lego-creator-31033",
+      "price": {
+        "amount": 10.01,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1762706365,
+      "uuid": "56e14b34-5b67-54cd-a585-7e220c53c811"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8084908388-lego-mandalorian-pilot-sachet",
+      "price": {
+        "amount": 6.55,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770044083,
+      "uuid": "73348bc6-420e-5dd3-9d1e-6dbed7b7e9dc"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8160011281-love-lego-neuve-robert-indiana",
+      "price": {
+        "amount": 58.52,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770911116,
+      "uuid": "07cfdd58-c13e-5d3a-8612-f02e1e7eb320"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7614797110-lego-70347",
+      "price": {
+        "amount": 11.17,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1763831114,
+      "uuid": "8ad1e13f-9695-511a-8b1c-095ce8061933"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8082903243-lego-10343-la-mini-orchidee",
+      "price": {
+        "amount": 29.65,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770030285,
+      "uuid": "e2122add-5d83-5e27-aa34-2656fe5afb7f"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8115673321-lego-fleur-collection-botanique-plante-10343-mini-orchidee-orchid-flower-botanical",
+      "price": {
+        "amount": 35.31,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770406990,
+      "uuid": "004fb090-a347-5522-b920-08df2a6f004a"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8181873883-lego-marvel-polybag",
+      "price": {
+        "amount": 8.86,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771171324,
+      "uuid": "1ff037a0-4d1d-5071-9dc3-1792f4df81e3"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8099799161-lego-botanicals-10343-mini-orchid",
+      "price": {
+        "amount": 29.63,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770220984,
+      "uuid": "043bd085-df53-5773-8706-44905dd77a78"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8185074464-lego-mini-orchid",
+      "price": {
+        "amount": 29.65,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771190606,
+      "uuid": "7df25a40-6de5-5401-84de-9e64060de3a7"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8134570792-lego-f1-williams-10353",
+      "price": {
+        "amount": 70.07,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770588276,
+      "uuid": "df8f6daa-ceb0-5cd7-9348-755930f623c2"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7844629440-aiguillage-lego-7895",
+      "price": {
+        "amount": 29.65,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1767174260,
+      "uuid": "9b1152f8-d0dc-5c31-9e10-7774d4351d74"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8189675017-lego-vintage-parade-car-40913",
+      "price": {
+        "amount": 23.86,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771255675,
+      "uuid": "8fd4fc29-7ef7-53e8-bb99-bcad7db1949b"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8130065610-lego-40153-decoration-pour-table-danniversaire",
+      "price": {
+        "amount": 23.87,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770562566,
+      "uuid": "b5f1cc26-8782-5b2d-9fd4-377e48576b74"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7635955778-lego-duplo-30330-birthday-cake",
+      "price": {
+        "amount": 4.24,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1764069907,
+      "uuid": "85f125a5-a244-580a-bc2b-3ca68f7313ce"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8010992712-lego-42031",
+      "price": {
+        "amount": 7.7,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1769204251,
+      "uuid": "85d6aa8d-e8d9-5877-bb3c-0ca1db6d68ae"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8172465651-lego-city-40345-pack-de-figurines-de-lespace-laboratoire-de-lespace",
+      "price": {
+        "amount": 22.71,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771078811,
+      "uuid": "7117c574-7dcc-5b47-a609-f51a094a8fdb"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8180938109-set-lego-10305-le-chateau-des-chevaliers-du-lion-neuf-et-scelle",
+      "price": {
+        "amount": 554.01,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771167339,
+      "uuid": "251f1641-92b2-5e7d-af97-150db82175fc"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8100605826-lego-icons-le-bambou-de-la-chance-lorchidee-miniature",
+      "price": {
+        "amount": 68.92,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770226387,
+      "uuid": "978aa70e-1a0d-5997-93e4-cac41afa3b80"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8137957333-mini-orchidee-lego-neuf",
+      "price": {
+        "amount": 26.18,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770646435,
+      "uuid": "2b36fec6-3b63-57f2-ada4-7f023582dabd"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7953420420-lego-mini-orchid",
+      "price": {
+        "amount": 27.34,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1768514031,
+      "uuid": "0b440a84-877c-519e-afec-cc0281d7e78e"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7531479067-lego-classic-plaque-de-base-bleue-10714",
+      "price": {
+        "amount": 12.32,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1762867991,
+      "uuid": "0ef79489-b902-52e3-a2c9-0b6b2330ddc4"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7586487493-lego-city-30589",
+      "price": {
+        "amount": 6.55,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1763482192,
+      "uuid": "449937ea-9526-5fc7-a655-230e00a61a82"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7929689936-lego-31002-neuf-et-scelle",
+      "price": {
+        "amount": 15.79,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1768222567,
+      "uuid": "2e698ef3-79b8-5994-b4bd-80b7f37de5e1"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8162015676-lego-colecao-botanica-mini-orquidea",
+      "price": {
+        "amount": 29.65,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770929264,
+      "uuid": "4d66df02-7967-53ad-a2ef-b7c782e024fd"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8077019617-lego-botanicals-mini-orchidee-10343",
+      "price": {
+        "amount": 27.34,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1769959254,
+      "uuid": "3102b1a1-9156-50d4-ac9d-63d03a770107"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8084851313-lego-botanicals-10343-mini-orchidee",
+      "price": {
+        "amount": 29.65,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770043716,
+      "uuid": "fa2e7148-19d2-5c33-93cc-647f5745e928"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8124815982-lego-botanicals-orquidea-em-miniatura-set-10343-novo-e-selado",
+      "price": {
+        "amount": 29.65,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770505170,
+      "uuid": "83a49c88-603a-54e5-9ef7-f730eed68b98"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8131360331-lego-ninjago-entrainement-ninja",
+      "price": {
+        "amount": 18.1,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770567955,
+      "uuid": "19fe6a9d-584f-5984-9606-dab18b2c46ca"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8141977356-lego-dreamzzz-30636-neuf",
+      "price": {
+        "amount": 4,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770678547,
+      "uuid": "2b236370-8f74-543e-b8a0-588dc1622b81"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7823315824-lego-disney-40613-le-palais-agrabah",
+      "price": {
+        "amount": 45.82,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1766856815,
+      "uuid": "811a29f7-2dc8-5e8a-96c0-6b7019d5943e"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8173396976-lego-6305",
+      "price": {
+        "amount": 87.4,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771084384,
+      "uuid": "12b1e900-ec40-5b0b-85cf-426c7b0114e5"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7463511960-lego-polybag-spider-man",
+      "price": {
+        "amount": 7.7,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1762092638,
+      "uuid": "3ea693a5-244f-5527-9ac5-b90ad75ca635"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7922763710-lego-set-10343-orquidea-em-miniatura",
+      "price": {
+        "amount": 27.34,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1768143144,
+      "uuid": "0b78f617-543d-58b8-a940-f7fe8a64d368"
+    },
+    {
+      "link": "https://www.vinted.fr/items/5816130026-lego-minifigures-disney-series-2-sally",
+      "price": {
+        "amount": 12.32,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1739553801,
+      "uuid": "4f433d06-b84c-5789-8989-fed69805c2a9"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8083584123-lot-de-3-lego-botanique",
+      "price": {
+        "amount": 87.4,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770035288,
+      "uuid": "144d0dac-2571-517c-81ab-5016af265464"
+    },
+    {
+      "link": "https://www.vinted.fr/items/6873792416-lego-polybag-dr-strange",
+      "price": {
+        "amount": 6.55,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1755266611,
+      "uuid": "405c6c30-d6ed-5840-bd79-7d501d9df309"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7654505363-lego-mc-laren-30683-speed-chanpion",
+      "price": {
+        "amount": 8.86,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1764317372,
+      "uuid": "5c3a1e5e-73c5-5684-84a1-3a2bca692365"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8191335177-2011-lego-city-3658-police-helicopter-8n1ks",
+      "price": {
+        "amount": 127.82,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771265547,
+      "uuid": "9d1ec326-30ab-5159-a695-7af7b275200c"
+    },
+    {
+      "link": "https://www.vinted.fr/items/6620380598-lego-polybag-30614-dc-super-heroes-superman-lex-luthor",
+      "price": {
+        "amount": 13.48,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1751613896,
+      "uuid": "b1d9d9a3-e1dd-5a0a-a8d7-9831b205b429"
+    },
+    {
+      "link": "https://www.vinted.fr/items/5817655058-la-plaque-de-base-bleue-lego-classic-10714",
+      "price": {
+        "amount": 11.15,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1739610405,
+      "uuid": "1595b698-4cb5-589b-9d22-22580f54b6f7"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8128999191-lego-creator",
+      "price": {
+        "amount": 18.1,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770558063,
+      "uuid": "29c00483-4459-58b2-91ca-59f92fbdb519"
+    },
+    {
+      "link": "https://www.vinted.fr/items/1440018076-lego-construction",
+      "price": {
+        "amount": 4.24,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1636796858,
+      "uuid": "d4a36dfa-0028-524f-8a91-9d48039811e8"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8079478981-lego-10343",
+      "price": {
+        "amount": 26.18,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1769970721,
+      "uuid": "6d90f17f-b3ca-588a-8678-aeb3e058a588"
+    },
+    {
+      "link": "https://www.vinted.fr/items/6841439644-lego-city",
+      "price": {
+        "amount": 5.39,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1754760082,
+      "uuid": "84eb99f4-3a01-5190-8bdd-888d734b8a77"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7831737090-lego-10343-mini-orquidea",
+      "price": {
+        "amount": 27.34,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1766965564,
+      "uuid": "7ac5f8c4-5159-5a80-940e-5f8bb18e7666"
+    },
+    {
+      "link": "https://www.vinted.fr/items/6952941162-lego-creator",
+      "price": {
+        "amount": 6.55,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1756297231,
+      "uuid": "17386ff0-1916-5368-99f1-549950e1afd5"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8095169372-lego-10343-orquideas-botanical-pvp-fijo-25",
+      "price": {
+        "amount": 29.65,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770154193,
+      "uuid": "96d93e96-51d8-5b66-9913-687ea86fdd51"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8184256808-lego-nexo-knights-brand-new-still-sealed-in-packaging",
+      "price": {
+        "amount": 10,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771184086,
+      "uuid": "6cbe0f4d-79d0-5937-af62-bf7714823fef"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8116045809-lego-70335-nexo-knights-neuf",
+      "price": {
+        "amount": 10.01,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770410434,
+      "uuid": "3f46aeb1-3321-5307-af11-a19be1eee0cd"
+    },
+    {
+      "link": "https://www.vinted.fr/items/6982566184-lego-city-30352-voiture-de-police",
+      "price": {
+        "amount": 6.55,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1756644186,
+      "uuid": "1778a6b2-fb5b-50a0-b511-a676d891b208"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7876609531-10343-miniorquidea-new",
+      "price": {
+        "amount": 28.38,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1767560565,
+      "uuid": "2120f1cf-b29c-5a7c-b179-ac030fa460c6"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8163695862-lego-technic",
+      "price": {
+        "amount": 7.69,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770976794,
+      "uuid": "6bba613a-fb58-5d90-b3f5-3509d4cc9f24"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8065064338-lego-orquidea-10343",
+      "price": {
+        "amount": 28.49,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1769863719,
+      "uuid": "09cafed4-6128-594f-be5d-e9fe63584e97"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8189941673-lego-series-disney-71024-13-hades-novo-neufnuovonuevonieuwnew",
+      "price": {
+        "amount": 5.95,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1771257172,
+      "uuid": "ab4991c0-4af9-549c-822e-8120a646a379"
+    },
+    {
+      "link": "https://www.vinted.fr/items/4715684936-minifig-lego-serie-16-le-mariachi",
+      "price": {
+        "amount": 12.32,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1719944286,
+      "uuid": "33381a1f-f5b7-5aeb-addc-b08989f734af"
+    },
+    {
+      "link": "https://www.vinted.fr/items/7625917411-lego-mini-figurine-personnage-anglais-40308-sachet-scelle-neuf",
+      "price": {
+        "amount": 18.1,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1763927891,
+      "uuid": "f603bdbd-fb84-540d-a0cc-f6098122a50a"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8103763140-lego-friends-flowers-ref-30634-neuf",
+      "price": {
+        "amount": 10.01,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770285074,
+      "uuid": "10ee15da-02b3-5c86-a545-db4ae53144c6"
+    },
+    {
+      "link": "https://www.vinted.fr/items/2421872712-minifigurines-lego-muppet-show",
+      "price": {
+        "amount": 4.24,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1668539226,
+      "uuid": "bac04592-bdac-51a4-8d78-c2ff84cdfe77"
+    },
+    {
+      "link": "https://www.vinted.fr/items/6467440486-lego-disney-100-ans-minifigure-jiminy-cricket",
+      "price": {
+        "amount": 10.01,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1749242672,
+      "uuid": "84438244-756a-524a-b1ad-d0eedbf3539f"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8103319743-10343-lego-botanicals-mini-orchidea-nuovo",
+      "price": {
+        "amount": 35.42,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1770280300,
+      "uuid": "b09439eb-eb61-57c8-b320-cfcf22f6c6ec"
+    },
+    {
+      "link": "https://www.vinted.fr/items/8041188701-10343-mini-orchid-newsealed",
+      "price": {
+        "amount": 27.23,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1769535284,
+      "uuid": "c2d80c5d-c7df-58a6-bf8b-cdac942b0c00"
+    },
+    {
+      "link": "https://www.vinted.fr/items/4326023335-brique-lego",
+      "price": {
+        "amount": 10.01,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1712429443,
+      "uuid": "bb733893-6749-56b1-b4b6-f35011ede553"
+    },
+    {
+      "link": "https://www.vinted.fr/items/6684919587-lego-city",
+      "price": {
+        "amount": 6.55,
+        "currencyCode": "EUR"
+      },
+      "title": "Lego 31154",
+      "published": 1752523956,
+      "uuid": "c476f2d9-f3e9-52f8-9e5f-ff07f8ef5ba4"
     }
   ],
   "31162": [
@@ -10008,672 +11546,960 @@
   "40715": [
     {
       "link": "https://www.vinted.fr/items/8017525331-lego-31058-neuf-et-scelle",
-      "price": null,
+      "price": {
+        "amount": 8.96,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1769277568,
       "uuid": "251637d5-9edc-51bd-9583-af8e36930b41"
     },
     {
       "link": "https://www.vinted.fr/items/8187107062-lego-orchidee",
-      "price": null,
+      "price": {
+        "amount": 19.04,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771239748,
       "uuid": "e42a9d54-e7f8-524d-b25c-f9171e332c33"
     },
     {
       "link": "https://www.vinted.fr/items/8176786038-lego-super-heroes-mr-freeze",
-      "price": null,
+      "price": {
+        "amount": 8.96,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771146650,
       "uuid": "a20900fb-4bcc-5241-b02a-a3716fe254c7"
     },
     {
       "link": "https://www.vinted.fr/items/8122945453-valisette-de-construction-lego-classic-4-99",
-      "price": null,
+      "price": {
+        "amount": 12.31,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770486686,
       "uuid": "74136aa8-45c6-568a-bbe4-914f84946789"
     },
     {
       "link": "https://www.vinted.fr/items/8192303861-lego-creator-le-paons-3-en-1-neuf-dans-carton-dorigine",
-      "price": null,
+      "price": {
+        "amount": 15.68,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771272476,
       "uuid": "b607da09-dd42-5e28-9577-86867b6ee2cc"
     },
     {
       "link": "https://www.vinted.fr/items/8182577458-lego-10343-botanicals",
-      "price": null,
+      "price": {
+        "amount": 17.36,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771174443,
       "uuid": "7d066424-e007-5c7d-a068-8a7d80b5816e"
     },
     {
       "link": "https://www.vinted.fr/items/8176635927-lego-super-heroes-spiderman",
-      "price": null,
+      "price": {
+        "amount": 4.76,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771145304,
       "uuid": "79351163-af10-59d6-9733-6f073a23a77b"
     },
     {
       "link": "https://www.vinted.fr/items/8175584815-lego-art-set-31214-love-sculpture-neuf-2025",
-      "price": null,
+      "price": {
+        "amount": 39.2,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771103127,
       "uuid": "3309e45e-d921-5b09-8cac-ec84e8bd13dd"
     },
     {
       "link": "https://www.vinted.fr/items/8166043148-lego-botanique-10343-lorchidee-miniature-neuf",
-      "price": null,
+      "price": {
+        "amount": 19.38,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770995307,
       "uuid": "fb2da5e6-c297-5d5b-b8cb-548119a67780"
     },
     {
       "link": "https://www.vinted.fr/items/8174852577-lego-minifigures-serie-23",
-      "price": null,
+      "price": {
+        "amount": 5.18,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771095041,
       "uuid": "a964201e-5f30-5600-a0ca-f7932b49775b"
     },
     {
       "link": "https://www.vinted.fr/items/8191766542-lego-40913-vintage-parade-car",
-      "price": null,
+      "price": {
+        "amount": 21.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771268528,
       "uuid": "1e872899-a871-52a2-8516-c5eb8b5a25c5"
     },
     {
       "link": "https://www.vinted.fr/items/8177904417-lego-spider-man",
-      "price": null,
+      "price": {
+        "amount": 10.64,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771153230,
       "uuid": "7b5852ef-b277-5f05-a2d9-b51c010bdb49"
     },
     {
       "link": "https://www.vinted.fr/items/8153554579-lego-botanicals-ndeg-10343-mini-orchidee-neuf-avec-etiquette-25-eu",
-      "price": null,
+      "price": {
+        "amount": 21.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770827284,
       "uuid": "c19ddca2-6ddc-5763-be2d-372aee21db5b"
     },
     {
       "link": "https://www.vinted.fr/items/8177968352-lego-10343",
-      "price": null,
+      "price": {
+        "amount": 7.28,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771153548,
       "uuid": "26ee262d-4eb7-5130-a11b-e81063fd6588"
     },
     {
       "link": "https://www.vinted.fr/items/8019454629-lego-duplo-train-neuf",
-      "price": null,
+      "price": {
+        "amount": 8.12,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1769300652,
       "uuid": "c7df99e9-b416-5a26-9f63-30660d6827a4"
     },
     {
       "link": "https://www.vinted.fr/items/8174831724-lego-minifigure",
-      "price": null,
+      "price": {
+        "amount": 5.18,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771094839,
       "uuid": "0b901802-b3e9-56e7-ac73-2acb0ecb2990"
     },
     {
       "link": "https://www.vinted.fr/items/8190451433-lego-bonhomme-de-neige-40093",
-      "price": null,
+      "price": {
+        "amount": 8.96,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771260088,
       "uuid": "15cac1c3-1cee-585f-a9c4-63e64fd2920c"
     },
     {
       "link": "https://www.vinted.fr/items/8097590317-lego-creator-le-perroquet-rose-neuf",
-      "price": null,
+      "price": {
+        "amount": 32.48,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770206293,
       "uuid": "2d951f7c-3b80-5fbd-959a-e72f18dd9c25"
     },
     {
       "link": "https://www.vinted.fr/items/8174844676-lego-minifigures-muppets",
-      "price": null,
+      "price": {
+        "amount": 5.18,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771094962,
       "uuid": "fe57db56-1d50-5a75-8b3c-200a7494d573"
     },
     {
       "link": "https://www.vinted.fr/items/8167143726-lego-10343-nuevo-sin-abrir-orquidea-planta-artificial-decoracion",
-      "price": null,
+      "price": {
+        "amount": 24.92,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771003695,
       "uuid": "23ffe28d-c2e8-5e88-9c24-1578d4ed4461"
     },
     {
       "link": "https://www.vinted.fr/items/7463443690-lego-spider-man",
-      "price": null,
+      "price": {
+        "amount": 5.6,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1762092357,
       "uuid": "c514a5b2-fc86-59a9-add0-353044b061f4"
     },
     {
       "link": "https://www.vinted.fr/items/8114023689-lego-3-en-1-6387808",
-      "price": null,
+      "price": {
+        "amount": 8.12,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770394154,
       "uuid": "ee3e09d7-6c5c-56ab-b262-39a19b95e9ac"
     },
     {
       "link": "https://www.vinted.fr/items/8011060201-lego-botanicals-10343-orchidee-miniature-plante-deco-neuf",
-      "price": null,
+      "price": {
+        "amount": 25.68,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1769205231,
       "uuid": "8c0874d7-5087-5fd6-8798-bbe72df667b0"
     },
     {
       "link": "https://www.vinted.fr/items/8149322325-genuine-lego-lester-minifigure-sealed-polybag-40308",
-      "price": null,
+      "price": {
+        "amount": 12.32,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770791662,
       "uuid": "9ed209f4-8762-5afe-9ab7-1d4b33356115"
     },
     {
       "link": "https://www.vinted.fr/items/8182809356-lego-nexo-knight-70354",
-      "price": null,
+      "price": {
+        "amount": 25.76,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771175551,
       "uuid": "ba3b605b-410f-5112-bfca-b616db2d5b21"
     },
     {
       "link": "https://www.vinted.fr/items/8175580574-lego-botanicals-10343-lorchidee-miniature",
-      "price": null,
+      "price": {
+        "amount": 23.24,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771103071,
       "uuid": "b645c5c5-a486-5f76-9a29-7493d2c5eef0"
     },
     {
       "link": "https://www.vinted.fr/items/8155595148-lego-stranger-things-75810",
-      "price": null,
+      "price": {
+        "amount": 235.76,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770842658,
       "uuid": "d437938c-39f9-560a-a65a-e44bfdea4711"
     },
     {
       "link": "https://www.vinted.fr/items/8163117455-lego-set-orchid-10343",
-      "price": null,
+      "price": {
+        "amount": 21.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770970317,
       "uuid": "2b8c4bd4-f716-5d08-a277-25c98944b406"
     },
     {
       "link": "https://www.vinted.fr/items/8189231193-polybag-reference-30549-de-la-marque-lego",
-      "price": null,
+      "price": {
+        "amount": 4.76,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771253166,
       "uuid": "094a3010-5e7e-5abf-a855-92f3863273f0"
     },
     {
       "link": "https://www.vinted.fr/items/8146460288-lego-10343-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 19.46,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770741908,
       "uuid": "4f7ca49d-8ab7-5a22-9788-f1779eac2a58"
     },
     {
       "link": "https://www.vinted.fr/items/8071472004-lego-botanical-mini-orquidia",
-      "price": null,
+      "price": {
+        "amount": 21.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1769903238,
       "uuid": "e98e20f6-f7c3-551d-b889-d9ca74203af9"
     },
     {
       "link": "https://www.vinted.fr/items/7995197864-lego-minifigurine-serie-19-col19-5",
-      "price": null,
+      "price": {
+        "amount": 3.08,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1769009985,
       "uuid": "e4ce9ff8-957c-5aaa-8682-f128adc403f5"
     },
     {
       "link": "https://www.vinted.fr/items/8170886259-figurines-lego-71028-seconde-serie-harry-potter",
-      "price": null,
+      "price": {
+        "amount": 92.12,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771068657,
       "uuid": "2b513335-8406-5a2a-9c11-7716fb7fa8cc"
     },
     {
       "link": "https://www.vinted.fr/items/7516877748-lego-creator-31033",
-      "price": null,
+      "price": {
+        "amount": 7.28,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1762706365,
       "uuid": "56e14b34-5b67-54cd-a585-7e220c53c811"
     },
     {
       "link": "https://www.vinted.fr/items/8084908388-lego-mandalorian-pilot-sachet",
-      "price": null,
+      "price": {
+        "amount": 4.76,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770044083,
       "uuid": "73348bc6-420e-5dd3-9d1e-6dbed7b7e9dc"
     },
     {
       "link": "https://www.vinted.fr/items/8160011281-love-lego-neuve-robert-indiana",
-      "price": null,
+      "price": {
+        "amount": 42.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770911116,
       "uuid": "07cfdd58-c13e-5d3a-8612-f02e1e7eb320"
     },
     {
       "link": "https://www.vinted.fr/items/7614797110-lego-70347",
-      "price": null,
+      "price": {
+        "amount": 8.12,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1763831114,
       "uuid": "8ad1e13f-9695-511a-8b1c-095ce8061933"
     },
     {
       "link": "https://www.vinted.fr/items/8082903243-lego-10343-la-mini-orchidee",
-      "price": null,
+      "price": {
+        "amount": 21.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770030285,
       "uuid": "e2122add-5d83-5e27-aa34-2656fe5afb7f"
     },
     {
       "link": "https://www.vinted.fr/items/8115673321-lego-fleur-collection-botanique-plante-10343-mini-orchidee-orchid-flower-botanical",
-      "price": null,
+      "price": {
+        "amount": 25.68,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770406990,
       "uuid": "004fb090-a347-5522-b920-08df2a6f004a"
     },
     {
       "link": "https://www.vinted.fr/items/8181873883-lego-marvel-polybag",
-      "price": null,
+      "price": {
+        "amount": 6.44,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771171324,
       "uuid": "1ff037a0-4d1d-5071-9dc3-1792f4df81e3"
     },
     {
       "link": "https://www.vinted.fr/items/8099799161-lego-botanicals-10343-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 21.55,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770220984,
       "uuid": "043bd085-df53-5773-8706-44905dd77a78"
     },
     {
       "link": "https://www.vinted.fr/items/8185074464-lego-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 21.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771190606,
       "uuid": "7df25a40-6de5-5401-84de-9e64060de3a7"
     },
     {
       "link": "https://www.vinted.fr/items/8134570792-lego-f1-williams-10353",
-      "price": null,
+      "price": {
+        "amount": 50.96,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770588276,
       "uuid": "df8f6daa-ceb0-5cd7-9348-755930f623c2"
     },
     {
       "link": "https://www.vinted.fr/items/7844629440-aiguillage-lego-7895",
-      "price": null,
+      "price": {
+        "amount": 21.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1767174260,
       "uuid": "9b1152f8-d0dc-5c31-9e10-7774d4351d74"
     },
     {
       "link": "https://www.vinted.fr/items/8189675017-lego-vintage-parade-car-40913",
-      "price": null,
+      "price": {
+        "amount": 17.35,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771255675,
       "uuid": "8fd4fc29-7ef7-53e8-bb99-bcad7db1949b"
     },
     {
       "link": "https://www.vinted.fr/items/8130065610-lego-40153-decoration-pour-table-danniversaire",
-      "price": null,
+      "price": {
+        "amount": 17.36,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770562566,
       "uuid": "b5f1cc26-8782-5b2d-9fd4-377e48576b74"
     },
     {
       "link": "https://www.vinted.fr/items/7635955778-lego-duplo-30330-birthday-cake",
-      "price": null,
+      "price": {
+        "amount": 3.08,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1764069907,
       "uuid": "85f125a5-a244-580a-bc2b-3ca68f7313ce"
     },
     {
       "link": "https://www.vinted.fr/items/8010992712-lego-42031",
-      "price": null,
+      "price": {
+        "amount": 5.6,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1769204251,
       "uuid": "85d6aa8d-e8d9-5877-bb3c-0ca1db6d68ae"
     },
     {
       "link": "https://www.vinted.fr/items/8172465651-lego-city-40345-pack-de-figurines-de-lespace-laboratoire-de-lespace",
-      "price": null,
+      "price": {
+        "amount": 16.52,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771078811,
       "uuid": "7117c574-7dcc-5b47-a609-f51a094a8fdb"
     },
     {
       "link": "https://www.vinted.fr/items/8180938109-set-lego-10305-le-chateau-des-chevaliers-du-lion-neuf-et-scelle",
-      "price": null,
+      "price": {
+        "amount": 402.92,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771167339,
       "uuid": "251f1641-92b2-5e7d-af97-150db82175fc"
     },
     {
       "link": "https://www.vinted.fr/items/8100605826-lego-icons-le-bambou-de-la-chance-lorchidee-miniature",
-      "price": null,
+      "price": {
+        "amount": 50.12,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770226387,
       "uuid": "978aa70e-1a0d-5997-93e4-cac41afa3b80"
     },
     {
       "link": "https://www.vinted.fr/items/8137957333-mini-orchidee-lego-neuf",
-      "price": null,
+      "price": {
+        "amount": 19.04,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770646435,
       "uuid": "2b36fec6-3b63-57f2-ada4-7f023582dabd"
     },
     {
       "link": "https://www.vinted.fr/items/7953420420-lego-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 19.88,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1768514031,
       "uuid": "0b440a84-877c-519e-afec-cc0281d7e78e"
     },
     {
       "link": "https://www.vinted.fr/items/7531479067-lego-classic-plaque-de-base-bleue-10714",
-      "price": null,
+      "price": {
+        "amount": 8.96,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1762867991,
       "uuid": "0ef79489-b902-52e3-a2c9-0b6b2330ddc4"
     },
     {
       "link": "https://www.vinted.fr/items/7586487493-lego-city-30589",
-      "price": null,
+      "price": {
+        "amount": 4.76,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1763482192,
       "uuid": "449937ea-9526-5fc7-a655-230e00a61a82"
     },
     {
       "link": "https://www.vinted.fr/items/7929689936-lego-31002-neuf-et-scelle",
-      "price": null,
+      "price": {
+        "amount": 11.48,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1768222567,
       "uuid": "2e698ef3-79b8-5994-b4bd-80b7f37de5e1"
     },
     {
       "link": "https://www.vinted.fr/items/8162015676-lego-colecao-botanica-mini-orquidea",
-      "price": null,
+      "price": {
+        "amount": 21.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770929264,
       "uuid": "4d66df02-7967-53ad-a2ef-b7c782e024fd"
     },
     {
       "link": "https://www.vinted.fr/items/8077019617-lego-botanicals-mini-orchidee-10343",
-      "price": null,
+      "price": {
+        "amount": 19.88,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1769959254,
       "uuid": "3102b1a1-9156-50d4-ac9d-63d03a770107"
     },
     {
       "link": "https://www.vinted.fr/items/8084851313-lego-botanicals-10343-mini-orchidee",
-      "price": null,
+      "price": {
+        "amount": 21.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770043716,
       "uuid": "fa2e7148-19d2-5c33-93cc-647f5745e928"
     },
     {
       "link": "https://www.vinted.fr/items/8124815982-lego-botanicals-orquidea-em-miniatura-set-10343-novo-e-selado",
-      "price": null,
+      "price": {
+        "amount": 21.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770505170,
       "uuid": "83a49c88-603a-54e5-9ef7-f730eed68b98"
     },
     {
       "link": "https://www.vinted.fr/items/8131360331-lego-ninjago-entrainement-ninja",
-      "price": null,
+      "price": {
+        "amount": 13.16,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770567955,
       "uuid": "19fe6a9d-584f-5984-9606-dab18b2c46ca"
     },
     {
       "link": "https://www.vinted.fr/items/8141977356-lego-dreamzzz-30636-neuf",
-      "price": null,
+      "price": {
+        "amount": 2.91,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770678547,
       "uuid": "2b236370-8f74-543e-b8a0-588dc1622b81"
     },
     {
       "link": "https://www.vinted.fr/items/7823315824-lego-disney-40613-le-palais-agrabah",
-      "price": null,
+      "price": {
+        "amount": 33.32,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1766856815,
       "uuid": "811a29f7-2dc8-5e8a-96c0-6b7019d5943e"
     },
     {
       "link": "https://www.vinted.fr/items/8173396976-lego-6305",
-      "price": null,
+      "price": {
+        "amount": 63.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771084384,
       "uuid": "12b1e900-ec40-5b0b-85cf-426c7b0114e5"
     },
     {
       "link": "https://www.vinted.fr/items/7463511960-lego-polybag-spider-man",
-      "price": null,
+      "price": {
+        "amount": 5.6,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1762092638,
       "uuid": "3ea693a5-244f-5527-9ac5-b90ad75ca635"
     },
     {
       "link": "https://www.vinted.fr/items/7922763710-lego-set-10343-orquidea-em-miniatura",
-      "price": null,
+      "price": {
+        "amount": 19.88,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1768143144,
       "uuid": "0b78f617-543d-58b8-a940-f7fe8a64d368"
     },
     {
       "link": "https://www.vinted.fr/items/5816130026-lego-minifigures-disney-series-2-sally",
-      "price": null,
+      "price": {
+        "amount": 8.96,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1739553801,
       "uuid": "4f433d06-b84c-5789-8989-fed69805c2a9"
     },
     {
       "link": "https://www.vinted.fr/items/8083584123-lot-de-3-lego-botanique",
-      "price": null,
+      "price": {
+        "amount": 63.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770035288,
       "uuid": "144d0dac-2571-517c-81ab-5016af265464"
     },
     {
       "link": "https://www.vinted.fr/items/6873792416-lego-polybag-dr-strange",
-      "price": null,
+      "price": {
+        "amount": 4.76,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1755266611,
       "uuid": "405c6c30-d6ed-5840-bd79-7d501d9df309"
     },
     {
       "link": "https://www.vinted.fr/items/7654505363-lego-mc-laren-30683-speed-chanpion",
-      "price": null,
+      "price": {
+        "amount": 6.44,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1764317372,
       "uuid": "5c3a1e5e-73c5-5684-84a1-3a2bca692365"
     },
     {
       "link": "https://www.vinted.fr/items/8191335177-2011-lego-city-3658-police-helicopter-8n1ks",
-      "price": null,
+      "price": {
+        "amount": 92.96,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771265547,
       "uuid": "9d1ec326-30ab-5159-a695-7af7b275200c"
     },
     {
       "link": "https://www.vinted.fr/items/6620380598-lego-polybag-30614-dc-super-heroes-superman-lex-luthor",
-      "price": null,
+      "price": {
+        "amount": 9.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1751613896,
       "uuid": "b1d9d9a3-e1dd-5a0a-a8d7-9831b205b429"
     },
     {
       "link": "https://www.vinted.fr/items/5817655058-la-plaque-de-base-bleue-lego-classic-10714",
-      "price": null,
+      "price": {
+        "amount": 8.11,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1739610405,
       "uuid": "1595b698-4cb5-589b-9d22-22580f54b6f7"
     },
     {
       "link": "https://www.vinted.fr/items/8128999191-lego-creator",
-      "price": null,
+      "price": {
+        "amount": 13.16,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770558063,
       "uuid": "29c00483-4459-58b2-91ca-59f92fbdb519"
     },
     {
       "link": "https://www.vinted.fr/items/1440018076-lego-construction",
-      "price": null,
+      "price": {
+        "amount": 3.08,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1636796858,
       "uuid": "d4a36dfa-0028-524f-8a91-9d48039811e8"
     },
     {
       "link": "https://www.vinted.fr/items/8079478981-lego-10343",
-      "price": null,
+      "price": {
+        "amount": 19.04,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1769970721,
       "uuid": "6d90f17f-b3ca-588a-8678-aeb3e058a588"
     },
     {
       "link": "https://www.vinted.fr/items/6841439644-lego-city",
-      "price": null,
+      "price": {
+        "amount": 3.92,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1754760082,
       "uuid": "84eb99f4-3a01-5190-8bdd-888d734b8a77"
     },
     {
       "link": "https://www.vinted.fr/items/7831737090-lego-10343-mini-orquidea",
-      "price": null,
+      "price": {
+        "amount": 19.88,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1766965564,
       "uuid": "7ac5f8c4-5159-5a80-940e-5f8bb18e7666"
     },
     {
       "link": "https://www.vinted.fr/items/6952941162-lego-creator",
-      "price": null,
+      "price": {
+        "amount": 4.76,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1756297231,
       "uuid": "17386ff0-1916-5368-99f1-549950e1afd5"
     },
     {
       "link": "https://www.vinted.fr/items/8095169372-lego-10343-orquideas-botanical-pvp-fijo-25",
-      "price": null,
+      "price": {
+        "amount": 21.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770154193,
       "uuid": "96d93e96-51d8-5b66-9913-687ea86fdd51"
     },
     {
       "link": "https://www.vinted.fr/items/8184256808-lego-nexo-knights-brand-new-still-sealed-in-packaging",
-      "price": null,
+      "price": {
+        "amount": 7.27,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771184086,
       "uuid": "6cbe0f4d-79d0-5937-af62-bf7714823fef"
     },
     {
       "link": "https://www.vinted.fr/items/8116045809-lego-70335-nexo-knights-neuf",
-      "price": null,
+      "price": {
+        "amount": 7.28,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770410434,
       "uuid": "3f46aeb1-3321-5307-af11-a19be1eee0cd"
     },
     {
       "link": "https://www.vinted.fr/items/6982566184-lego-city-30352-voiture-de-police",
-      "price": null,
+      "price": {
+        "amount": 4.76,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1756644186,
       "uuid": "1778a6b2-fb5b-50a0-b511-a676d891b208"
     },
     {
       "link": "https://www.vinted.fr/items/7876609531-10343-miniorquidea-new",
-      "price": null,
+      "price": {
+        "amount": 20.64,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1767560565,
       "uuid": "2120f1cf-b29c-5a7c-b179-ac030fa460c6"
     },
     {
       "link": "https://www.vinted.fr/items/8163695862-lego-technic",
-      "price": null,
+      "price": {
+        "amount": 5.59,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770976794,
       "uuid": "6bba613a-fb58-5d90-b3f5-3509d4cc9f24"
     },
     {
       "link": "https://www.vinted.fr/items/8065064338-lego-orquidea-10343",
-      "price": null,
+      "price": {
+        "amount": 20.72,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1769863719,
       "uuid": "09cafed4-6128-594f-be5d-e9fe63584e97"
     },
     {
       "link": "https://www.vinted.fr/items/8189941673-lego-series-disney-71024-13-hades-novo-neufnuovonuevonieuwnew",
-      "price": null,
+      "price": {
+        "amount": 4.33,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1771257172,
       "uuid": "ab4991c0-4af9-549c-822e-8120a646a379"
     },
     {
       "link": "https://www.vinted.fr/items/4715684936-minifig-lego-serie-16-le-mariachi",
-      "price": null,
+      "price": {
+        "amount": 8.96,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1719944286,
       "uuid": "33381a1f-f5b7-5aeb-addc-b08989f734af"
     },
     {
       "link": "https://www.vinted.fr/items/7625917411-lego-mini-figurine-personnage-anglais-40308-sachet-scelle-neuf",
-      "price": null,
+      "price": {
+        "amount": 13.16,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1763927891,
       "uuid": "f603bdbd-fb84-540d-a0cc-f6098122a50a"
     },
     {
       "link": "https://www.vinted.fr/items/8103763140-lego-friends-flowers-ref-30634-neuf",
-      "price": null,
+      "price": {
+        "amount": 7.28,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770285074,
       "uuid": "10ee15da-02b3-5c86-a545-db4ae53144c6"
     },
     {
       "link": "https://www.vinted.fr/items/2421872712-minifigurines-lego-muppet-show",
-      "price": null,
+      "price": {
+        "amount": 3.08,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1668539226,
       "uuid": "bac04592-bdac-51a4-8d78-c2ff84cdfe77"
     },
     {
       "link": "https://www.vinted.fr/items/6467440486-lego-disney-100-ans-minifigure-jiminy-cricket",
-      "price": null,
+      "price": {
+        "amount": 7.28,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1749242672,
       "uuid": "84438244-756a-524a-b1ad-d0eedbf3539f"
     },
     {
       "link": "https://www.vinted.fr/items/8103319743-10343-lego-botanicals-mini-orchidea-nuovo",
-      "price": null,
+      "price": {
+        "amount": 25.76,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1770280300,
       "uuid": "b09439eb-eb61-57c8-b320-cfcf22f6c6ec"
     },
     {
       "link": "https://www.vinted.fr/items/8041188701-10343-mini-orchid-newsealed",
-      "price": null,
+      "price": {
+        "amount": 19.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1769535284,
       "uuid": "c2d80c5d-c7df-58a6-bf8b-cdac942b0c00"
     },
     {
       "link": "https://www.vinted.fr/items/4326023335-brique-lego",
-      "price": null,
+      "price": {
+        "amount": 7.28,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1712429443,
       "uuid": "bb733893-6749-56b1-b4b6-f35011ede553"
     },
     {
       "link": "https://www.vinted.fr/items/6684919587-lego-city",
-      "price": null,
+      "price": {
+        "amount": 4.76,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 40715",
       "published": 1752523956,
       "uuid": "c476f2d9-f3e9-52f8-9e5f-ff07f8ef5ba4"
@@ -15492,672 +17318,960 @@
   "43247": [
     {
       "link": "https://www.vinted.fr/items/8017525331-lego-31058-neuf-et-scelle",
-      "price": null,
+      "price": {
+        "amount": 13.44,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1769277568,
       "uuid": "251637d5-9edc-51bd-9583-af8e36930b41"
     },
     {
       "link": "https://www.vinted.fr/items/8187107062-lego-orchidee",
-      "price": null,
+      "price": {
+        "amount": 28.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771239748,
       "uuid": "e42a9d54-e7f8-524d-b25c-f9171e332c33"
     },
     {
       "link": "https://www.vinted.fr/items/8176786038-lego-super-heroes-mr-freeze",
-      "price": null,
+      "price": {
+        "amount": 13.44,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771146650,
       "uuid": "a20900fb-4bcc-5241-b02a-a3716fe254c7"
     },
     {
       "link": "https://www.vinted.fr/items/8122945453-valisette-de-construction-lego-classic-4-99",
-      "price": null,
+      "price": {
+        "amount": 18.47,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770486686,
       "uuid": "74136aa8-45c6-568a-bbe4-914f84946789"
     },
     {
       "link": "https://www.vinted.fr/items/8192303861-lego-creator-le-paons-3-en-1-neuf-dans-carton-dorigine",
-      "price": null,
+      "price": {
+        "amount": 23.52,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771272476,
       "uuid": "b607da09-dd42-5e28-9577-86867b6ee2cc"
     },
     {
       "link": "https://www.vinted.fr/items/8182577458-lego-10343-botanicals",
-      "price": null,
+      "price": {
+        "amount": 26.04,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771174443,
       "uuid": "7d066424-e007-5c7d-a068-8a7d80b5816e"
     },
     {
       "link": "https://www.vinted.fr/items/8176635927-lego-super-heroes-spiderman",
-      "price": null,
+      "price": {
+        "amount": 7.14,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771145304,
       "uuid": "79351163-af10-59d6-9733-6f073a23a77b"
     },
     {
       "link": "https://www.vinted.fr/items/8175584815-lego-art-set-31214-love-sculpture-neuf-2025",
-      "price": null,
+      "price": {
+        "amount": 58.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771103127,
       "uuid": "3309e45e-d921-5b09-8cac-ec84e8bd13dd"
     },
     {
       "link": "https://www.vinted.fr/items/8166043148-lego-botanique-10343-lorchidee-miniature-neuf",
-      "price": null,
+      "price": {
+        "amount": 29.06,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770995307,
       "uuid": "fb2da5e6-c297-5d5b-b8cb-548119a67780"
     },
     {
       "link": "https://www.vinted.fr/items/8174852577-lego-minifigures-serie-23",
-      "price": null,
+      "price": {
+        "amount": 7.78,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771095041,
       "uuid": "a964201e-5f30-5600-a0ca-f7932b49775b"
     },
     {
       "link": "https://www.vinted.fr/items/8191766542-lego-40913-vintage-parade-car",
-      "price": null,
+      "price": {
+        "amount": 32.34,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771268528,
       "uuid": "1e872899-a871-52a2-8516-c5eb8b5a25c5"
     },
     {
       "link": "https://www.vinted.fr/items/8177904417-lego-spider-man",
-      "price": null,
+      "price": {
+        "amount": 15.96,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771153230,
       "uuid": "7b5852ef-b277-5f05-a2d9-b51c010bdb49"
     },
     {
       "link": "https://www.vinted.fr/items/8153554579-lego-botanicals-ndeg-10343-mini-orchidee-neuf-avec-etiquette-25-eu",
-      "price": null,
+      "price": {
+        "amount": 32.34,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770827284,
       "uuid": "c19ddca2-6ddc-5763-be2d-372aee21db5b"
     },
     {
       "link": "https://www.vinted.fr/items/8177968352-lego-10343",
-      "price": null,
+      "price": {
+        "amount": 10.92,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771153548,
       "uuid": "26ee262d-4eb7-5130-a11b-e81063fd6588"
     },
     {
       "link": "https://www.vinted.fr/items/8019454629-lego-duplo-train-neuf",
-      "price": null,
+      "price": {
+        "amount": 12.18,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1769300652,
       "uuid": "c7df99e9-b416-5a26-9f63-30660d6827a4"
     },
     {
       "link": "https://www.vinted.fr/items/8174831724-lego-minifigure",
-      "price": null,
+      "price": {
+        "amount": 7.78,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771094839,
       "uuid": "0b901802-b3e9-56e7-ac73-2acb0ecb2990"
     },
     {
       "link": "https://www.vinted.fr/items/8190451433-lego-bonhomme-de-neige-40093",
-      "price": null,
+      "price": {
+        "amount": 13.44,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771260088,
       "uuid": "15cac1c3-1cee-585f-a9c4-63e64fd2920c"
     },
     {
       "link": "https://www.vinted.fr/items/8097590317-lego-creator-le-perroquet-rose-neuf",
-      "price": null,
+      "price": {
+        "amount": 48.72,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770206293,
       "uuid": "2d951f7c-3b80-5fbd-959a-e72f18dd9c25"
     },
     {
       "link": "https://www.vinted.fr/items/8174844676-lego-minifigures-muppets",
-      "price": null,
+      "price": {
+        "amount": 7.78,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771094962,
       "uuid": "fe57db56-1d50-5a75-8b3c-200a7494d573"
     },
     {
       "link": "https://www.vinted.fr/items/8167143726-lego-10343-nuevo-sin-abrir-orquidea-planta-artificial-decoracion",
-      "price": null,
+      "price": {
+        "amount": 37.38,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771003695,
       "uuid": "23ffe28d-c2e8-5e88-9c24-1578d4ed4461"
     },
     {
       "link": "https://www.vinted.fr/items/7463443690-lego-spider-man",
-      "price": null,
+      "price": {
+        "amount": 8.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1762092357,
       "uuid": "c514a5b2-fc86-59a9-add0-353044b061f4"
     },
     {
       "link": "https://www.vinted.fr/items/8114023689-lego-3-en-1-6387808",
-      "price": null,
+      "price": {
+        "amount": 12.18,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770394154,
       "uuid": "ee3e09d7-6c5c-56ab-b262-39a19b95e9ac"
     },
     {
       "link": "https://www.vinted.fr/items/8011060201-lego-botanicals-10343-orchidee-miniature-plante-deco-neuf",
-      "price": null,
+      "price": {
+        "amount": 38.52,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1769205231,
       "uuid": "8c0874d7-5087-5fd6-8798-bbe72df667b0"
     },
     {
       "link": "https://www.vinted.fr/items/8149322325-genuine-lego-lester-minifigure-sealed-polybag-40308",
-      "price": null,
+      "price": {
+        "amount": 18.48,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770791662,
       "uuid": "9ed209f4-8762-5afe-9ab7-1d4b33356115"
     },
     {
       "link": "https://www.vinted.fr/items/8182809356-lego-nexo-knight-70354",
-      "price": null,
+      "price": {
+        "amount": 38.64,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771175551,
       "uuid": "ba3b605b-410f-5112-bfca-b616db2d5b21"
     },
     {
       "link": "https://www.vinted.fr/items/8175580574-lego-botanicals-10343-lorchidee-miniature",
-      "price": null,
+      "price": {
+        "amount": 34.86,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771103071,
       "uuid": "b645c5c5-a486-5f76-9a29-7493d2c5eef0"
     },
     {
       "link": "https://www.vinted.fr/items/8155595148-lego-stranger-things-75810",
-      "price": null,
+      "price": {
+        "amount": 353.64,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770842658,
       "uuid": "d437938c-39f9-560a-a65a-e44bfdea4711"
     },
     {
       "link": "https://www.vinted.fr/items/8163117455-lego-set-orchid-10343",
-      "price": null,
+      "price": {
+        "amount": 32.34,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770970317,
       "uuid": "2b8c4bd4-f716-5d08-a277-25c98944b406"
     },
     {
       "link": "https://www.vinted.fr/items/8189231193-polybag-reference-30549-de-la-marque-lego",
-      "price": null,
+      "price": {
+        "amount": 7.14,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771253166,
       "uuid": "094a3010-5e7e-5abf-a855-92f3863273f0"
     },
     {
       "link": "https://www.vinted.fr/items/8146460288-lego-10343-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 29.2,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770741908,
       "uuid": "4f7ca49d-8ab7-5a22-9788-f1779eac2a58"
     },
     {
       "link": "https://www.vinted.fr/items/8071472004-lego-botanical-mini-orquidia",
-      "price": null,
+      "price": {
+        "amount": 32.34,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1769903238,
       "uuid": "e98e20f6-f7c3-551d-b889-d9ca74203af9"
     },
     {
       "link": "https://www.vinted.fr/items/7995197864-lego-minifigurine-serie-19-col19-5",
-      "price": null,
+      "price": {
+        "amount": 4.62,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1769009985,
       "uuid": "e4ce9ff8-957c-5aaa-8682-f128adc403f5"
     },
     {
       "link": "https://www.vinted.fr/items/8170886259-figurines-lego-71028-seconde-serie-harry-potter",
-      "price": null,
+      "price": {
+        "amount": 138.18,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771068657,
       "uuid": "2b513335-8406-5a2a-9c11-7716fb7fa8cc"
     },
     {
       "link": "https://www.vinted.fr/items/7516877748-lego-creator-31033",
-      "price": null,
+      "price": {
+        "amount": 10.92,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1762706365,
       "uuid": "56e14b34-5b67-54cd-a585-7e220c53c811"
     },
     {
       "link": "https://www.vinted.fr/items/8084908388-lego-mandalorian-pilot-sachet",
-      "price": null,
+      "price": {
+        "amount": 7.14,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770044083,
       "uuid": "73348bc6-420e-5dd3-9d1e-6dbed7b7e9dc"
     },
     {
       "link": "https://www.vinted.fr/items/8160011281-love-lego-neuve-robert-indiana",
-      "price": null,
+      "price": {
+        "amount": 63.84,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770911116,
       "uuid": "07cfdd58-c13e-5d3a-8612-f02e1e7eb320"
     },
     {
       "link": "https://www.vinted.fr/items/7614797110-lego-70347",
-      "price": null,
+      "price": {
+        "amount": 12.18,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1763831114,
       "uuid": "8ad1e13f-9695-511a-8b1c-095ce8061933"
     },
     {
       "link": "https://www.vinted.fr/items/8082903243-lego-10343-la-mini-orchidee",
-      "price": null,
+      "price": {
+        "amount": 32.34,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770030285,
       "uuid": "e2122add-5d83-5e27-aa34-2656fe5afb7f"
     },
     {
       "link": "https://www.vinted.fr/items/8115673321-lego-fleur-collection-botanique-plante-10343-mini-orchidee-orchid-flower-botanical",
-      "price": null,
+      "price": {
+        "amount": 38.52,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770406990,
       "uuid": "004fb090-a347-5522-b920-08df2a6f004a"
     },
     {
       "link": "https://www.vinted.fr/items/8181873883-lego-marvel-polybag",
-      "price": null,
+      "price": {
+        "amount": 9.66,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771171324,
       "uuid": "1ff037a0-4d1d-5071-9dc3-1792f4df81e3"
     },
     {
       "link": "https://www.vinted.fr/items/8099799161-lego-botanicals-10343-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 32.33,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770220984,
       "uuid": "043bd085-df53-5773-8706-44905dd77a78"
     },
     {
       "link": "https://www.vinted.fr/items/8185074464-lego-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 32.34,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771190606,
       "uuid": "7df25a40-6de5-5401-84de-9e64060de3a7"
     },
     {
       "link": "https://www.vinted.fr/items/8134570792-lego-f1-williams-10353",
-      "price": null,
+      "price": {
+        "amount": 76.44,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770588276,
       "uuid": "df8f6daa-ceb0-5cd7-9348-755930f623c2"
     },
     {
       "link": "https://www.vinted.fr/items/7844629440-aiguillage-lego-7895",
-      "price": null,
+      "price": {
+        "amount": 32.34,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1767174260,
       "uuid": "9b1152f8-d0dc-5c31-9e10-7774d4351d74"
     },
     {
       "link": "https://www.vinted.fr/items/8189675017-lego-vintage-parade-car-40913",
-      "price": null,
+      "price": {
+        "amount": 26.03,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771255675,
       "uuid": "8fd4fc29-7ef7-53e8-bb99-bcad7db1949b"
     },
     {
       "link": "https://www.vinted.fr/items/8130065610-lego-40153-decoration-pour-table-danniversaire",
-      "price": null,
+      "price": {
+        "amount": 26.04,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770562566,
       "uuid": "b5f1cc26-8782-5b2d-9fd4-377e48576b74"
     },
     {
       "link": "https://www.vinted.fr/items/7635955778-lego-duplo-30330-birthday-cake",
-      "price": null,
+      "price": {
+        "amount": 4.62,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1764069907,
       "uuid": "85f125a5-a244-580a-bc2b-3ca68f7313ce"
     },
     {
       "link": "https://www.vinted.fr/items/8010992712-lego-42031",
-      "price": null,
+      "price": {
+        "amount": 8.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1769204251,
       "uuid": "85d6aa8d-e8d9-5877-bb3c-0ca1db6d68ae"
     },
     {
       "link": "https://www.vinted.fr/items/8172465651-lego-city-40345-pack-de-figurines-de-lespace-laboratoire-de-lespace",
-      "price": null,
+      "price": {
+        "amount": 24.78,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771078811,
       "uuid": "7117c574-7dcc-5b47-a609-f51a094a8fdb"
     },
     {
       "link": "https://www.vinted.fr/items/8180938109-set-lego-10305-le-chateau-des-chevaliers-du-lion-neuf-et-scelle",
-      "price": null,
+      "price": {
+        "amount": 604.38,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771167339,
       "uuid": "251f1641-92b2-5e7d-af97-150db82175fc"
     },
     {
       "link": "https://www.vinted.fr/items/8100605826-lego-icons-le-bambou-de-la-chance-lorchidee-miniature",
-      "price": null,
+      "price": {
+        "amount": 75.18,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770226387,
       "uuid": "978aa70e-1a0d-5997-93e4-cac41afa3b80"
     },
     {
       "link": "https://www.vinted.fr/items/8137957333-mini-orchidee-lego-neuf",
-      "price": null,
+      "price": {
+        "amount": 28.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770646435,
       "uuid": "2b36fec6-3b63-57f2-ada4-7f023582dabd"
     },
     {
       "link": "https://www.vinted.fr/items/7953420420-lego-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 29.82,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1768514031,
       "uuid": "0b440a84-877c-519e-afec-cc0281d7e78e"
     },
     {
       "link": "https://www.vinted.fr/items/7531479067-lego-classic-plaque-de-base-bleue-10714",
-      "price": null,
+      "price": {
+        "amount": 13.44,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1762867991,
       "uuid": "0ef79489-b902-52e3-a2c9-0b6b2330ddc4"
     },
     {
       "link": "https://www.vinted.fr/items/7586487493-lego-city-30589",
-      "price": null,
+      "price": {
+        "amount": 7.14,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1763482192,
       "uuid": "449937ea-9526-5fc7-a655-230e00a61a82"
     },
     {
       "link": "https://www.vinted.fr/items/7929689936-lego-31002-neuf-et-scelle",
-      "price": null,
+      "price": {
+        "amount": 17.22,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1768222567,
       "uuid": "2e698ef3-79b8-5994-b4bd-80b7f37de5e1"
     },
     {
       "link": "https://www.vinted.fr/items/8162015676-lego-colecao-botanica-mini-orquidea",
-      "price": null,
+      "price": {
+        "amount": 32.34,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770929264,
       "uuid": "4d66df02-7967-53ad-a2ef-b7c782e024fd"
     },
     {
       "link": "https://www.vinted.fr/items/8077019617-lego-botanicals-mini-orchidee-10343",
-      "price": null,
+      "price": {
+        "amount": 29.82,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1769959254,
       "uuid": "3102b1a1-9156-50d4-ac9d-63d03a770107"
     },
     {
       "link": "https://www.vinted.fr/items/8084851313-lego-botanicals-10343-mini-orchidee",
-      "price": null,
+      "price": {
+        "amount": 32.34,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770043716,
       "uuid": "fa2e7148-19d2-5c33-93cc-647f5745e928"
     },
     {
       "link": "https://www.vinted.fr/items/8124815982-lego-botanicals-orquidea-em-miniatura-set-10343-novo-e-selado",
-      "price": null,
+      "price": {
+        "amount": 32.34,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770505170,
       "uuid": "83a49c88-603a-54e5-9ef7-f730eed68b98"
     },
     {
       "link": "https://www.vinted.fr/items/8131360331-lego-ninjago-entrainement-ninja",
-      "price": null,
+      "price": {
+        "amount": 19.74,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770567955,
       "uuid": "19fe6a9d-584f-5984-9606-dab18b2c46ca"
     },
     {
       "link": "https://www.vinted.fr/items/8141977356-lego-dreamzzz-30636-neuf",
-      "price": null,
+      "price": {
+        "amount": 4.37,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770678547,
       "uuid": "2b236370-8f74-543e-b8a0-588dc1622b81"
     },
     {
       "link": "https://www.vinted.fr/items/7823315824-lego-disney-40613-le-palais-agrabah",
-      "price": null,
+      "price": {
+        "amount": 49.98,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1766856815,
       "uuid": "811a29f7-2dc8-5e8a-96c0-6b7019d5943e"
     },
     {
       "link": "https://www.vinted.fr/items/8173396976-lego-6305",
-      "price": null,
+      "price": {
+        "amount": 95.34,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771084384,
       "uuid": "12b1e900-ec40-5b0b-85cf-426c7b0114e5"
     },
     {
       "link": "https://www.vinted.fr/items/7463511960-lego-polybag-spider-man",
-      "price": null,
+      "price": {
+        "amount": 8.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1762092638,
       "uuid": "3ea693a5-244f-5527-9ac5-b90ad75ca635"
     },
     {
       "link": "https://www.vinted.fr/items/7922763710-lego-set-10343-orquidea-em-miniatura",
-      "price": null,
+      "price": {
+        "amount": 29.82,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1768143144,
       "uuid": "0b78f617-543d-58b8-a940-f7fe8a64d368"
     },
     {
       "link": "https://www.vinted.fr/items/5816130026-lego-minifigures-disney-series-2-sally",
-      "price": null,
+      "price": {
+        "amount": 13.44,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1739553801,
       "uuid": "4f433d06-b84c-5789-8989-fed69805c2a9"
     },
     {
       "link": "https://www.vinted.fr/items/8083584123-lot-de-3-lego-botanique",
-      "price": null,
+      "price": {
+        "amount": 95.34,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770035288,
       "uuid": "144d0dac-2571-517c-81ab-5016af265464"
     },
     {
       "link": "https://www.vinted.fr/items/6873792416-lego-polybag-dr-strange",
-      "price": null,
+      "price": {
+        "amount": 7.14,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1755266611,
       "uuid": "405c6c30-d6ed-5840-bd79-7d501d9df309"
     },
     {
       "link": "https://www.vinted.fr/items/7654505363-lego-mc-laren-30683-speed-chanpion",
-      "price": null,
+      "price": {
+        "amount": 9.66,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1764317372,
       "uuid": "5c3a1e5e-73c5-5684-84a1-3a2bca692365"
     },
     {
       "link": "https://www.vinted.fr/items/8191335177-2011-lego-city-3658-police-helicopter-8n1ks",
-      "price": null,
+      "price": {
+        "amount": 139.44,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771265547,
       "uuid": "9d1ec326-30ab-5159-a695-7af7b275200c"
     },
     {
       "link": "https://www.vinted.fr/items/6620380598-lego-polybag-30614-dc-super-heroes-superman-lex-luthor",
-      "price": null,
+      "price": {
+        "amount": 14.7,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1751613896,
       "uuid": "b1d9d9a3-e1dd-5a0a-a8d7-9831b205b429"
     },
     {
       "link": "https://www.vinted.fr/items/5817655058-la-plaque-de-base-bleue-lego-classic-10714",
-      "price": null,
+      "price": {
+        "amount": 12.17,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1739610405,
       "uuid": "1595b698-4cb5-589b-9d22-22580f54b6f7"
     },
     {
       "link": "https://www.vinted.fr/items/8128999191-lego-creator",
-      "price": null,
+      "price": {
+        "amount": 19.74,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770558063,
       "uuid": "29c00483-4459-58b2-91ca-59f92fbdb519"
     },
     {
       "link": "https://www.vinted.fr/items/1440018076-lego-construction",
-      "price": null,
+      "price": {
+        "amount": 4.62,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1636796858,
       "uuid": "d4a36dfa-0028-524f-8a91-9d48039811e8"
     },
     {
       "link": "https://www.vinted.fr/items/8079478981-lego-10343",
-      "price": null,
+      "price": {
+        "amount": 28.56,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1769970721,
       "uuid": "6d90f17f-b3ca-588a-8678-aeb3e058a588"
     },
     {
       "link": "https://www.vinted.fr/items/6841439644-lego-city",
-      "price": null,
+      "price": {
+        "amount": 5.88,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1754760082,
       "uuid": "84eb99f4-3a01-5190-8bdd-888d734b8a77"
     },
     {
       "link": "https://www.vinted.fr/items/7831737090-lego-10343-mini-orquidea",
-      "price": null,
+      "price": {
+        "amount": 29.82,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1766965564,
       "uuid": "7ac5f8c4-5159-5a80-940e-5f8bb18e7666"
     },
     {
       "link": "https://www.vinted.fr/items/6952941162-lego-creator",
-      "price": null,
+      "price": {
+        "amount": 7.14,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1756297231,
       "uuid": "17386ff0-1916-5368-99f1-549950e1afd5"
     },
     {
       "link": "https://www.vinted.fr/items/8095169372-lego-10343-orquideas-botanical-pvp-fijo-25",
-      "price": null,
+      "price": {
+        "amount": 32.34,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770154193,
       "uuid": "96d93e96-51d8-5b66-9913-687ea86fdd51"
     },
     {
       "link": "https://www.vinted.fr/items/8184256808-lego-nexo-knights-brand-new-still-sealed-in-packaging",
-      "price": null,
+      "price": {
+        "amount": 10.91,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771184086,
       "uuid": "6cbe0f4d-79d0-5937-af62-bf7714823fef"
     },
     {
       "link": "https://www.vinted.fr/items/8116045809-lego-70335-nexo-knights-neuf",
-      "price": null,
+      "price": {
+        "amount": 10.92,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770410434,
       "uuid": "3f46aeb1-3321-5307-af11-a19be1eee0cd"
     },
     {
       "link": "https://www.vinted.fr/items/6982566184-lego-city-30352-voiture-de-police",
-      "price": null,
+      "price": {
+        "amount": 7.14,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1756644186,
       "uuid": "1778a6b2-fb5b-50a0-b511-a676d891b208"
     },
     {
       "link": "https://www.vinted.fr/items/7876609531-10343-miniorquidea-new",
-      "price": null,
+      "price": {
+        "amount": 30.96,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1767560565,
       "uuid": "2120f1cf-b29c-5a7c-b179-ac030fa460c6"
     },
     {
       "link": "https://www.vinted.fr/items/8163695862-lego-technic",
-      "price": null,
+      "price": {
+        "amount": 8.39,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770976794,
       "uuid": "6bba613a-fb58-5d90-b3f5-3509d4cc9f24"
     },
     {
       "link": "https://www.vinted.fr/items/8065064338-lego-orquidea-10343",
-      "price": null,
+      "price": {
+        "amount": 31.08,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1769863719,
       "uuid": "09cafed4-6128-594f-be5d-e9fe63584e97"
     },
     {
       "link": "https://www.vinted.fr/items/8189941673-lego-series-disney-71024-13-hades-novo-neufnuovonuevonieuwnew",
-      "price": null,
+      "price": {
+        "amount": 6.49,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1771257172,
       "uuid": "ab4991c0-4af9-549c-822e-8120a646a379"
     },
     {
       "link": "https://www.vinted.fr/items/4715684936-minifig-lego-serie-16-le-mariachi",
-      "price": null,
+      "price": {
+        "amount": 13.44,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1719944286,
       "uuid": "33381a1f-f5b7-5aeb-addc-b08989f734af"
     },
     {
       "link": "https://www.vinted.fr/items/7625917411-lego-mini-figurine-personnage-anglais-40308-sachet-scelle-neuf",
-      "price": null,
+      "price": {
+        "amount": 19.74,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1763927891,
       "uuid": "f603bdbd-fb84-540d-a0cc-f6098122a50a"
     },
     {
       "link": "https://www.vinted.fr/items/8103763140-lego-friends-flowers-ref-30634-neuf",
-      "price": null,
+      "price": {
+        "amount": 10.92,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770285074,
       "uuid": "10ee15da-02b3-5c86-a545-db4ae53144c6"
     },
     {
       "link": "https://www.vinted.fr/items/2421872712-minifigurines-lego-muppet-show",
-      "price": null,
+      "price": {
+        "amount": 4.62,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1668539226,
       "uuid": "bac04592-bdac-51a4-8d78-c2ff84cdfe77"
     },
     {
       "link": "https://www.vinted.fr/items/6467440486-lego-disney-100-ans-minifigure-jiminy-cricket",
-      "price": null,
+      "price": {
+        "amount": 10.92,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1749242672,
       "uuid": "84438244-756a-524a-b1ad-d0eedbf3539f"
     },
     {
       "link": "https://www.vinted.fr/items/8103319743-10343-lego-botanicals-mini-orchidea-nuovo",
-      "price": null,
+      "price": {
+        "amount": 38.64,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1770280300,
       "uuid": "b09439eb-eb61-57c8-b320-cfcf22f6c6ec"
     },
     {
       "link": "https://www.vinted.fr/items/8041188701-10343-mini-orchid-newsealed",
-      "price": null,
+      "price": {
+        "amount": 29.7,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1769535284,
       "uuid": "c2d80c5d-c7df-58a6-bf8b-cdac942b0c00"
     },
     {
       "link": "https://www.vinted.fr/items/4326023335-brique-lego",
-      "price": null,
+      "price": {
+        "amount": 10.92,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1712429443,
       "uuid": "bb733893-6749-56b1-b4b6-f35011ede553"
     },
     {
       "link": "https://www.vinted.fr/items/6684919587-lego-city",
-      "price": null,
+      "price": {
+        "amount": 7.14,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 43247",
       "published": 1752523956,
       "uuid": "c476f2d9-f3e9-52f8-9e5f-ff07f8ef5ba4"
@@ -22900,672 +25014,960 @@
   "75389": [
     {
       "link": "https://www.vinted.fr/items/8017525331-lego-31058-neuf-et-scelle",
-      "price": null,
+      "price": {
+        "amount": 16.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1769277568,
       "uuid": "251637d5-9edc-51bd-9583-af8e36930b41"
     },
     {
       "link": "https://www.vinted.fr/items/8187107062-lego-orchidee",
-      "price": null,
+      "price": {
+        "amount": 35.7,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771239748,
       "uuid": "e42a9d54-e7f8-524d-b25c-f9171e332c33"
     },
     {
       "link": "https://www.vinted.fr/items/8176786038-lego-super-heroes-mr-freeze",
-      "price": null,
+      "price": {
+        "amount": 16.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771146650,
       "uuid": "a20900fb-4bcc-5241-b02a-a3716fe254c7"
     },
     {
       "link": "https://www.vinted.fr/items/8122945453-valisette-de-construction-lego-classic-4-99",
-      "price": null,
+      "price": {
+        "amount": 23.09,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770486686,
       "uuid": "74136aa8-45c6-568a-bbe4-914f84946789"
     },
     {
       "link": "https://www.vinted.fr/items/8192303861-lego-creator-le-paons-3-en-1-neuf-dans-carton-dorigine",
-      "price": null,
+      "price": {
+        "amount": 29.4,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771272476,
       "uuid": "b607da09-dd42-5e28-9577-86867b6ee2cc"
     },
     {
       "link": "https://www.vinted.fr/items/8182577458-lego-10343-botanicals",
-      "price": null,
+      "price": {
+        "amount": 32.55,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771174443,
       "uuid": "7d066424-e007-5c7d-a068-8a7d80b5816e"
     },
     {
       "link": "https://www.vinted.fr/items/8176635927-lego-super-heroes-spiderman",
-      "price": null,
+      "price": {
+        "amount": 8.93,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771145304,
       "uuid": "79351163-af10-59d6-9733-6f073a23a77b"
     },
     {
       "link": "https://www.vinted.fr/items/8175584815-lego-art-set-31214-love-sculpture-neuf-2025",
-      "price": null,
+      "price": {
+        "amount": 73.5,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771103127,
       "uuid": "3309e45e-d921-5b09-8cac-ec84e8bd13dd"
     },
     {
       "link": "https://www.vinted.fr/items/8166043148-lego-botanique-10343-lorchidee-miniature-neuf",
-      "price": null,
+      "price": {
+        "amount": 36.33,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770995307,
       "uuid": "fb2da5e6-c297-5d5b-b8cb-548119a67780"
     },
     {
       "link": "https://www.vinted.fr/items/8174852577-lego-minifigures-serie-23",
-      "price": null,
+      "price": {
+        "amount": 9.72,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771095041,
       "uuid": "a964201e-5f30-5600-a0ca-f7932b49775b"
     },
     {
       "link": "https://www.vinted.fr/items/8191766542-lego-40913-vintage-parade-car",
-      "price": null,
+      "price": {
+        "amount": 40.42,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771268528,
       "uuid": "1e872899-a871-52a2-8516-c5eb8b5a25c5"
     },
     {
       "link": "https://www.vinted.fr/items/8177904417-lego-spider-man",
-      "price": null,
+      "price": {
+        "amount": 19.95,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771153230,
       "uuid": "7b5852ef-b277-5f05-a2d9-b51c010bdb49"
     },
     {
       "link": "https://www.vinted.fr/items/8153554579-lego-botanicals-ndeg-10343-mini-orchidee-neuf-avec-etiquette-25-eu",
-      "price": null,
+      "price": {
+        "amount": 40.42,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770827284,
       "uuid": "c19ddca2-6ddc-5763-be2d-372aee21db5b"
     },
     {
       "link": "https://www.vinted.fr/items/8177968352-lego-10343",
-      "price": null,
+      "price": {
+        "amount": 13.65,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771153548,
       "uuid": "26ee262d-4eb7-5130-a11b-e81063fd6588"
     },
     {
       "link": "https://www.vinted.fr/items/8019454629-lego-duplo-train-neuf",
-      "price": null,
+      "price": {
+        "amount": 15.23,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1769300652,
       "uuid": "c7df99e9-b416-5a26-9f63-30660d6827a4"
     },
     {
       "link": "https://www.vinted.fr/items/8174831724-lego-minifigure",
-      "price": null,
+      "price": {
+        "amount": 9.72,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771094839,
       "uuid": "0b901802-b3e9-56e7-ac73-2acb0ecb2990"
     },
     {
       "link": "https://www.vinted.fr/items/8190451433-lego-bonhomme-de-neige-40093",
-      "price": null,
+      "price": {
+        "amount": 16.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771260088,
       "uuid": "15cac1c3-1cee-585f-a9c4-63e64fd2920c"
     },
     {
       "link": "https://www.vinted.fr/items/8097590317-lego-creator-le-perroquet-rose-neuf",
-      "price": null,
+      "price": {
+        "amount": 60.9,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770206293,
       "uuid": "2d951f7c-3b80-5fbd-959a-e72f18dd9c25"
     },
     {
       "link": "https://www.vinted.fr/items/8174844676-lego-minifigures-muppets",
-      "price": null,
+      "price": {
+        "amount": 9.72,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771094962,
       "uuid": "fe57db56-1d50-5a75-8b3c-200a7494d573"
     },
     {
       "link": "https://www.vinted.fr/items/8167143726-lego-10343-nuevo-sin-abrir-orquidea-planta-artificial-decoracion",
-      "price": null,
+      "price": {
+        "amount": 46.72,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771003695,
       "uuid": "23ffe28d-c2e8-5e88-9c24-1578d4ed4461"
     },
     {
       "link": "https://www.vinted.fr/items/7463443690-lego-spider-man",
-      "price": null,
+      "price": {
+        "amount": 10.5,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1762092357,
       "uuid": "c514a5b2-fc86-59a9-add0-353044b061f4"
     },
     {
       "link": "https://www.vinted.fr/items/8114023689-lego-3-en-1-6387808",
-      "price": null,
+      "price": {
+        "amount": 15.23,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770394154,
       "uuid": "ee3e09d7-6c5c-56ab-b262-39a19b95e9ac"
     },
     {
       "link": "https://www.vinted.fr/items/8011060201-lego-botanicals-10343-orchidee-miniature-plante-deco-neuf",
-      "price": null,
+      "price": {
+        "amount": 48.15,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1769205231,
       "uuid": "8c0874d7-5087-5fd6-8798-bbe72df667b0"
     },
     {
       "link": "https://www.vinted.fr/items/8149322325-genuine-lego-lester-minifigure-sealed-polybag-40308",
-      "price": null,
+      "price": {
+        "amount": 23.1,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770791662,
       "uuid": "9ed209f4-8762-5afe-9ab7-1d4b33356115"
     },
     {
       "link": "https://www.vinted.fr/items/8182809356-lego-nexo-knight-70354",
-      "price": null,
+      "price": {
+        "amount": 48.3,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771175551,
       "uuid": "ba3b605b-410f-5112-bfca-b616db2d5b21"
     },
     {
       "link": "https://www.vinted.fr/items/8175580574-lego-botanicals-10343-lorchidee-miniature",
-      "price": null,
+      "price": {
+        "amount": 43.58,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771103071,
       "uuid": "b645c5c5-a486-5f76-9a29-7493d2c5eef0"
     },
     {
       "link": "https://www.vinted.fr/items/8155595148-lego-stranger-things-75810",
-      "price": null,
+      "price": {
+        "amount": 442.05,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770842658,
       "uuid": "d437938c-39f9-560a-a65a-e44bfdea4711"
     },
     {
       "link": "https://www.vinted.fr/items/8163117455-lego-set-orchid-10343",
-      "price": null,
+      "price": {
+        "amount": 40.42,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770970317,
       "uuid": "2b8c4bd4-f716-5d08-a277-25c98944b406"
     },
     {
       "link": "https://www.vinted.fr/items/8189231193-polybag-reference-30549-de-la-marque-lego",
-      "price": null,
+      "price": {
+        "amount": 8.93,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771253166,
       "uuid": "094a3010-5e7e-5abf-a855-92f3863273f0"
     },
     {
       "link": "https://www.vinted.fr/items/8146460288-lego-10343-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 36.49,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770741908,
       "uuid": "4f7ca49d-8ab7-5a22-9788-f1779eac2a58"
     },
     {
       "link": "https://www.vinted.fr/items/8071472004-lego-botanical-mini-orquidia",
-      "price": null,
+      "price": {
+        "amount": 40.42,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1769903238,
       "uuid": "e98e20f6-f7c3-551d-b889-d9ca74203af9"
     },
     {
       "link": "https://www.vinted.fr/items/7995197864-lego-minifigurine-serie-19-col19-5",
-      "price": null,
+      "price": {
+        "amount": 5.78,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1769009985,
       "uuid": "e4ce9ff8-957c-5aaa-8682-f128adc403f5"
     },
     {
       "link": "https://www.vinted.fr/items/8170886259-figurines-lego-71028-seconde-serie-harry-potter",
-      "price": null,
+      "price": {
+        "amount": 172.73,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771068657,
       "uuid": "2b513335-8406-5a2a-9c11-7716fb7fa8cc"
     },
     {
       "link": "https://www.vinted.fr/items/7516877748-lego-creator-31033",
-      "price": null,
+      "price": {
+        "amount": 13.65,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1762706365,
       "uuid": "56e14b34-5b67-54cd-a585-7e220c53c811"
     },
     {
       "link": "https://www.vinted.fr/items/8084908388-lego-mandalorian-pilot-sachet",
-      "price": null,
+      "price": {
+        "amount": 8.93,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770044083,
       "uuid": "73348bc6-420e-5dd3-9d1e-6dbed7b7e9dc"
     },
     {
       "link": "https://www.vinted.fr/items/8160011281-love-lego-neuve-robert-indiana",
-      "price": null,
+      "price": {
+        "amount": 79.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770911116,
       "uuid": "07cfdd58-c13e-5d3a-8612-f02e1e7eb320"
     },
     {
       "link": "https://www.vinted.fr/items/7614797110-lego-70347",
-      "price": null,
+      "price": {
+        "amount": 15.23,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1763831114,
       "uuid": "8ad1e13f-9695-511a-8b1c-095ce8061933"
     },
     {
       "link": "https://www.vinted.fr/items/8082903243-lego-10343-la-mini-orchidee",
-      "price": null,
+      "price": {
+        "amount": 40.42,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770030285,
       "uuid": "e2122add-5d83-5e27-aa34-2656fe5afb7f"
     },
     {
       "link": "https://www.vinted.fr/items/8115673321-lego-fleur-collection-botanique-plante-10343-mini-orchidee-orchid-flower-botanical",
-      "price": null,
+      "price": {
+        "amount": 48.15,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770406990,
       "uuid": "004fb090-a347-5522-b920-08df2a6f004a"
     },
     {
       "link": "https://www.vinted.fr/items/8181873883-lego-marvel-polybag",
-      "price": null,
+      "price": {
+        "amount": 12.08,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771171324,
       "uuid": "1ff037a0-4d1d-5071-9dc3-1792f4df81e3"
     },
     {
       "link": "https://www.vinted.fr/items/8099799161-lego-botanicals-10343-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 40.41,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770220984,
       "uuid": "043bd085-df53-5773-8706-44905dd77a78"
     },
     {
       "link": "https://www.vinted.fr/items/8185074464-lego-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 40.42,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771190606,
       "uuid": "7df25a40-6de5-5401-84de-9e64060de3a7"
     },
     {
       "link": "https://www.vinted.fr/items/8134570792-lego-f1-williams-10353",
-      "price": null,
+      "price": {
+        "amount": 95.55,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770588276,
       "uuid": "df8f6daa-ceb0-5cd7-9348-755930f623c2"
     },
     {
       "link": "https://www.vinted.fr/items/7844629440-aiguillage-lego-7895",
-      "price": null,
+      "price": {
+        "amount": 40.42,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1767174260,
       "uuid": "9b1152f8-d0dc-5c31-9e10-7774d4351d74"
     },
     {
       "link": "https://www.vinted.fr/items/8189675017-lego-vintage-parade-car-40913",
-      "price": null,
+      "price": {
+        "amount": 32.54,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771255675,
       "uuid": "8fd4fc29-7ef7-53e8-bb99-bcad7db1949b"
     },
     {
       "link": "https://www.vinted.fr/items/8130065610-lego-40153-decoration-pour-table-danniversaire",
-      "price": null,
+      "price": {
+        "amount": 32.55,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770562566,
       "uuid": "b5f1cc26-8782-5b2d-9fd4-377e48576b74"
     },
     {
       "link": "https://www.vinted.fr/items/7635955778-lego-duplo-30330-birthday-cake",
-      "price": null,
+      "price": {
+        "amount": 5.78,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1764069907,
       "uuid": "85f125a5-a244-580a-bc2b-3ca68f7313ce"
     },
     {
       "link": "https://www.vinted.fr/items/8010992712-lego-42031",
-      "price": null,
+      "price": {
+        "amount": 10.5,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1769204251,
       "uuid": "85d6aa8d-e8d9-5877-bb3c-0ca1db6d68ae"
     },
     {
       "link": "https://www.vinted.fr/items/8172465651-lego-city-40345-pack-de-figurines-de-lespace-laboratoire-de-lespace",
-      "price": null,
+      "price": {
+        "amount": 30.97,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771078811,
       "uuid": "7117c574-7dcc-5b47-a609-f51a094a8fdb"
     },
     {
       "link": "https://www.vinted.fr/items/8180938109-set-lego-10305-le-chateau-des-chevaliers-du-lion-neuf-et-scelle",
-      "price": null,
+      "price": {
+        "amount": 755.47,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771167339,
       "uuid": "251f1641-92b2-5e7d-af97-150db82175fc"
     },
     {
       "link": "https://www.vinted.fr/items/8100605826-lego-icons-le-bambou-de-la-chance-lorchidee-miniature",
-      "price": null,
+      "price": {
+        "amount": 93.97,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770226387,
       "uuid": "978aa70e-1a0d-5997-93e4-cac41afa3b80"
     },
     {
       "link": "https://www.vinted.fr/items/8137957333-mini-orchidee-lego-neuf",
-      "price": null,
+      "price": {
+        "amount": 35.7,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770646435,
       "uuid": "2b36fec6-3b63-57f2-ada4-7f023582dabd"
     },
     {
       "link": "https://www.vinted.fr/items/7953420420-lego-mini-orchid",
-      "price": null,
+      "price": {
+        "amount": 37.28,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1768514031,
       "uuid": "0b440a84-877c-519e-afec-cc0281d7e78e"
     },
     {
       "link": "https://www.vinted.fr/items/7531479067-lego-classic-plaque-de-base-bleue-10714",
-      "price": null,
+      "price": {
+        "amount": 16.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1762867991,
       "uuid": "0ef79489-b902-52e3-a2c9-0b6b2330ddc4"
     },
     {
       "link": "https://www.vinted.fr/items/7586487493-lego-city-30589",
-      "price": null,
+      "price": {
+        "amount": 8.93,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1763482192,
       "uuid": "449937ea-9526-5fc7-a655-230e00a61a82"
     },
     {
       "link": "https://www.vinted.fr/items/7929689936-lego-31002-neuf-et-scelle",
-      "price": null,
+      "price": {
+        "amount": 21.52,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1768222567,
       "uuid": "2e698ef3-79b8-5994-b4bd-80b7f37de5e1"
     },
     {
       "link": "https://www.vinted.fr/items/8162015676-lego-colecao-botanica-mini-orquidea",
-      "price": null,
+      "price": {
+        "amount": 40.42,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770929264,
       "uuid": "4d66df02-7967-53ad-a2ef-b7c782e024fd"
     },
     {
       "link": "https://www.vinted.fr/items/8077019617-lego-botanicals-mini-orchidee-10343",
-      "price": null,
+      "price": {
+        "amount": 37.28,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1769959254,
       "uuid": "3102b1a1-9156-50d4-ac9d-63d03a770107"
     },
     {
       "link": "https://www.vinted.fr/items/8084851313-lego-botanicals-10343-mini-orchidee",
-      "price": null,
+      "price": {
+        "amount": 40.42,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770043716,
       "uuid": "fa2e7148-19d2-5c33-93cc-647f5745e928"
     },
     {
       "link": "https://www.vinted.fr/items/8124815982-lego-botanicals-orquidea-em-miniatura-set-10343-novo-e-selado",
-      "price": null,
+      "price": {
+        "amount": 40.42,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770505170,
       "uuid": "83a49c88-603a-54e5-9ef7-f730eed68b98"
     },
     {
       "link": "https://www.vinted.fr/items/8131360331-lego-ninjago-entrainement-ninja",
-      "price": null,
+      "price": {
+        "amount": 24.67,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770567955,
       "uuid": "19fe6a9d-584f-5984-9606-dab18b2c46ca"
     },
     {
       "link": "https://www.vinted.fr/items/8141977356-lego-dreamzzz-30636-neuf",
-      "price": null,
+      "price": {
+        "amount": 5.46,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770678547,
       "uuid": "2b236370-8f74-543e-b8a0-588dc1622b81"
     },
     {
       "link": "https://www.vinted.fr/items/7823315824-lego-disney-40613-le-palais-agrabah",
-      "price": null,
+      "price": {
+        "amount": 62.47,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1766856815,
       "uuid": "811a29f7-2dc8-5e8a-96c0-6b7019d5943e"
     },
     {
       "link": "https://www.vinted.fr/items/8173396976-lego-6305",
-      "price": null,
+      "price": {
+        "amount": 119.18,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771084384,
       "uuid": "12b1e900-ec40-5b0b-85cf-426c7b0114e5"
     },
     {
       "link": "https://www.vinted.fr/items/7463511960-lego-polybag-spider-man",
-      "price": null,
+      "price": {
+        "amount": 10.5,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1762092638,
       "uuid": "3ea693a5-244f-5527-9ac5-b90ad75ca635"
     },
     {
       "link": "https://www.vinted.fr/items/7922763710-lego-set-10343-orquidea-em-miniatura",
-      "price": null,
+      "price": {
+        "amount": 37.28,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1768143144,
       "uuid": "0b78f617-543d-58b8-a940-f7fe8a64d368"
     },
     {
       "link": "https://www.vinted.fr/items/5816130026-lego-minifigures-disney-series-2-sally",
-      "price": null,
+      "price": {
+        "amount": 16.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1739553801,
       "uuid": "4f433d06-b84c-5789-8989-fed69805c2a9"
     },
     {
       "link": "https://www.vinted.fr/items/8083584123-lot-de-3-lego-botanique",
-      "price": null,
+      "price": {
+        "amount": 119.18,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770035288,
       "uuid": "144d0dac-2571-517c-81ab-5016af265464"
     },
     {
       "link": "https://www.vinted.fr/items/6873792416-lego-polybag-dr-strange",
-      "price": null,
+      "price": {
+        "amount": 8.93,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1755266611,
       "uuid": "405c6c30-d6ed-5840-bd79-7d501d9df309"
     },
     {
       "link": "https://www.vinted.fr/items/7654505363-lego-mc-laren-30683-speed-chanpion",
-      "price": null,
+      "price": {
+        "amount": 12.08,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1764317372,
       "uuid": "5c3a1e5e-73c5-5684-84a1-3a2bca692365"
     },
     {
       "link": "https://www.vinted.fr/items/8191335177-2011-lego-city-3658-police-helicopter-8n1ks",
-      "price": null,
+      "price": {
+        "amount": 174.3,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771265547,
       "uuid": "9d1ec326-30ab-5159-a695-7af7b275200c"
     },
     {
       "link": "https://www.vinted.fr/items/6620380598-lego-polybag-30614-dc-super-heroes-superman-lex-luthor",
-      "price": null,
+      "price": {
+        "amount": 18.38,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1751613896,
       "uuid": "b1d9d9a3-e1dd-5a0a-a8d7-9831b205b429"
     },
     {
       "link": "https://www.vinted.fr/items/5817655058-la-plaque-de-base-bleue-lego-classic-10714",
-      "price": null,
+      "price": {
+        "amount": 15.21,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1739610405,
       "uuid": "1595b698-4cb5-589b-9d22-22580f54b6f7"
     },
     {
       "link": "https://www.vinted.fr/items/8128999191-lego-creator",
-      "price": null,
+      "price": {
+        "amount": 24.67,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770558063,
       "uuid": "29c00483-4459-58b2-91ca-59f92fbdb519"
     },
     {
       "link": "https://www.vinted.fr/items/1440018076-lego-construction",
-      "price": null,
+      "price": {
+        "amount": 5.78,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1636796858,
       "uuid": "d4a36dfa-0028-524f-8a91-9d48039811e8"
     },
     {
       "link": "https://www.vinted.fr/items/8079478981-lego-10343",
-      "price": null,
+      "price": {
+        "amount": 35.7,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1769970721,
       "uuid": "6d90f17f-b3ca-588a-8678-aeb3e058a588"
     },
     {
       "link": "https://www.vinted.fr/items/6841439644-lego-city",
-      "price": null,
+      "price": {
+        "amount": 7.35,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1754760082,
       "uuid": "84eb99f4-3a01-5190-8bdd-888d734b8a77"
     },
     {
       "link": "https://www.vinted.fr/items/7831737090-lego-10343-mini-orquidea",
-      "price": null,
+      "price": {
+        "amount": 37.28,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1766965564,
       "uuid": "7ac5f8c4-5159-5a80-940e-5f8bb18e7666"
     },
     {
       "link": "https://www.vinted.fr/items/6952941162-lego-creator",
-      "price": null,
+      "price": {
+        "amount": 8.93,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1756297231,
       "uuid": "17386ff0-1916-5368-99f1-549950e1afd5"
     },
     {
       "link": "https://www.vinted.fr/items/8095169372-lego-10343-orquideas-botanical-pvp-fijo-25",
-      "price": null,
+      "price": {
+        "amount": 40.42,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770154193,
       "uuid": "96d93e96-51d8-5b66-9913-687ea86fdd51"
     },
     {
       "link": "https://www.vinted.fr/items/8184256808-lego-nexo-knights-brand-new-still-sealed-in-packaging",
-      "price": null,
+      "price": {
+        "amount": 13.63,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771184086,
       "uuid": "6cbe0f4d-79d0-5937-af62-bf7714823fef"
     },
     {
       "link": "https://www.vinted.fr/items/8116045809-lego-70335-nexo-knights-neuf",
-      "price": null,
+      "price": {
+        "amount": 13.65,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770410434,
       "uuid": "3f46aeb1-3321-5307-af11-a19be1eee0cd"
     },
     {
       "link": "https://www.vinted.fr/items/6982566184-lego-city-30352-voiture-de-police",
-      "price": null,
+      "price": {
+        "amount": 8.93,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1756644186,
       "uuid": "1778a6b2-fb5b-50a0-b511-a676d891b208"
     },
     {
       "link": "https://www.vinted.fr/items/7876609531-10343-miniorquidea-new",
-      "price": null,
+      "price": {
+        "amount": 38.7,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1767560565,
       "uuid": "2120f1cf-b29c-5a7c-b179-ac030fa460c6"
     },
     {
       "link": "https://www.vinted.fr/items/8163695862-lego-technic",
-      "price": null,
+      "price": {
+        "amount": 10.48,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770976794,
       "uuid": "6bba613a-fb58-5d90-b3f5-3509d4cc9f24"
     },
     {
       "link": "https://www.vinted.fr/items/8065064338-lego-orquidea-10343",
-      "price": null,
+      "price": {
+        "amount": 38.85,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1769863719,
       "uuid": "09cafed4-6128-594f-be5d-e9fe63584e97"
     },
     {
       "link": "https://www.vinted.fr/items/8189941673-lego-series-disney-71024-13-hades-novo-neufnuovonuevonieuwnew",
-      "price": null,
+      "price": {
+        "amount": 8.12,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1771257172,
       "uuid": "ab4991c0-4af9-549c-822e-8120a646a379"
     },
     {
       "link": "https://www.vinted.fr/items/4715684936-minifig-lego-serie-16-le-mariachi",
-      "price": null,
+      "price": {
+        "amount": 16.8,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1719944286,
       "uuid": "33381a1f-f5b7-5aeb-addc-b08989f734af"
     },
     {
       "link": "https://www.vinted.fr/items/7625917411-lego-mini-figurine-personnage-anglais-40308-sachet-scelle-neuf",
-      "price": null,
+      "price": {
+        "amount": 24.67,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1763927891,
       "uuid": "f603bdbd-fb84-540d-a0cc-f6098122a50a"
     },
     {
       "link": "https://www.vinted.fr/items/8103763140-lego-friends-flowers-ref-30634-neuf",
-      "price": null,
+      "price": {
+        "amount": 13.65,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770285074,
       "uuid": "10ee15da-02b3-5c86-a545-db4ae53144c6"
     },
     {
       "link": "https://www.vinted.fr/items/2421872712-minifigurines-lego-muppet-show",
-      "price": null,
+      "price": {
+        "amount": 5.78,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1668539226,
       "uuid": "bac04592-bdac-51a4-8d78-c2ff84cdfe77"
     },
     {
       "link": "https://www.vinted.fr/items/6467440486-lego-disney-100-ans-minifigure-jiminy-cricket",
-      "price": null,
+      "price": {
+        "amount": 13.65,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1749242672,
       "uuid": "84438244-756a-524a-b1ad-d0eedbf3539f"
     },
     {
       "link": "https://www.vinted.fr/items/8103319743-10343-lego-botanicals-mini-orchidea-nuovo",
-      "price": null,
+      "price": {
+        "amount": 48.3,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1770280300,
       "uuid": "b09439eb-eb61-57c8-b320-cfcf22f6c6ec"
     },
     {
       "link": "https://www.vinted.fr/items/8041188701-10343-mini-orchid-newsealed",
-      "price": null,
+      "price": {
+        "amount": 37.13,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1769535284,
       "uuid": "c2d80c5d-c7df-58a6-bf8b-cdac942b0c00"
     },
     {
       "link": "https://www.vinted.fr/items/4326023335-brique-lego",
-      "price": null,
+      "price": {
+        "amount": 13.65,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1712429443,
       "uuid": "bb733893-6749-56b1-b4b6-f35011ede553"
     },
     {
       "link": "https://www.vinted.fr/items/6684919587-lego-city",
-      "price": null,
+      "price": {
+        "amount": 8.93,
+        "currencyCode": "EUR"
+      },
       "title": "Lego 75389",
       "published": 1752523956,
       "uuid": "c476f2d9-f3e9-52f8-9e5f-ff07f8ef5ba4"
