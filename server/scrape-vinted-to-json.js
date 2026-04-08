@@ -45,21 +45,36 @@ async function main () {
     const ids = await loadDealIds();
     console.log(`✅ ${ids.length} ids trouvés`);
 
-    const allSales = {};
+    // Charger les ventes déjà scrapées si le fichier existe
+    let allSales = {};
+    try {
+      const existing = await readFile(OUTPUT_FILE, 'utf-8');
+      allSales = JSON.parse(existing);
+      console.log(`📄 vinted-sales.json existant chargé (${Object.keys(allSales).length} sets)`);
+    } catch {
+      console.log('ℹ️ Aucun vinted-sales.json existant, on part de zéro');
+    }
 
-      // Add a small delay between each Vinted call to reduce 403s
-      let index = 0;
-      for (const id of ids) {
-        index += 1;
+    // Add a small delay between each Vinted call to reduce 403s
+    let index = 0;
+    for (const id of ids) {
+      index += 1;
+
+      // Si on a déjà des ventes pour ce set, on ne le re-scrape pas
+      if (allSales[id] && Array.isArray(allSales[id]) && allSales[id].length > 0) {
+        console.log(`⏭  Set ${id} déjà présent (${allSales[id].length} ventes), on saute`);
+        continue;
+      }
+
       console.log(`🧱 Scraping Vinted pour le set ${id}...`);
       const sales = await vinted.scrape(id);
       console.log(`   -> ${sales.length} ventes trouvées`);
       allSales[id] = sales;
 
-        // Pause 1.5s between calls (tunable if needed)
-        if (index < ids.length) {
-          await sleep(1500);
-        }
+      // Pause 1s between calls (tunable if needed)
+      if (index < ids.length) {
+        await sleep(1000);
+      }
     }
 
     console.log('💾 Écriture du fichier vinted-sales.json...');

@@ -19,7 +19,8 @@ const parse = data => {
         const json = JSON.parse(vue3Data);
         const thread = json.props && json.props.thread;
 
-        if (!thread) return null;
+        // Ignore invalid threads and deals explicitly marked as expired
+        if (!thread || thread.isExpired) return null;
 
         const link = `https://www.dealabs.com/bons-plans/${thread.titleSlug}-${thread.threadId}`;
 
