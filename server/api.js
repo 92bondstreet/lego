@@ -34,6 +34,19 @@ const loadDealsFromFile = async () => {
   return fileDeals;
 };
 
+// Vinted sales loaded from vinted-sales.json (generated locally)
+let fileSales = null;
+
+const loadSalesFromFile = async () => {
+  if (!fileSales) {
+    const filePath = path.join(__dirname, 'vinted-sales.json');
+    const content = await readFile(filePath, 'utf-8');
+    fileSales = JSON.parse(content);
+  }
+
+  return fileSales;
+};
+
 /**
  * GET /api/deals
  * Returns scraped deals from dealabs, with optional pagination
@@ -87,7 +100,26 @@ app.get('/api/sales', async (req, res) => {
       return res.status(400).json({ success: false, error: 'Missing id parameter' });
     }
 
-    console.log(`🔍 Scraping Vinted for lego set ${id}...`);
+    // Try to use pre-scraped JSON first (works on Vercel)
+    try {
+      const allSales = await loadSalesFromFile();
+      const salesFromFile = allSales[String(id)] || [];
+
+      if (salesFromFile.length > 0) {
+        console.log(`📄 ${salesFromFile.length} Vinted sales loaded from JSON for set ${id}`);
+        return res.json({
+          success: true,
+          data: {
+            result: salesFromFile
+          }
+        });
+      }
+    } catch (e) {
+      console.warn('vinted-sales.json not available or invalid, falling back to live scrape');
+    }
+
+    // Fallback: live scrape (works surtout en local)
+    console.log(`🔍 Scraping Vinted for lego set ${id} (fallback)...`);
     const sales = await vinted.scrape(id) || [];
     console.log(`✅ ${sales.length} Vinted sales found for set ${id}`);
 
@@ -208,7 +240,17 @@ app.get('/sales/search', async (req, res) => {
     }
 
     console.log(`🔍 Searching Vinted sales for lego set ${legoSetId}...`);
-    const rawSales = await vinted.scrape(legoSetId) || [];
+
+    let rawSales = [];
+
+    try {
+      const allSales = await loadSalesFromFile();
+      rawSales = allSales[String(legoSetId)] || [];
+      console.log(`📄 ${rawSales.length} Vinted sales loaded from JSON for set ${legoSetId}`);
+    } catch (e) {
+      console.warn('vinted-sales.json not available or invalid, falling back to live scrape');
+      rawSales = await vinted.scrape(legoSetId) || [];
+    }
 
     // Keep only sales that actually mention the lego set id in the title
     const filtered = rawSales.filter(sale =>
