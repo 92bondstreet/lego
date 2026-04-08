@@ -13,8 +13,8 @@ const app = express();
 
 app.use(cors());
 
-// Serve client v2 static files
-app.use(express.static(path.join(__dirname, '..', 'client', 'v2')));
+// Serve client static files (copied under server/public for Vercel)
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Cache for scraped deals
 let cachedDeals = [];

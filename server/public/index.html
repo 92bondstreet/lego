@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🧱 Lego | Predictability of a lego set deal</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f6f9;
+        color: #333;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 24px;
+        color: #d4a017;
+      }
+      h2 {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+        color: #555;
+        border-bottom: 2px solid #d4a017;
+        padding-bottom: 4px;
+      }
+      section { margin-bottom: 24px; }
+      #options {
+        background: #fff;
+        border-radius: 10px;
+        padding: 16px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        align-items: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      }
+      #options label { font-weight: 600; margin-right: 4px; }
+      #options select {
+        padding: 6px 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 0.95rem;
+      }
+      #filters {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      #filters span {
+        padding: 6px 14px;
+        background: #e8e8e8;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 0.85rem;
+        transition: background 0.2s, color 0.2s;
+        user-select: none;
+      }
+      #filters span:hover, #filters span.active {
+        background: #d4a017;
+        color: #fff;
+      }
+      #lego, #indicators {
+        background: #fff;
+        border-radius: 10px;
+        padding: 16px 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      }
+      #indicators > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 0;
+        border-bottom: 1px solid #eee;
+      }
+      #indicators > div:last-child { border-bottom: none; }
+      #indicators span:last-child { font-weight: 700; color: #d4a017; }
+      .deals-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 16px;
+      }
+      .deal {
+        background: #fff;
+        border-radius: 10px;
+        padding: 14px 16px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        position: relative;
+        transition: transform 0.15s;
+      }
+      .deal:hover { transform: translateY(-3px); box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+      .deal.favorite { border-left: 4px solid #e74c3c; }
+      .deal .deal-id { font-size: 0.8rem; color: #999; }
+      .deal a {
+        color: #2874a6;
+        text-decoration: none;
+        font-weight: 600;
+        word-break: break-word;
+      }
+      .deal a:hover { text-decoration: underline; }
+      .deal-meta {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        font-size: 0.85rem;
+        color: #666;
+      }
+      .deal-price { font-weight: 700; font-size: 1.1rem; color: #27ae60; }
+      .deal-discount { color: #e74c3c; font-weight: 600; }
+      .fav-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 1.3rem;
+        cursor: pointer;
+        transition: transform 0.15s;
+      }
+      .fav-btn:hover { transform: scale(1.2); }
+      .sales-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 12px;
+      }
+      .sale {
+        background: #fff;
+        border-radius: 8px;
+        padding: 12px 14px;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.06);
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .sale a {
+        color: #2874a6;
+        text-decoration: none;
+        font-weight: 500;
+        word-break: break-word;
+      }
+      .sale a:hover { text-decoration: underline; }
+      .sale-price { font-weight: 700; color: #27ae60; }
+    </style>
+  </head>
+  <body>
+    <h1>🧱 Lego Deals</h1>
+    <section id="options">
+      <div id="show">
+        <label for="show-select">Show:</label>
+        <select name="show" id="show-select">
+          <option value="6">6</option>
+          <option value="12">12</option>
+          <option value="24">24</option>
+        </select>
+      </div>
+      <div id="page">
+        <label for="page-select">Page:</label>
+        <select name="page" id="page-select"> </select>
+      </div>
+      <div id="sort">
+        <label for="sort-select">Sort:</label>
+        <select name="sort" id="sort-select">
+          <option value="price-asc">Price ↑</option>
+          <option value="price-desc">Price ↓</option>
+          <option value="date-asc">Date ↑</option>
+          <option value="date-desc">Date ↓</option>
+        </select>
+      </div>
+      <div id="filters">
+        <span id="filter-discount">💰 Best discount</span>
+        <span id="filter-commented">💬 Most commented</span>
+        <span id="filter-hot">🔥 Hot deals</span>
+        <span id="filter-favorite">❤️ Favorites</span>
+      </div>
+    </section>
+    <section id="deals"></section>
+    <section id="lego">
+      <h2>Lego sets — Vinted Sales</h2>
+      <div>
+        <label>Lego set id:</label>
+        <select id="lego-set-id-select"></select>
+      </div>
+    </section>
+    <section id="indicators">
+      <h2>Indicators</h2>
+      <div>
+        <span>Number of deals</span>
+        <span id="nbDeals">0</span>
+      </div>
+      <div>
+        <span>Number of sales</span>
+        <span id="nbSales">0</span>
+      </div>
+      <div>
+        <span>Average sales price</span>
+        <span id="avgPrice">-</span>
+      </div>
+      <div>
+        <span>p5 sales price value</span>
+        <span id="p5Price">-</span>
+      </div>
+      <div>
+        <span>p25 sales price value</span>
+        <span id="p25Price">-</span>
+      </div>
+      <div>
+        <span>p50 sales price value</span>
+        <span id="p50Price">-</span>
+      </div>
+      <div>
+        <span>Lifetime value</span>
+        <span id="lifetime">-</span>
+      </div>
+    </section>
+    <section id="sales"></section>
+    <script type="text/javascript" charset="UTF-8" src="utils.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="portfolio.js"></script>
+  </body>
+</html>
