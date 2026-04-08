@@ -1,7 +1,8 @@
 // Invoking strict mode https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode#invoking_strict_mode
 'use strict';
 
-const API_BASE_URL = 'https://lego-api-xi.vercel.app';
+// Use same-origin API when deployed (Vercel or local)
+const API_BASE_URL = '';
 
 /**
 Description of the available api

@@ -10,7 +10,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = 8000;
 
 app.use(cors());
 
@@ -232,7 +231,4 @@ app.get('/sales/search', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server running at http://localhost:${PORT}`);
-  console.log(`📱 Client available at http://localhost:${PORT}`);
-});
+export default app;
