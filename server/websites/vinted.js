@@ -95,10 +95,11 @@ const scrape = async searchText => {
       return [];
     }
 
-    const url = `https://www.vinted.fr/api/v2/catalog/items?page=1&per_page=96&search_text=lego+${encodeURIComponent(searchText)}&catalog_ids=&size_ids=&brand_ids=89162&status_ids=6,1&material_ids=`;
+    const strictUrl = `https://www.vinted.fr/api/v2/catalog/items?page=1&per_page=96&search_text=${encodeURIComponent(`lego ${searchText}`)}&catalog_ids=&size_ids=&brand_ids=89162&status_ids=6,1&material_ids=`;
+    const looseUrl = `https://www.vinted.fr/api/v2/catalog/items?page=1&per_page=96&search_text=${encodeURIComponent(searchText)}&catalog_ids=&size_ids=&material_ids=`;
 
-    const makeRequest = async () => {
-      return fetch(url, {
+    const fetchItems = async (url, label) => {
+      const response = await fetch(url, {
         headers: {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
           'Accept': 'application/json, text/plain, */*',
@@ -107,26 +108,27 @@ const scrape = async searchText => {
           'Cookie': allCookies,
         },
       });
+
+      if (!response.ok) {
+        console.error(`Vinted API error (${label}):`, response.status);
+        return [];
+      }
+
+      const body = await response.json();
+      const items = body.items || [];
+      console.log(`Vinted ${label} search for ${searchText}: ${items.length} items`);
+      return items;
     };
 
-    let response = await makeRequest();
+    // 1) Requête stricte (avec marque + status)
+    let items = await fetchItems(strictUrl, 'strict');
 
-    // If 401/403, try refreshing token once
-    if (response.status === 401 || response.status === 403) {
-      console.log('🔄 Token expired, refreshing...');
-      accessToken = null;
-      await fetchToken();
-      if (!accessToken) return [];
-      response = await makeRequest();
+    // 2) Si rien, on élargit la recherche (sans filtre marque/status)
+    if (!items.length) {
+      items = await fetchItems(looseUrl, 'loose');
     }
 
-    if (response.ok) {
-      const body = await response.json();
-      return parse(body);
-    }
-
-    console.error('Vinted API error:', response.status);
-    return [];
+    return parse({items});
   } catch (error) {
     console.error(error);
     return [];

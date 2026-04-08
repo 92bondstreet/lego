@@ -22,6 +22,9 @@ const __dirname = path.dirname(__filename);
 const DEALS_FILE = path.join(__dirname, 'deals.json');
 const OUTPUT_FILE = path.join(__dirname, 'vinted-sales.json');
 
+// Simple async delay helper to avoid hitting Vinted too fast
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
 async function loadDealIds () {
   const content = await readFile(DEALS_FILE, 'utf-8');
   const deals = JSON.parse(content);
@@ -44,11 +47,19 @@ async function main () {
 
     const allSales = {};
 
-    for (const id of ids) {
+      // Add a small delay between each Vinted call to reduce 403s
+      let index = 0;
+      for (const id of ids) {
+        index += 1;
       console.log(`🧱 Scraping Vinted pour le set ${id}...`);
       const sales = await vinted.scrape(id);
       console.log(`   -> ${sales.length} ventes trouvées`);
       allSales[id] = sales;
+
+        // Pause 1.5s between calls (tunable if needed)
+        if (index < ids.length) {
+          await sleep(1500);
+        }
     }
 
     console.log('💾 Écriture du fichier vinted-sales.json...');

@@ -34,11 +34,11 @@ async function scrapeVinted (lego) {
   }
 }
 
-async function scrapeDealabs (website = 'https://www.dealabs.com/groupe/lego') {
+async function scrapeDealabs (maxPages = 10, website = 'https://www.dealabs.com/groupe/lego') {
   try {
-    console.log(`🕵️‍♀️  scraping deals from ${website}`);
+    console.log(`🕵️‍♀️  scraping deals from ${website} (maxPages=${maxPages})`);
 
-    const deals = await dealabs.scrape(website);
+    const deals = await dealabs.scrape(website, maxPages);
 
     console.log(deals);
     console.log(`\n${deals.length} deals found`);
@@ -56,7 +56,8 @@ async function scrapeDealabs (website = 'https://www.dealabs.com/groupe/lego') {
 
 
 const [,, param] = process.argv;
+const maxPages = Number.isNaN(parseInt(param, 10)) ? 10 : parseInt(param, 10);
 
-scrapeDealabs(param);
+scrapeDealabs(maxPages);
 //scrapeADLB(param);
 //scrapeVinted(param)
