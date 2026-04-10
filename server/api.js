@@ -25,10 +25,19 @@ try {
   console.warn(`⚠️ SALES not loaded: ${error}`);
 }
 
+/*try {
+  deals = JSON.parse(
+    readFileSync(path.join(__dirname, 'deals.json'), 'utf8')
+  );
+} catch (error) {
+  console.warn(`⚠️ DEALS not loaded: ${error}`);
+}*/
+
 try {
   deals = JSON.parse(
     readFileSync(path.join(__dirname, 'deals.json'), 'utf8')
   );
+  console.log('Deals loaded:', deals.length, 'First uuid:', deals[0]?.uuid);
 } catch (error) {
   console.warn(`⚠️ DEALS not loaded: ${error}`);
 }
@@ -80,9 +89,12 @@ app.get('/deals/search', (req, res) => {
 // GET /deals/:id
 // ==========================
 app.get('/deals/:id', (req, res) => {
+  //const { id } = req.params;
   const { id } = req.params;
+  /*console.log('Looking for id:', id);
+  console.log('Available uuids:', deals.map(d => d.uuid).slice(0, 3));*/
 
-  const deal = deals.find(d => d._id === id);
+  const deal = deals.find(d => d.uuid === id);
 
   if (!deal) {
     return res.status(404).json({ error: 'Deal not found' });
@@ -109,7 +121,11 @@ app.get('/sales/search', (req, res) => {
     // sort by date DESC
     results.sort((a, b) => b.published - a.published);
 
-    const limited = results.slice(0, Number(limit));
+    // Flatten the price before returning 
+    const limited = results.slice(0, Number(limit)).map(sale => ({
+      ...sale,
+      price: parseFloat(sale.price?.amount || sale.price || 0)
+    }));
 
     res.json({
       limit: Number(limit),
