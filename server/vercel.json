@@ -1,7 +1,13 @@
 {
   "version": 2,
   "builds": [
-    {"src": "*.js", "use": "@vercel/node"},
-    {"src": "*.json", "use": "@vercel/node"}],
+    {
+      "src": "api.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["websites/*.json", "sources/*.json"]
+      }
+    }
+  ],
   "routes": [{"src": "/(.*)", "dest": "api.js"}]
 }

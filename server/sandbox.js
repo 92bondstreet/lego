@@ -1,39 +1,36 @@
-/* eslint-disable no-console, no-process-exit */
 import * as avenuedelabrique from './websites/avenuedelabrique.js';
-import * as vinted from './websites/vinted.js';
+import * as dealabs from './websites/dealabs.js';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-async function scrapeADLB (website = 'https://www.avenuedelabrique.com/promotions-et-bons-plans-lego') {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+async function runScrapers() {
   try {
-    console.log(`🕵️‍♀️  browsing ${website} website`);
+    // 1. Scrape Avenue de la Brique
+    console.log('🕵️‍♀️ Scrapping Avenue de la Brique...');
+    const adlbDeals = await avenuedelabrique.scrape('https://www.avenuedelabrique.com/promotions-et-bons-plans-lego');
+    if (adlbDeals) {
+      fs.writeFileSync(path.join(__dirname, 'websites', 'avenuedelabrique.json'), JSON.stringify(adlbDeals, null, 2));
+      console.log(`✅ Saved ${adlbDeals.length} deals from Avenue de la Brique`);
+    }
 
-    const deals = await avenuedelabrique.scrape(website);
+    // 2. Scrape Dealabs
+    console.log('🕵️‍♀️ Scrapping Dealabs...');
+    const dealabsDeals = await dealabs.scrape('https://www.dealabs.com/groupe/lego');
+    if (dealabsDeals) {
+      fs.writeFileSync(path.join(__dirname, 'websites', 'dealabs.json'), JSON.stringify(dealabsDeals, null, 2));
+      console.log(`✅ Saved ${dealabsDeals.length} deals from Dealabs`);
+    }
 
-    console.log(deals);
-    console.log('done');
+    console.log('🚀 Scraping task completed!');
     process.exit(0);
   } catch (e) {
-    console.error(e);
+    console.error('❌ Error during scraping:', e);
     process.exit(1);
   }
 }
 
-async function scrapeVinted (lego) {
-  try {
-    console.log(`🕵️‍♀️  scraping lego ${lego} from vinted.fr`);
-
-    const sales = await vinted.scrape(lego);
-
-    console.log(sales);
-    console.log('done');
-    process.exit(0);
-  } catch (e) {
-    console.error(e);
-    process.exit(1);
-  }
-}
-
-
-const [,, param] = process.argv;
-
-scrapeADLB(param);
-//scrapeVinted(param)
+runScrapers();

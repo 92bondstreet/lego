@@ -1,7 +1,8 @@
-import * as cheerio from 'cheerio';
 import { v5 as uuidv5 } from 'uuid';
 
-const COOKIE = "";
+// Read from environment variable — set via Vercel dashboard or .env file locally
+const COOKIE = process.env.VINTED_COOKIE || "";
+
 
 function isNotDefined(value) {
   return (value == null || (typeof value === "string" && value.trim().length === 0));

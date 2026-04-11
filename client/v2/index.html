@@ -1,74 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>🧱 Lego | Predictability of a lego set deal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Lego</h1>
-    <section id="options">
-      <div id="show">
-        <label for="show-select">Show:</label>
-        <select name="show" id="show-select">
-          <option value="6">6</option>
-          <option value="12">12</option>
-          <option value="24">24</option>
-        </select>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <span class="logo-icon">🧱</span>
+          <span class="logo-text">LegoDeals</span>
+        </div>
+        <button class="sidebar-toggle" id="sidebar-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
-      <div id="page">
-        <label for="page-select">Go to page:</label>
-        <select name="page" id="page-select"> </select>
+
+      <div class="sidebar-filters">
+        <div class="filter-section">
+          <h3 class="filter-title">
+            <i class="fas fa-sliders-h"></i> Filters & Options
+          </h3>
+          
+          <div class="filter-group">
+            <label for="show-select" class="filter-label">
+              <i class="fas fa-list"></i> Items per page
+            </label>
+            <select name="show" id="show-select" class="select">
+              <option value="6">6 items</option>
+              <option value="12" selected>12 items</option>
+              <option value="24">24 items</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="sort-select" class="filter-label">
+              <i class="fas fa-sort"></i> Sort by
+            </label>
+            <select name="sort" id="sort-select" class="select">
+              <option value="price-asc">💰 Cheaper first</option>
+              <option value="price-desc">💸 More expensive</option>
+              <option value="date-asc">📅 Recently published</option>
+              <option value="date-desc">📆 Older deals</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="page-select" class="filter-label">
+              <i class="fas fa-bookmark"></i> Page
+            </label>
+            <select name="page" id="page-select" class="select"></select>
+          </div>
+
+          <div class="filter-group">
+            <label for="lego-set-id-select" class="filter-label">
+              <i class="fas fa-cubes"></i> Lego set
+            </label>
+            <select id="lego-set-id-select" class="select"></select> 
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3 class="filter-title">
+            <i class="fas fa-fire"></i> Quick Filters
+          </h3>
+          <div class="quick-filters" id="filters">
+            <button class="quick-filter-btn" id="filter-discount">
+              <i class="fas fa-percentage"></i> Best Discount
+            </button>
+            <button class="quick-filter-btn" id="filter-commented">
+              <i class="fas fa-comments"></i> Most Commented
+            </button>
+            <button class="quick-filter-btn" id="filter-hot">
+              <i class="fas fa-fire"></i> Hot Deals
+            </button>
+            <button class="quick-filter-btn" id="filter-favorite">
+              <i class="fas fa-heart"></i> Favorites
+            </button>
+            <button class="quick-filter-btn" id="filter-vinted">
+              <i class="fas fa-tag"></i> Vinted Available
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3 class="filter-title">
+            <i class="fas fa-info-circle"></i> Quick Stats
+          </h3>
+          <div class="quick-stats">
+            <div class="quick-stat">
+              <span class="stat-icon">📊</span>
+              <span class="stat-label">Deals</span>
+              <span class="stat-number" id="nbDeals">0</span>
+            </div>
+            <div class="quick-stat">
+              <span class="stat-icon">💸</span>
+              <span class="stat-label">Sales</span>
+              <span class="stat-number" id="nbSales">0</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="filters">
-        <span>By best discount</span>
-        <span>By most commented</span>
-        <span>By hot deals</span>
+
+      <div class="sidebar-footer">
+        <p>🎨 Find the best Lego deals online</p>
       </div>
-      <div id="sort">
-        <label for="sort-select">Sort:</label>
-        <select name="sort" id="sort-select">
-          <option value="price-asc">Cheaper</option>
-          <option value="price-desc">Expensive</option>
-          <option value="date-asc">Recently published</option>
-          <option value="date-desc">Anciently published</option>
-        </select>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Header Bar -->
+      <header class="top-header">
+        <div class="header-left">
+          <h1 class="main-title">Lego Deals Tracker</h1>
+          <p class="main-subtitle">Discover amazing deals on your favorite Lego sets</p>
+        </div>
+      </header>
+
+      <div class="content-wrapper">
+        <!-- Main Content Area -->
+        <section class="main-section">
+          <!-- Stats Cards -->
+          <div class="indicators-section">
+            <h2 class="section-heading">
+              <i class="fas fa-chart-line"></i> Market Statistics
+            </h2>
+            <div class="indicators-grid">
+              <div class="stat-card stat-card-1">
+                <div class="stat-card-icon">📊</div>
+                <div class="stat-card-content">
+                  <div class="stat-card-label">Active Deals</div>
+                  <div class="stat-card-value" id="stat-deals">0</div>
+                  <div class="stat-card-change">deals loaded</div>
+                </div>
+              </div>
+
+              <div class="stat-card stat-card-2">
+                <div class="stat-card-icon">💰</div>
+                <div class="stat-card-content">
+                  <div class="stat-card-label">Median Price (p50)</div>
+                  <div class="stat-card-value" id="stat-p50">—</div>
+                  <div class="stat-card-change">select a Lego set</div>
+                </div>
+              </div>
+
+              <div class="stat-card stat-card-3">
+                <div class="stat-card-icon">📈</div>
+                <div class="stat-card-content">
+                  <div class="stat-card-label">P25 Price</div>
+                  <div class="stat-card-value" id="stat-p25">—</div>
+                  <div class="stat-card-change">lower quartile</div>
+                </div>
+              </div>
+
+              <div class="stat-card stat-card-4">
+                <div class="stat-card-icon">📉</div>
+                <div class="stat-card-content">
+                  <div class="stat-card-label">P5 Price</div>
+                  <div class="stat-card-value" id="stat-p5">—</div>
+                  <div class="stat-card-change">lowest 5%</div>
+                </div>
+              </div>
+
+              <div class="stat-card stat-card-5">
+                <div class="stat-card-icon">⏳</div>
+                <div class="stat-card-content">
+                  <div class="stat-card-label">Lifetime Value</div>
+                  <div class="stat-card-value" id="stat-lifetime">—</div>
+                  <div class="stat-card-change">days on market</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deals Grid -->
+          <div class="deals-container">
+            <div class="deals-header">
+              <h2 class="section-heading">
+                <i class="fas fa-tags"></i> Available Deals
+              </h2>
+              <div class="view-controls">
+                <button class="view-btn active" title="Grid view">
+                  <i class="fas fa-th"></i>
+                </button>
+                <button class="view-btn" title="List view">
+                  <i class="fas fa-list"></i>
+                </button>
+              </div>
+            </div>
+            <div id="deals" class="deals-grid"></div>
+          </div>
+        </section>
       </div>
-    </section>
-    <section id="lego">
-      <h2>Lego sets</h2>
-      <div>
-        <label>Lego set id:</label>
-        <select id="lego-set-id-select"></select> 
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 LegoDeals Tracker. Find amazing deals on Lego sets worldwide!</p>
       </div>
-    </section>
-    <section id="indicators">
-      <h2>Indicators</h2>
-      <div>
-        <span>Number of deals</span>
-        <span id="nbDeals">0</span>
-      </div>
-      <div>
-        <span>Number of sales</span>
-        <span id="nbSales">0</span>
-      </div>
-      <div>
-        <span>p5 sales price value</span>
-        <span>0</span>
-      </div>
-      <div>
-        <span>p25 sales price value</span>
-        <span>0</span>
-      </div>
-      <div>
-        <span>p50 sales price value</span>
-        <span>0</span>
-      </div>
-      <div>
-        <span>Lifetime value</span>
-        <span>10 days</span>
-      </div>
-    </section>
-    <section id="deals"></section>
+    </footer>
+
     <script type="text/javascript" charset="UTF-8" src="utils.js"></script>
     <script type="text/javascript" charset="UTF-8" src="portfolio.js"></script>
   </body>
