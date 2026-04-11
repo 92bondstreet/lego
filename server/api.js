@@ -108,7 +108,7 @@ app.get('/deals/:id', (req, res) => {
 // ==========================
 // GET /sales/search
 // ==========================
-app.get('/sales/search', (req, res) => {
+/*app.get('/sales/search', (req, res) => {
   try {
     const { limit = 12, legoSetId } = req.query;
 
@@ -140,6 +140,37 @@ app.get('/sales/search', (req, res) => {
       results: []
     });
   }
+});*/ 
+
+app.get('/sales/search', (req, res) => {
+  const { limit = 12, legoSetId } = req.query;
+
+  let results = [];
+
+  // Convert SALES into array
+  const allSales = Array.isArray(SALES)
+    ? SALES
+    : Object.values(SALES).flat();
+
+  // Filter by legoSetId inside title
+  if (legoSetId) {
+    results = allSales.filter(s =>
+      s.title && s.title.includes(legoSetId)
+    );
+  } else {
+    results = allSales;
+  }
+
+  // Sort by most recent
+  results.sort((a, b) => b.published - a.published);
+
+  const limited = results.slice(0, Number(limit));
+
+  res.json({
+    limit: Number(limit),
+    total: results.length,
+    results: limited
+  });
 });
 
 

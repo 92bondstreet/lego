@@ -6,7 +6,7 @@ let currentPagination = {}
 let activeFilters = []
 let favorites = JSON.parse(localStorage.getItem('legoFavorites') || '[]')
 
-const API = 'https://lego-api-blue.vercel.app'
+const API = 'https://legoserverdzb.vercel.app'
 
 // ── ELEMENTS ──
 const selectShow   = document.querySelector('#show-select')
@@ -26,25 +26,58 @@ const setCurrentDeals = ({ result, meta }) => {
 }
 
 // ── FETCH ──
-const fetchDeals = async (page = 1, size = 6) => {
+/*const fetchDeals = async (page = 1, size = 6) => {
   setLoading(true)
   try {
-    const res  = await fetch(`${API}/deals?page=${page}&size=${size}`)
+    const res  = await fetch(`${API}/deals/search?page=${page}&size=${size}`)
     const body = await res.json()
     if (!body.success) return null
     return body.data
   } finally {
     setLoading(false)
   }
+}*/ 
+
+const fetchDeals = async (page = 1, size = 6) => {
+  setLoading(true)
+  try {
+    const res = await fetch(`${API}/deals/search?page=${page}&size=${size}`)
+    const body = await res.json()
+    // Your API returns {limit, total, results} directly
+    return {
+      result: body.results,
+      meta: {
+        currentPage: page,
+        pageCount: Math.ceil(body.total / size),
+        count: body.total
+      }
+    }
+  } finally {
+    setLoading(false)
+  }
 }
+
+/*const fetchSales = async (id) => {
+  setLoading(true)
+  try {
+    const res  = await fetch(`${API}/sales/search?legoSetId=${id}`)
+    const body = await res.json()
+    if (!body.success) return []
+    return body.data
+  } finally {
+    setLoading(false)
+  }
+}*/ 
 
 const fetchSales = async (id) => {
   setLoading(true)
   try {
-    const res  = await fetch(`${API}/sales?id=${id}`)
+    const res  = await fetch(`${API}/sales/search?legoSetId=${id}`)
     const body = await res.json()
-    if (!body.success) return []
-    return body.data
+
+    // Your API returns { limit, total, results }
+    return body.results || []
+    
   } finally {
     setLoading(false)
   }
