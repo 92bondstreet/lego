@@ -12,7 +12,7 @@ const API = 'https://legoserverdzb.vercel.app'
 const selectShow   = document.querySelector('#show-select')
 const selectPage   = document.querySelector('#page-select')
 const selectSort   = document.querySelector('#sort-select')
-const selectSetIds = document.querySelector('#lego-set-id-select')
+const inputSetId = document.querySelector('#lego-set-id-input')
 const sectionDeals = document.querySelector('#deals')
 const sectionSales = document.querySelector('#sales')
 const loadingBar   = document.querySelector('#loadingBar')
@@ -132,7 +132,7 @@ const renderDeals = (deals) => {
         </button>
       </div>
       <div class="deal-body">
-        <div class="deal-id">ID: ${deal.id}</div>
+        <div class="deal-id">ID: ${deal.id || '—'}</div>
         <div class="deal-title">${deal.title}</div>
         <div class="deal-meta">
           <span class="deal-price">${deal.price}€</span>
@@ -278,7 +278,11 @@ const renderIndicators = (pagination, sales = []) => {
 
 // ── RENDER SET IDS ──
 const renderLegoSetIds = (deals) => {
-  const ids = getIdsFromDeals(deals)
+  // Extract ID from title using regex, fallback to uuid slice
+  const ids = [...new Set(deals.map(d => {
+    const match = d.title && d.title.match(/\b(\d{4,6})\b/)
+    return match ? match[1] : null
+  }).filter(Boolean))]
   selectSetIds.innerHTML = ids.map(id => `<option value="${id}">${id}</option>`).join('')
 }
 
@@ -357,10 +361,15 @@ selectSort.addEventListener('change', () => {
   renderDeals(applyFilters())
 })
 
-selectSetIds.addEventListener('change', async (e) => {
-  const sales = await fetchSales(e.target.value)
-  renderSales(sales)
-  renderIndicators(currentPagination, sales)
+inputSetId.addEventListener('keypress', async (e) => {
+  if (e.key === 'Enter') {
+    const id = e.target.value.trim()
+    if (!id) return
+
+    const sales = await fetchSales(id)
+    renderSales(sales)
+    renderIndicators(currentPagination, sales)
+  }
 })
 
 // ── MAIN RENDER ──

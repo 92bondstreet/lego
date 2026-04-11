@@ -143,34 +143,32 @@ app.get('/deals/:id', (req, res) => {
 });*/ 
 
 app.get('/sales/search', (req, res) => {
-  const { limit = 12, legoSetId } = req.query;
+  try {
+    const { limit = 12, legoSetId } = req.query;
 
-  let results = [];
+    let results = [];
 
-  // Convert SALES into array
-  const allSales = Array.isArray(SALES)
-    ? SALES
-    : Object.values(SALES).flat();
+    if (legoSetId && SALES[legoSetId]) {
+      results = SALES[legoSetId].map(sale => ({
+        ...sale,
+        price: parseFloat(sale.price?.amount || sale.price || 0)
+      }));
+    }
 
-  // Filter by legoSetId inside title
-  if (legoSetId) {
-    results = allSales.filter(s =>
-      s.title && s.title.includes(legoSetId)
-    );
-  } else {
-    results = allSales;
+    results.sort((a, b) => b.published - a.published);
+
+    const limited = results.slice(0, Number(limit));
+
+    res.json({
+      limit: Number(limit),
+      total: results.length,
+      results: limited
+    });
+
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ success: false, results: [] });
   }
-
-  // Sort by most recent
-  results.sort((a, b) => b.published - a.published);
-
-  const limited = results.slice(0, Number(limit));
-
-  res.json({
-    limit: Number(limit),
-    total: results.length,
-    results: limited
-  });
 });
 
 
