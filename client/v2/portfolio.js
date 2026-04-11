@@ -61,7 +61,7 @@ const setCurrentDeals = ({result, meta}) => {
 const fetchDeals = async (page = 1, size = 100) => {
   try {
     const response = await fetch(
-      `https://server-ten-coral-54.vercel.app/deals/search?limit=${size}`
+      `http://localhost:8092/deals/search?limit=${size}`
     );
     const body = await response.json();
 
@@ -334,7 +334,7 @@ const fetchVintedSales = async (setId) => {
   try {
     console.log('Fetching Vinted sales for set ID:', setId);
     const response = await fetch(
-      `https://server-ten-coral-54.vercel.app/sales/search?legoSetId=${setId}`
+      `http://localhost:8092/sales/search?legoSetId=${setId}`
     );
     const body = await response.json();
 

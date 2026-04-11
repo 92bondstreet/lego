@@ -20,7 +20,7 @@ let DEALS = [];
 
 // Load SALES from vinted.json
 try {
-  const vintedPath = path.join(__dirname, 'sources', 'vinted.json');
+  const vintedPath = path.join(process.cwd(), 'sources', 'vinted.json');
   if (fs.existsSync(vintedPath)) {
     SALES = JSON.parse(readFileSync(vintedPath, 'utf8'));
   }
@@ -30,7 +30,7 @@ try {
 
 // Load all DEALS from any json file in the websites folder
 try {
-  const websitesDir = path.join(__dirname, 'websites');
+  const websitesDir = path.join(process.cwd(), 'websites');
   const files = fs.readdirSync(websitesDir);
   
   files.forEach(file => {
@@ -86,7 +86,7 @@ app.get('/deals/search', (request, response) => {
     const filterBy = request.query.filterBy;
     
     // Only keep deals with a valid price
-    let results = [...DEALS].filter(deal => deal.price > 0);
+    let results = [...DEALS].filter(deal => deal.price !== null && deal.price !== undefined);
 
     // Filter by max price
     if (!isNaN(maxPrice)) {
