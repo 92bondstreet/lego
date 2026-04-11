@@ -6,13 +6,20 @@ let currentPagination = {}
 let activeFilters = []
 let favorites = JSON.parse(localStorage.getItem('legoFavorites') || '[]')
 
+const VALID_SET_IDS = [
+  "10343","10348","11384","31150","31162","31163","31165","31175",
+  "31218","40747","40885","42179","43020","43221","43257","43268",
+  "43271","43272","60444","71814","71858","75687","76281","77240",
+  "77251","77255"
+]
+
 const API = 'https://legoserverdzb.vercel.app'
 
 // ── ELEMENTS ──
 const selectShow   = document.querySelector('#show-select')
 const selectPage   = document.querySelector('#page-select')
 const selectSort   = document.querySelector('#sort-select')
-const inputSetId = document.querySelector('#lego-set-id-input')
+const selectSetIds = document.querySelector('#lego-set-id-select')
 const sectionDeals = document.querySelector('#deals')
 const sectionSales = document.querySelector('#sales')
 const loadingBar   = document.querySelector('#loadingBar')
@@ -277,13 +284,10 @@ const renderIndicators = (pagination, sales = []) => {
 }
 
 // ── RENDER SET IDS ──
-const renderLegoSetIds = (deals) => {
-  // Extract ID from title using regex, fallback to uuid slice
-  const ids = [...new Set(deals.map(d => {
-    const match = d.title && d.title.match(/\b(\d{4,6})\b/)
-    return match ? match[1] : null
-  }).filter(Boolean))]
-  selectSetIds.innerHTML = ids.map(id => `<option value="${id}">${id}</option>`).join('')
+const renderLegoSetIds = () => {
+  selectSetIds.innerHTML = VALID_SET_IDS
+    .map(id => `<option value="${id}">${id}</option>`)
+    .join('')
 }
 
 // ── FILTERS ──
@@ -361,15 +365,10 @@ selectSort.addEventListener('change', () => {
   renderDeals(applyFilters())
 })
 
-inputSetId.addEventListener('keypress', async (e) => {
-  if (e.key === 'Enter') {
-    const id = e.target.value.trim()
-    if (!id) return
-
-    const sales = await fetchSales(id)
-    renderSales(sales)
-    renderIndicators(currentPagination, sales)
-  }
+selectSetIds.addEventListener('change', async (e) => {
+  const sales = await fetchSales(e.target.value)
+  renderSales(sales)
+  renderIndicators(currentPagination, sales)
 })
 
 // ── MAIN RENDER ──
