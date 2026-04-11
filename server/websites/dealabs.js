@@ -73,27 +73,40 @@ export const scrape = async (url = 'https://www.dealabs.com/groupe/lego') => {
     if (!threadId || threadMap[threadId]) return;
 
     const priceText = $(el).find('[data-t="price"]').text().trim() ||
-                      $(el).find('.thread-price').text().trim();
-    const price = parseFloat(priceText.replace(',', '.').replace(/[^0-9.]/g, '')) || null;
+                      $(el).find('.thread-price').text().trim() ||
+                      $(el).find('.thread-price--list').text().trim();
+    const price = parseFloat(priceText.replace('€', '').replace(',', '.').replace(/[^0-9.]/g, '')) || null;
 
-    const discountText = $(el).find('[data-t="discount"]').text().trim();
-    const discount = discountText ? parseInt(discountText.replace(/[^0-9]/g, '')) : 0;
+    const retailText = $(el).find('.thread-price--old').text().trim();
+    const retail = parseFloat(retailText.replace('€', '').replace(',', '.').replace(/[^0-9.]/g, '')) || 0;
 
-    const tempText = $(el).find('[data-t="temperature"]').text().trim();
-    const temperature = tempText ? parseFloat(tempText) : 0;
+    const discountText = $(el).find('[data-t="discount"]').text().trim() ||
+                         $(el).find('.thread-discount').text().trim();
+    let discount = discountText ? parseInt(discountText.replace(/[^0-9]/g, '')) : 0;
 
-    const titleEl = $(el).find('strong.thread-title a, a.thread-title--list, .thread-title a').first();
-    const title = titleEl.text().trim();
+    // Auto-calculate discount if retail exists but discount is missing
+    if (price && retail && !discount) {
+      discount = Math.round(((retail - price) / retail) * 100);
+    }
+
+    const tempText = $(el).find('[data-t="temperature"]').text().trim() ||
+                     $(el).find('.vote-temp').text().trim();
+    const temperature = tempText ? parseFloat(tempText.replace(/[^-0-9.]/g, '')) : 0;
+
+    const titleEl = $(el).find('strong.thread-title a, a.thread-title--list, .thread-title a, .thread--type-list .thread-title').first();
+    const title = titleEl.text().trim() || $(el).find('.thread-title').text().trim();
     const link = titleEl.attr('href') || `https://www.dealabs.com/bons-plans/${threadId}`;
 
     const imgSrc = $(el).find('img[src]').not('[src*="data:"]').first().attr('src') ||
-                   $(el).find('img').first().attr('data-src') || '';
+                   $(el).find('img').first().attr('data-src') || 
+                   $(el).find('.thread-image img').attr('src') || '';
 
     if (title) {
       threadMap[threadId] = {
         threadId,
         title,
         price,
+        retail,
         priceDiscount: discount,
         temperature,
         url: link,
@@ -113,7 +126,7 @@ export const scrape = async (url = 'https://www.dealabs.com/groupe/lego') => {
       uuid: uuidv5(link, uuidv5.URL),
       title: thread.title || '',
       price: thread.price || 0,
-      retail: thread.nextBestPrice || 0,
+      retail: thread.retail || thread.nextBestPrice || 0,
       discount: thread.priceDiscount || 0,
       temperature: Math.round(thread.temperature || 0),
       comments: thread.commentCount || 0,

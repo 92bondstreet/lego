@@ -122,6 +122,16 @@ app.get('/deals/search', (request, response) => {
       results.sort((a, b) => (a.price || 0) - (b.price || 0));
     }
 
+    // Add Vinted availability info to each deal
+    results = results.map(deal => {
+      const setIdMatch = deal.title.match(/\b\d{4,5}\b/);
+      const setId = setIdMatch ? setIdMatch[0] : null;
+      return {
+        ...deal,
+        hasVintedSales: setId ? !!(SALES[setId] && SALES[setId].length > 0) : false
+      };
+    });
+
     const total = results.length;
     results = results.slice(0, limit);
 

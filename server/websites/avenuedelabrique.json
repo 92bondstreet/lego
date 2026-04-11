@@ -2,7 +2,8 @@
   {
     "discount": 76,
     "link": "https://www.avenuedelabrique.com/jeux-video-lego/ps4-l2kd-esg-lego-2k-drive-edition-super-geniale-ps4/p9147",
-    "price": 24.12,
+    "price": 23.78,
+    "retail": 0,
     "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
     "title": "Jeux vidéo LEGO 2K Drive Édition Super Géniale - PS4",
     "uuid": "8db3e667-4baf-5ec8-a0bd-e6b0056ab7df"
@@ -11,14 +12,16 @@
     "discount": 75,
     "link": "https://www.avenuedelabrique.com/lego-super-mario/30385-ensemble-d-extension-surprise-de-super-champignon-polybag/p6066",
     "price": 1,
+    "retail": 0,
     "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
     "title": "LEGO Super Mario 30385 - Ensemble d'extension Surprise de super champignon (Polybag)",
     "uuid": "8f594b56-0f76-52d5-9e9e-7a07fa4c49df"
   },
   {
-    "discount": 70,
+    "discount": 71,
     "link": "https://www.avenuedelabrique.com/jeux-video-lego/xbox-l2kd-esg-lego-2k-drive-edition-super-geniale-xbox-series-x-one/p9149",
-    "price": 29.75,
+    "price": 29.44,
+    "retail": 0,
     "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
     "title": "Jeux vidéo LEGO 2K Drive Édition Super Géniale - XBOX Series X & One",
     "uuid": "2b9bdca0-c54c-5827-9f40-38ea7ce4a8d2"
@@ -27,136 +30,153 @@
     "discount": 66,
     "link": "https://www.avenuedelabrique.com/livres-lego/5006811-a-visual-history/p7314",
     "price": 11.99,
+    "retail": 0,
     "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
     "title": "Livres A Visual History",
     "uuid": "1c13ac61-9cc0-5118-94e9-c514cbbb928d"
   },
   {
-    "discount": 64,
-    "link": "https://www.avenuedelabrique.com/livres-lego/5007583-the-lego-ideas-book-new-edition-you-can-build-anything/p8752",
-    "price": 8.99,
-    "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
-    "title": "Livres The LEGO Ideas Book New Edition: You Can Build Anything!",
-    "uuid": "f330bb92-0347-56ed-90af-bdb788cd095a"
-  },
-  {
-    "discount": 59,
-    "link": "https://www.avenuedelabrique.com/lego-movie/70828-le-bus-discotheque/p5212",
-    "price": 40.99,
-    "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
-    "title": "LEGO The LEGO Movie 70828 - Le bus discothèque",
-    "uuid": "3f16495b-5cad-5554-8724-607622b0eaf3"
-  },
-  {
-    "discount": 58,
+    "discount": 66,
     "link": "https://www.avenuedelabrique.com/lego-vidiyo/43103-punk-pirate-beatbox/p6646",
-    "price": 8.36,
+    "price": 6.87,
+    "retail": 0,
     "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
     "title": "LEGO VIDIYO 43103 - Punk Pirate BeatBox",
     "uuid": "df8718f7-01d6-5398-88b3-bd2075dc3860"
   },
   {
+    "discount": 64,
+    "link": "https://www.avenuedelabrique.com/livres-lego/5007583-the-lego-ideas-book-new-edition-you-can-build-anything/p8752",
+    "price": 8.99,
+    "retail": 0,
+    "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
+    "title": "Livres The LEGO Ideas Book New Edition: You Can Build Anything!",
+    "uuid": "f330bb92-0347-56ed-90af-bdb788cd095a"
+  },
+  {
     "discount": 58,
     "link": "https://www.avenuedelabrique.com/lego-unikitty/41452-le-tricycle-de-prince-puppycorn/p4948",
     "price": 6.35,
+    "retail": 0,
     "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
     "title": "LEGO Unikitty 41452 - Le tricycle de Prince Puppycorn",
     "uuid": "91c93606-708a-56e3-bd47-561cc902650d"
   },
   {
-    "discount": 56,
-    "link": "https://www.avenuedelabrique.com/lego-super-mario/72040-campement-du-capitaine-toad/p10819",
-    "price": 6.57,
+    "discount": 57,
+    "link": "https://www.avenuedelabrique.com/lego-marvel-super-heroes/76308-le-robot-de-spider-man-contre-anti-venom/p10494",
+    "price": 6.41,
+    "retail": 0,
     "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
-    "title": "LEGO Super Mario 72040 - Campement du capitaine Toad",
-    "uuid": "00caaf6c-1d2f-5db3-b033-21290db87f1b"
-  },
-  {
-    "discount": 55,
-    "link": "https://www.avenuedelabrique.com/jeux-de-societe-lego/5009128-monkey-palace-version-francaise/p10350",
-    "price": 22.74,
-    "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
-    "title": "Jeux de société Monkey Palace (version française)",
-    "uuid": "89a73e3f-fb5f-5a3a-87a7-6e8431aa2c0d"
+    "title": "LEGO Marvel 76308 - Le robot de Spider-Man contre Anti-Venom",
+    "uuid": "e5d44685-24b5-54cf-b098-d8beba75ba1b"
   },
   {
     "discount": 55,
     "link": "https://www.avenuedelabrique.com/livres-lego/5008900-visual-dictionary-updated-edition/p10172",
     "price": 8.99,
+    "retail": 0,
     "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
     "title": "Livres Visual Dictionary – Updated Edition",
     "uuid": "3e48bb79-739e-5ef8-8bd5-d438ac17dc95"
   },
   {
     "discount": 54,
-    "link": "https://www.avenuedelabrique.com/lego-movie/70835-le-rexplorer-de-rex/p5205",
-    "price": 59.95,
-    "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
-    "title": "LEGO The LEGO Movie 70835 - Le Rexplorer de Rex",
-    "uuid": "e1b76921-5afe-53f7-b338-118d73f19401"
-  },
-  {
-    "discount": 54,
-    "link": "https://www.avenuedelabrique.com/lego-city/60464-voitures-de-course-de-f1-williams-racing-et-haas-f1/p10455",
+    "link": "https://www.avenuedelabrique.com/lego-creator/31146-le-camion-remorque-avec-helicoptere/p9563",
     "price": 9.27,
+    "retail": 0,
     "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
-    "title": "LEGO City 60464 - Voitures de course de F1 Williams Racing et Haas F1",
-    "uuid": "67e8ac63-1e79-5759-977d-ce47a7ef0402"
+    "title": "LEGO Creator 31146 - Le camion remorque avec hélicoptère",
+    "uuid": "99cfc17e-ded0-5e69-8818-33c0690d9b9a"
   },
   {
     "discount": 53,
-    "link": "https://www.avenuedelabrique.com/lego-duplo/10965-jouet-de-bain-le-train-flottant-des-animaux/p7806",
-    "price": 9.49,
+    "link": "https://www.avenuedelabrique.com/jeux-de-societe-lego/5009128-monkey-palace-version-francaise/p10350",
+    "price": 23.53,
+    "retail": 0,
     "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
-    "title": "LEGO Duplo 10965 - Jouet de bain : le train flottant des animaux",
-    "uuid": "759a41c3-8310-5e7d-adcd-498a9e9b141a"
+    "title": "Jeux de société Monkey Palace (version française)",
+    "uuid": "89a73e3f-fb5f-5a3a-87a7-6e8431aa2c0d"
+  },
+  {
+    "discount": 52,
+    "link": "https://www.avenuedelabrique.com/lego-movie/70828-le-bus-discotheque/p5212",
+    "price": 47.99,
+    "retail": 0,
+    "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
+    "title": "LEGO The LEGO Movie 70828 - Le bus discothèque",
+    "uuid": "3f16495b-5cad-5554-8724-607622b0eaf3"
+  },
+  {
+    "discount": 52,
+    "link": "https://www.avenuedelabrique.com/lego-star-wars/75400-microfighter-chasseur-jedi-de-plo-koon/p10878",
+    "price": 7.17,
+    "retail": 0,
+    "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
+    "title": "LEGO Star Wars 75400 - Microfighter Chasseur Jedi de Plo Koon",
+    "uuid": "edd3f2ba-96c0-5c67-8787-458118c74c5a"
   },
   {
     "discount": 51,
-    "link": "https://www.avenuedelabrique.com/lego-fortnite/77070-durrr-burger/p10225",
+    "link": "https://www.avenuedelabrique.com/lego-classic/11024-la-plaque-de-construction-grise/p7905",
     "price": 7.37,
+    "retail": 0,
     "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
-    "title": "LEGO Fortnite 77070 - Durrr Burger",
-    "uuid": "6b51ce0c-c26f-5eaa-b2e0-5d0d3f2fb6db"
+    "title": "LEGO Classic 11024 - La plaque de construction grise",
+    "uuid": "98686d99-08a5-5375-9770-45537dac55bb"
+  },
+  {
+    "discount": 51,
+    "link": "https://www.avenuedelabrique.com/lego-super-mario/72031-mario-kart-yoshimoto/p10263",
+    "price": 7.37,
+    "retail": 0,
+    "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
+    "title": "LEGO Super Mario 72031 - Mario Kart – Yoshimoto",
+    "uuid": "62c844f6-7c11-5182-a863-bc154a47b116"
   },
   {
     "discount": 50,
-    "link": "https://www.avenuedelabrique.com/lego-ninjago/71808-le-robot-elementaire-du-feu-de-kai/p9586",
-    "price": 14.92,
+    "link": "https://www.avenuedelabrique.com/lego-movie/70825-la-boite-a-construire-de-la-reine-watevra/p5211",
+    "price": 19.85,
+    "retail": 0,
     "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
-    "title": "LEGO Ninjago 71808 - Le robot élémentaire du feu de Kai",
-    "uuid": "9e3882ab-9b8b-5443-a09f-2ad0cf4a74ae"
-  },
-  {
-    "discount": 50,
-    "link": "https://www.avenuedelabrique.com/lego-friends/41671-le-cube-de-natation-d-andrea/p7367",
-    "price": 4.99,
-    "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
-    "title": "LEGO Friends 41671 - Le cube de natation d'Andréa",
-    "uuid": "d09f525f-14f7-540c-9d4b-565113b476c7"
+    "title": "LEGO The LEGO Movie 70825 - La boîte à construire de la Reine Watevra !",
+    "uuid": "1a0d57bf-225d-5515-9922-4494b78d8ecf"
   },
   {
     "discount": 49,
     "link": "https://www.avenuedelabrique.com/livres-lego/5007332-the-secrets-of-lego-house/p8028",
     "price": 16.87,
+    "retail": 0,
     "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
     "title": "Livres The Secrets of LEGO House",
     "uuid": "f097f341-c83e-5d93-a28e-996975b0c414"
   },
   {
     "discount": 48,
-    "link": "https://www.avenuedelabrique.com/lego-city/60413-l-avion-de-sauvetage-des-pompiers/p9617",
-    "price": 31.49,
-    "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
-    "title": "LEGO City 60413 - L’avion de sauvetage des pompiers",
-    "uuid": "170352c9-777f-5d82-9887-f7bff21b05e0"
-  },
-  {
-    "discount": 48,
     "link": "https://www.avenuedelabrique.com/livres-lego/5008313-space-1978-1992/p10636",
     "price": 25.99,
+    "retail": 0,
     "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
     "title": "Livres Space 1978-1992",
     "uuid": "8d2d08a8-b058-51cb-8d4e-d2a3fccb643f"
+  },
+  {
+    "discount": 48,
+    "link": "https://www.avenuedelabrique.com/lego-city/60415-la-course-poursuite-entre-la-voiture-de-police-et-la-super-voiture/p9608",
+    "price": 10.48,
+    "retail": 0,
+    "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
+    "title": "LEGO City 60415 - La course-poursuite entre la voiture de police et la super voiture",
+    "uuid": "524961d3-8445-5b6f-abb0-ff58321370dc"
+  },
+  {
+    "discount": 48,
+    "link": "https://www.avenuedelabrique.com/lego-sonic-the-hedgehog/77001-conflit-au-feu-de-camp-de-sonic/p10316",
+    "price": 10.48,
+    "retail": 0,
+    "photo": "/img/site/thumbs/image-non-chargee_0x180.png",
+    "title": "LEGO Sonic The Hedgehog 77001 - Conflit au feu de camp de Sonic",
+    "uuid": "bfacd7a2-eacb-5529-b33a-891c3850584f"
   }
 ]
